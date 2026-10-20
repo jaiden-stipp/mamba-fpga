@@ -1,0 +1,13 @@
+# vsim -c -lib simlib tb_phase_lab -do "run -all; quit -f" 
+# Start time: 22:17:13 on Oct 19,2026
+# Loading simlib.tb_phase_lab
+# Loading simlib.phase_lab
+# Loading simlib.altsource_probe
+# Loading simlib.phase_rotator
+# run -all
+# RESULT completed=1024 guard_errors=0 low_errors=0 cycles=1028 phase_guard=40479 phase_low=181
+# PASS
+# ** Note: $finish    : tb_phase_lab.v(13)
+#    Time: 24 us  Iteration: 0  Instance: /tb_phase_lab
+# End time: 22:17:13 on Oct 19,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

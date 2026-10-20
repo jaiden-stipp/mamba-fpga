@@ -1,0 +1,6 @@
+* text=auto
+*.npy binary
+*.pt binary
+*.png binary
+*.sof binary
+*.zip binary

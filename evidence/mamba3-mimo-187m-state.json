@@ -1,0 +1,731 @@
+[
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "FP32",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.0,
+    "max_abs": 0.0,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 0.72
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "FP16_RTN",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.0003511880207010682,
+    "max_abs": 0.03817939758300781,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 0.95
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "FP16_SR",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.0004968279683068295,
+    "max_abs": 0.05223274230957031,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 1.19
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "INT8_dynamic",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.03852282290667382,
+    "max_abs": 4.915889739990234,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 1.31
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "INT8_static",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.05002064350783568,
+    "max_abs": 5.651679992675781,
+    "clips": 2395,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 1.43
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "INT16_dynamic",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 6.261733766934424e-05,
+    "max_abs": 0.0060272216796875,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 1.55
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "INT16_static",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.009192273112612585,
+    "max_abs": 1.196587085723877,
+    "clips": 3281,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 1.66
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "INT8_dynamic_fixed8",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.0439102460472849,
+    "max_abs": 4.914788246154785,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 1.83
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 0,
+    "label": "INT8_dynamic_guard16_8",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.03859859242361632,
+    "max_abs": 4.89454460144043,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.0589603738917504e-07,
+    "seconds_layer_so_far": 2.02
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "FP32",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.0,
+    "max_abs": 0.0,
+    "clips": 0,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 0.31
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "FP16_RTN",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.0003521403044851331,
+    "max_abs": 0.013463020324707031,
+    "clips": 0,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 0.52
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "FP16_SR",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.0004960765858984964,
+    "max_abs": 0.020538330078125,
+    "clips": 0,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 0.71
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "INT8_dynamic",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.012436506376693052,
+    "max_abs": 0.550511360168457,
+    "clips": 0,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 0.8
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "INT8_static",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.044050888680390796,
+    "max_abs": 1.9992809295654297,
+    "clips": 489,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 0.89
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "INT16_dynamic",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 4.848891322236947e-05,
+    "max_abs": 0.0027649402618408203,
+    "clips": 0,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 0.99
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "INT16_static",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.010223685456015446,
+    "max_abs": 2.0067739486694336,
+    "clips": 509,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 1.1
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "INT8_dynamic_fixed8",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.015244171547440956,
+    "max_abs": 0.5934767723083496,
+    "clips": 0,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 1.24
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 5,
+    "label": "INT8_dynamic_guard16_8",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.013387466715586212,
+    "max_abs": 0.4675483703613281,
+    "clips": 0,
+    "reference_parity_relative_rms": 2.927172886302287e-07,
+    "seconds_layer_so_far": 1.38
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "FP32",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.0,
+    "max_abs": 0.0,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 0.36
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "FP16_RTN",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.00010442830846659664,
+    "max_abs": 0.02620697021484375,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 0.58
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "FP16_SR",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.00014752589583497003,
+    "max_abs": 0.029468536376953125,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 0.78
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "INT8_dynamic",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.012922249629181697,
+    "max_abs": 2.803791046142578,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 0.89
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "INT8_static",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.032179450022915675,
+    "max_abs": 5.646879196166992,
+    "clips": 1186,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 0.99
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "INT16_dynamic",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 5.001435894506422e-05,
+    "max_abs": 0.01222991943359375,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 1.09
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "INT16_static",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.003987375788646899,
+    "max_abs": 5.62763786315918,
+    "clips": 1223,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 1.19
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "INT8_dynamic_fixed8",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.012824427188556168,
+    "max_abs": 3.562957763671875,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 1.3
+  },
+  {
+    "checkpoint": "mamba3-mimo-187m",
+    "layer": 11,
+    "label": "INT8_dynamic_guard16_8",
+    "tokens": 8192,
+    "heads": [
+      0,
+      7,
+      15,
+      23
+    ],
+    "value_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relative_rms": 0.01290343206001006,
+    "max_abs": 3.7438812255859375,
+    "clips": 0,
+    "reference_parity_relative_rms": 3.15289639729599e-07,
+    "seconds_layer_so_far": 1.45
+  }
+]
