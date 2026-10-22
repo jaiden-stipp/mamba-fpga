@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-22",
+  "experiments": [
+    {
+      "id": "E001",
+      "path": "experiments/001-phase-precision",
+      "status": "completed_pilot_hardware_validated",
+      "report": "research_report.md",
+      "evidence": "hardware_results.json",
+      "gpu_serving_results": false
+    },
+    {
+      "id": "E002",
+      "path": "experiments/002-budgeted-memory",
+      "status": "completed_synthetic_study",
+      "report": "research_report.md",
+      "evidence": "confirmation_results.csv",
+      "gpu_serving_results": false
+    },
+    {
+      "id": "E003",
+      "path": "experiments/003-kv-compression",
+      "status": "completed_feasibility_pilot",
+      "report": "report.md",
+      "evidence": "raw_results.jsonl",
+      "gpu_serving_results": false
+    },
+    {
+      "id": "E004",
+      "path": "experiments/004-kv-serving",
+      "status": "prepared_integration_validated",
+      "report": "research_status.md",
+      "evidence": "validation.json",
+      "gpu_serving_results": false,
+      "gpu_serving_runs_completed": 0
+    }
+  ]
+}

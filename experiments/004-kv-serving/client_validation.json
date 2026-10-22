@@ -1,0 +1,8 @@
+{
+  "answer_checker": "passed",
+  "real_HTTP_SSE_client": "passed",
+  "first_token_not_buffered": true,
+  "ttft_s": 0.05469450000055076,
+  "completion_s": 0.2966558000007353,
+  "mean_tpot_s": 0.08065376666672819
+}

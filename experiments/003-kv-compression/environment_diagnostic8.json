@@ -1,0 +1,20 @@
+{
+  "python": "3.12.14",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "transformers": "4.57.1",
+  "model_manifest": {
+    "repo": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "local_path": "${ORIGINAL_WORKSPACE}\\work\\lowbit-kv\\assets\\Qwen3-4B"
+  },
+  "model_bytes": 8044936192,
+  "argv": [
+    "outputs/lowbit_kv_study/run_baseline.py",
+    "--methods",
+    "hqq8",
+    "--tag",
+    "diagnostic8"
+  ]
+}

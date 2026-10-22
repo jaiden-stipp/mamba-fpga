@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-22",
+  "scope": "Repository organization and relocation checks, not new research measurements",
+  "offline_repository_checks": 1084,
+  "staged_evidence_files_verified_byte_identically": 425,
+  "tracked_files": 462,
+  "tracked_snapshot_MiB": 51.57,
+  "phase_analysis_regenerated_byte_identically": ["summary.json", "language_model_results.csv"],
+  "kv_analysis_regenerated_byte_identically": ["summary.json", "summary.csv"],
+  "memory_semantics_tests": "passed: overwrite, noninterference, deletion, packed signatures, budgets, causality, evaluator isolation",
+  "learned_memory_parity_tests": "passed: Torch/Numba predictions, 4080-byte state, evaluator isolation",
+  "serving_cli": "help loads successfully without model execution",
+  "gpu_serving_runs_added": 0,
+  "remote_mutations": "none"
+}

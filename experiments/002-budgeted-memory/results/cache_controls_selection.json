@@ -1,0 +1,30 @@
+{
+  "cache_signature32": {
+    "family": "cache",
+    "kind": "signature",
+    "dimension": 32,
+    "capacity": 454,
+    "threshold": 0.7
+  },
+  "cache_signature64": {
+    "family": "cache",
+    "kind": "signature",
+    "dimension": 64,
+    "capacity": 314,
+    "threshold": 0.5
+  },
+  "cache_int864": {
+    "family": "cache",
+    "kind": "int8",
+    "dimension": 64,
+    "capacity": 59,
+    "threshold": 0.5
+  },
+  "cache_float3264": {
+    "family": "cache",
+    "kind": "float32",
+    "dimension": 64,
+    "capacity": 15,
+    "threshold": 0.5
+  }
+}

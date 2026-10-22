@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-10-20",
+  "scope": "Targeted primary-source novelty screen, not an exhaustive literature review or certification of novelty.",
+  "sources": [
+    {"title":"KIVI", "url":"https://arxiv.org/abs/2402.02750", "status":"ICML 2024", "relevance":"Asymmetric 2-bit KV quantization and complete serving gains already published; HF HQQ is not this exact algorithm."},
+    {"title":"QServe", "url":"https://arxiv.org/abs/2405.04532", "status":"Published research; official paper", "relevance":"Joint W4A8KV4 algorithm/system design already published; smaller cache alone is not a new full-stack contribution."},
+    {"title":"KVTuner", "url":"https://arxiv.org/abs/2502.04420", "status":"ICML 2025", "relevance":"Offline sensitivity-aware layer mixed precision and hardware-friendly configurations already covered."},
+    {"title":"TurboQuant", "url":"https://arxiv.org/abs/2504.19874", "status":"Public research paper", "relevance":"Random rotations and scalar/codebook quantization are prior art. We have not reproduced its method or performance."},
+    {"title":"MixKVQ", "url":"https://arxiv.org/abs/2512.19206", "status":"Public research paper; author repository labels ACL 2026", "relevance":"Query-aware mixed precision for difficult key channels already covered."},
+    {"title":"TriAxialKV", "url":"https://arxiv.org/abs/2605.17170", "status":"2026 preprint", "relevance":"Recency, modality, semantic role precision allocation with a serving implementation and fused Triton kernels already covered."},
+    {"title":"RateQuant", "url":"https://arxiv.org/abs/2605.06675", "status":"2026 preprint", "relevance":"Quantizer-specific rate-distortion calibration and per-head bit allocation already covered."},
+    {"title":"UltraQuant", "url":"https://arxiv.org/abs/2606.20474", "status":"September 2026 revision; page labels EMNLP 2026 Industry Track", "relevance":"4-bit KV for context-heavy multi-round agents with real deployment kernels and serving results already covered."},
+    {"title":"ReadKV / Read What Matters", "url":"https://arxiv.org/abs/2610.11245", "status":"October 8, 2026 preprint", "relevance":"Separate retained and fetched bits; progressive codes; query-dependent key and value reads. Reported latency evidence in abstract is a restricted single-layer experiment, not complete-model serving."},
+    {"title":"QuantSpec", "url":"https://machinelearning.apple.com/research/quantspec", "status":"ICML 2025 author research page", "relevance":"Self-speculation with quantized weights and hierarchical KV caches already covered."},
+    {"title":"SpecKV", "url":"https://arxiv.org/abs/2605.02888", "status":"2026 preprint", "relevance":"Compression-aware speculative length selection already covered."},
+    {"title":"MorphServe", "url":"https://systems.seas.harvard.edu/blog/make-model-precision-elastic/", "status":"Author systems research page, July 2026", "relevance":"Runtime weight precision swapping and elastic KV capacity under load already covered; distinguish from KV precision refinement."},
+    {"title":"TensorRT-LLM KV cache compression", "url":"https://nvidia.github.io/TensorRT-LLM/features/kv-cache-compression.html", "status":"Official moving documentation", "relevance":"Compression at iteration and hot/cold storage boundaries is already a supported design direction."},
+    {"title":"HF Transformers v4.57.1 cache documentation", "url":"https://huggingface.co/docs/transformers/v4.57.1/kv_cache", "status":"Versioned official documentation", "relevance":"Baseline implementation and recommended HQQ axes; warns cache quantization may hurt latency."},
+    {"title":"HF Transformers v4.57.1 cache source", "url":"https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/cache_utils.py", "status":"Versioned official code", "relevance":"QuantizedLayer dequantizes stored history and concatenates BF16 tensors before ordinary attention."},
+    {"title":"Qwen3-4B checkpoint", "url":"https://huggingface.co/Qwen/Qwen3-4B", "status":"Official model card; immutable revision in environment.json", "relevance":"4B dense model, 36 layers, 8 KV heads, 128 head dimension; native context stated as 32,768 tokens."}
+  ]
+}

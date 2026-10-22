@@ -4,3 +4,6 @@
 *.png binary
 *.sof binary
 *.zip binary
+# Recorded evidence and per-study manifests must retain identical bytes on
+# Windows and Linux, including original vendor report and CSV line endings.
+experiments/** -text

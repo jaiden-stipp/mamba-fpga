@@ -1,0 +1,3062 @@
+[
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 512,
+    "mode": "reference",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9969731569290161,
+        "target_rank": 2
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9995675683021545,
+        "target_rank": 1
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9998088479042053,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9924998879432678,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9978140592575073,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9969711303710938,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9989631175994873,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9989116191864014,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9984880685806274,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9975259900093079,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.998757004737854,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9986868500709534,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9981081485748291,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9992165565490723,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9988296627998352,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.99930739402771,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996059536933899,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996026158332825,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9992984533309937,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9995299577713013,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996887445449829,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9984610080718994,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9994142055511475,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9994414448738098,
+        "target_rank": 1
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 1.0,
+    "greedy_accuracy": 0.9583333333333334,
+    "mean_target_prob_eight": 0.998561310271422,
+    "seconds": 4.27
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 512,
+    "mode": "fixed8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9982006549835205,
+        "target_rank": 1
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9999239444732666,
+        "target_rank": 1
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9999364614486694,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9377279877662659,
+        "target_rank": 3
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9955636262893677,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9919456839561462,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9973312616348267,
+        "target_rank": 2
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9981386661529541,
+        "target_rank": 2
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9979373216629028,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9976398944854736,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9991276860237122,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9982942938804626,
+        "target_rank": 2
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9921572208404541,
+        "target_rank": 2
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9983684420585632,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9969533681869507,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9989394545555115,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996867179870605,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9992917776107788,
+        "target_rank": 2
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.998675525188446,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9992712140083313,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996460676193237,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9978781938552856,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9991633892059326,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9991233944892883,
+        "target_rank": 1
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 1.0,
+    "greedy_accuracy": 0.75,
+    "mean_target_prob_eight": 0.9954550936818123,
+    "seconds": 1.89
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 512,
+    "mode": "fixed10",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9988340735435486,
+        "target_rank": 1
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9997718930244446,
+        "target_rank": 1
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9998514652252197,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9903068542480469,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.997860848903656,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9971953630447388,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9987309575080872,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9987168312072754,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9984707236289978,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9982278943061829,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9989690780639648,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9988906979560852,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9985295534133911,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9993171691894531,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.998813271522522,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9994284510612488,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9997074007987976,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.99964439868927,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9993492960929871,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9995452761650085,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9997028708457947,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9986565113067627,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9994521737098694,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.999426007270813,
+        "target_rank": 1
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 1.0,
+    "greedy_accuracy": 1.0,
+    "mean_target_prob_eight": 0.9986416275302569,
+    "seconds": 1.87
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 512,
+    "mode": "guard16_8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9969122409820557,
+        "target_rank": 2
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9995853304862976,
+        "target_rank": 1
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9998111128807068,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9925104379653931,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9979592561721802,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9969835877418518,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9989439845085144,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.998907208442688,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9984768033027649,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9974699020385742,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9987773299217224,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.998643696308136,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9981560111045837,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9992159605026245,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9988070726394653,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9992966651916504,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9995915293693542,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996199607849121,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9993107318878174,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9995303153991699,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996911287307739,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.998310923576355,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9993823766708374,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9994521737098694,
+        "target_rank": 1
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 1.0,
+    "greedy_accuracy": 0.9583333333333334,
+    "mean_target_prob_eight": 0.9985560725132624,
+    "seconds": 1.97
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 2048,
+    "mode": "reference",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.062362246215343475,
+        "target_rank": 3770
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8103339672088623,
+        "target_rank": 43
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9963337182998657,
+        "target_rank": 2
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.073471300303936,
+        "target_rank": 1794
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6282057166099548,
+        "target_rank": 34
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8722613453865051,
+        "target_rank": 2
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.7080586552619934,
+        "target_rank": 198
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9681968092918396,
+        "target_rank": 16
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9998974800109863,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.049504369497299194,
+        "target_rank": 4442
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.5066983699798584,
+        "target_rank": 301
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9750326871871948,
+        "target_rank": 4
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.2190871387720108,
+        "target_rank": 910
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9028101563453674,
+        "target_rank": 48
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9972776770591736,
+        "target_rank": 2
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07055671513080597,
+        "target_rank": 4778
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.4351813495159149,
+        "target_rank": 642
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9782950282096863,
+        "target_rank": 4
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8693767189979553,
+        "target_rank": 141
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9908930063247681,
+        "target_rank": 6
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9988885521888733,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.031235355883836746,
+        "target_rank": 6547
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8105918765068054,
+        "target_rank": 87
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9945247173309326,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.75,
+    "greedy_accuracy": 0.08333333333333333,
+    "mean_target_prob_eight": 0.6645447898966571,
+    "seconds": 3.83
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 2048,
+    "mode": "fixed8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.44479167461395264,
+        "target_rank": 120
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.936056911945343,
+        "target_rank": 6
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9932571649551392,
+        "target_rank": 3
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.09252884984016418,
+        "target_rank": 833
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.29714277386665344,
+        "target_rank": 140
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6654999852180481,
+        "target_rank": 4
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.43928447365760803,
+        "target_rank": 464
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8202067017555237,
+        "target_rank": 152
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9990741014480591,
+        "target_rank": 2
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.04191656783223152,
+        "target_rank": 2906
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.2693210542201996,
+        "target_rank": 462
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9314656257629395,
+        "target_rank": 13
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8846597075462341,
+        "target_rank": 19
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9753795862197876,
+        "target_rank": 4
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9984779953956604,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.012675749137997627,
+        "target_rank": 3298
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.05577435344457626,
+        "target_rank": 1176
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9620887041091919,
+        "target_rank": 4
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.4097527861595154,
+        "target_rank": 330
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8921493291854858,
+        "target_rank": 19
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9955392479896545,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.09468851238489151,
+        "target_rank": 960
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8450409173965454,
+        "target_rank": 45
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9929960370063782,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.7083333333333334,
+    "greedy_accuracy": 0.08333333333333333,
+    "mean_target_prob_eight": 0.6270737004621575,
+    "seconds": 4.89
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 2048,
+    "mode": "fixed10",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07179107517004013,
+        "target_rank": 2783
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.797370195388794,
+        "target_rank": 50
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9958937168121338,
+        "target_rank": 3
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.05903210490942001,
+        "target_rank": 945
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.5026131868362427,
+        "target_rank": 30
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8495126962661743,
+        "target_rank": 3
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6405767202377319,
+        "target_rank": 183
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9568737745285034,
+        "target_rank": 22
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9997962117195129,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.03992738202214241,
+        "target_rank": 5045
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.39453619718551636,
+        "target_rank": 419
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9751026034355164,
+        "target_rank": 5
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.38704562187194824,
+        "target_rank": 264
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9612119197845459,
+        "target_rank": 11
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9981004595756531,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.055048465728759766,
+        "target_rank": 3148
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.2763756513595581,
+        "target_rank": 696
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9737613201141357,
+        "target_rank": 4
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9166214466094971,
+        "target_rank": 51
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.992121696472168,
+        "target_rank": 4
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9987655878067017,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.030499139800667763,
+        "target_rank": 4952
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8791094422340393,
+        "target_rank": 40
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9960877895355225,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.7083333333333334,
+    "greedy_accuracy": 0.125,
+    "mean_target_prob_eight": 0.6561572668918719,
+    "seconds": 4.59
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 2048,
+    "mode": "guard16_8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.06206875666975975,
+        "target_rank": 3697
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8084695935249329,
+        "target_rank": 43
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9963169097900391,
+        "target_rank": 2
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07568302005529404,
+        "target_rank": 1761
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6234360337257385,
+        "target_rank": 35
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8741299510002136,
+        "target_rank": 2
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.7078484296798706,
+        "target_rank": 198
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9672425985336304,
+        "target_rank": 17
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9998972415924072,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.049992676824331284,
+        "target_rank": 4442
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.5116588473320007,
+        "target_rank": 295
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9743412733078003,
+        "target_rank": 4
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.22260817885398865,
+        "target_rank": 905
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9032859802246094,
+        "target_rank": 47
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9973570704460144,
+        "target_rank": 2
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07095131278038025,
+        "target_rank": 4748
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.42828017473220825,
+        "target_rank": 655
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9782943725585938,
+        "target_rank": 4
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8676624894142151,
+        "target_rank": 143
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9907659292221069,
+        "target_rank": 6
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9988943934440613,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.03099125623703003,
+        "target_rank": 6497
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8210507035255432,
+        "target_rank": 84
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.994439959526062,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.75,
+    "greedy_accuracy": 0.08333333333333333,
+    "mean_target_prob_eight": 0.664819464708368,
+    "seconds": 4.02
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 8192,
+    "mode": "reference",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.0255790576338768,
+        "target_rank": 6961
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.02855032868683338,
+        "target_rank": 6480
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8725746273994446,
+        "target_rank": 34
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.016587812453508377,
+        "target_rank": 12616
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.016815653070807457,
+        "target_rank": 12191
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.5316710472106934,
+        "target_rank": 98
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.16912388801574707,
+        "target_rank": 649
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.16360987722873688,
+        "target_rank": 663
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.7029971480369568,
+        "target_rank": 29
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.04113173112273216,
+        "target_rank": 2745
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.04251912236213684,
+        "target_rank": 2436
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.4230305254459381,
+        "target_rank": 48
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07955911755561829,
+        "target_rank": 1522
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.0850960910320282,
+        "target_rank": 1392
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9624118804931641,
+        "target_rank": 8
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.02677956596016884,
+        "target_rank": 2556
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.0267049428075552,
+        "target_rank": 2474
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.23751017451286316,
+        "target_rank": 327
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6134615540504456,
+        "target_rank": 145
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6241323947906494,
+        "target_rank": 140
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9720330238342285,
+        "target_rank": 4
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.013076772913336754,
+        "target_rank": 7912
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.0167313851416111,
+        "target_rank": 6130
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.991754412651062,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.3333333333333333,
+    "greedy_accuracy": 0.0,
+    "mean_target_prob_eight": 0.3201434222670893,
+    "seconds": 16.94
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 8192,
+    "mode": "fixed8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.01595035009086132,
+        "target_rank": 6391
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.015145208686590195,
+        "target_rank": 5064
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.3706938624382019,
+        "target_rank": 304
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.00999972689896822,
+        "target_rank": 11928
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.010251686908304691,
+        "target_rank": 10750
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.7545717358589172,
+        "target_rank": 63
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.15633682906627655,
+        "target_rank": 301
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.17111466825008392,
+        "target_rank": 196
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9723018407821655,
+        "target_rank": 4
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.02942606247961521,
+        "target_rank": 2698
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.03255691006779671,
+        "target_rank": 1735
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6807381510734558,
+        "target_rank": 62
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.14314748346805573,
+        "target_rank": 315
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.22922807931900024,
+        "target_rank": 101
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9987130165100098,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.015220565721392632,
+        "target_rank": 2583
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.012182329781353474,
+        "target_rank": 2670
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.06666744500398636,
+        "target_rank": 842
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.40257760882377625,
+        "target_rank": 160
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.4234321117401123,
+        "target_rank": 131
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.2012435346841812,
+        "target_rank": 141
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.015451877377927303,
+        "target_rank": 4944
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.02268911339342594,
+        "target_rank": 2740
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9894046783447266,
+        "target_rank": 7
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.25,
+    "greedy_accuracy": 0.041666666666666664,
+    "mean_target_prob_eight": 0.28079353653204936,
+    "seconds": 11.62
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 8192,
+    "mode": "fixed10",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.0172119103372097,
+        "target_rank": 7506
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.018115194514393806,
+        "target_rank": 6771
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.7379554510116577,
+        "target_rank": 64
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.015712682157754898,
+        "target_rank": 11995
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.016200000420212746,
+        "target_rank": 11165
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6235982775688171,
+        "target_rank": 48
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.1542343646287918,
+        "target_rank": 575
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.14744871854782104,
+        "target_rank": 551
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8661425709724426,
+        "target_rank": 8
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.0343865230679512,
+        "target_rank": 3106
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.03318055719137192,
+        "target_rank": 2689
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.35194769501686096,
+        "target_rank": 33
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.08689656853675842,
+        "target_rank": 1138
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.10020028799772263,
+        "target_rank": 839
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9942171573638916,
+        "target_rank": 2
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.02133897691965103,
+        "target_rank": 3010
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.020149575546383858,
+        "target_rank": 2883
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.2528139650821686,
+        "target_rank": 171
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.566218912601471,
+        "target_rank": 130
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.5849565267562866,
+        "target_rank": 114
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9514424204826355,
+        "target_rank": 4
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.01163528673350811,
+        "target_rank": 7824
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.015611724928021431,
+        "target_rank": 5637
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9961777925491333,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.3333333333333333,
+    "greedy_accuracy": 0.0,
+    "mean_target_prob_eight": 0.3174080475388716,
+    "seconds": 12.68
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 8192,
+    "mode": "guard16_8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.025714384391903877,
+        "target_rank": 6950
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.028178421780467033,
+        "target_rank": 6503
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8784995675086975,
+        "target_rank": 34
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.01679769717156887,
+        "target_rank": 12532
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.01677575893700123,
+        "target_rank": 12121
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.5374087691307068,
+        "target_rank": 98
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.16920308768749237,
+        "target_rank": 642
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.1593272089958191,
+        "target_rank": 672
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.7136179208755493,
+        "target_rank": 27
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.04033181443810463,
+        "target_rank": 2773
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.04245296120643616,
+        "target_rank": 2428
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.4297902286052704,
+        "target_rank": 48
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07892069965600967,
+        "target_rank": 1539
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.08504786342382431,
+        "target_rank": 1376
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9611234664916992,
+        "target_rank": 8
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.027130015194416046,
+        "target_rank": 2489
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.026907464489340782,
+        "target_rank": 2466
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.24279266595840454,
+        "target_rank": 302
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6103478074073792,
+        "target_rank": 150
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6246159672737122,
+        "target_rank": 138
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9718046188354492,
+        "target_rank": 4
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.013106515631079674,
+        "target_rank": 7835
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.016886256635189056,
+        "target_rank": 6092
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9914687871932983,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.3333333333333333,
+    "greedy_accuracy": 0.0,
+    "mean_target_prob_eight": 0.3211770812049508,
+    "seconds": 12.89
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 512,
+    "mode": "guard16_8_trig8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9971615076065063,
+        "target_rank": 2
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9995667338371277,
+        "target_rank": 1
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9998101592063904,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.992771327495575,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9978634715080261,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9970452189445496,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9989553689956665,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9989303946495056,
+        "target_rank": 1
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9985687732696533,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9975741505622864,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9987245202064514,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9986745119094849,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9981822967529297,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9992259740829468,
+        "target_rank": 1
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9988654851913452,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9993041753768921,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996102452278137,
+        "target_rank": 1
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996227025985718,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9993011951446533,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9995330572128296,
+        "target_rank": 1
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9996870756149292,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9984082579612732,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9993715882301331,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9994469285011292,
+        "target_rank": 1
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 1.0,
+    "greedy_accuracy": 0.9583333333333334,
+    "mean_target_prob_eight": 0.9985918800036112,
+    "seconds": 5.91
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 2048,
+    "mode": "guard16_8_trig8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.0610283762216568,
+        "target_rank": 3762
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8118127584457397,
+        "target_rank": 43
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9964225888252258,
+        "target_rank": 1
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07566392421722412,
+        "target_rank": 1750
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6232627034187317,
+        "target_rank": 34
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8736156821250916,
+        "target_rank": 2
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.7062494158744812,
+        "target_rank": 200
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.967878520488739,
+        "target_rank": 16
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9998958110809326,
+        "target_rank": 1
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.049282025545835495,
+        "target_rank": 4401
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.5070983171463013,
+        "target_rank": 306
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9753329157829285,
+        "target_rank": 4
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.22009745240211487,
+        "target_rank": 890
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.905760645866394,
+        "target_rank": 45
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9973961114883423,
+        "target_rank": 2
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07272977381944656,
+        "target_rank": 4679
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.42833712697029114,
+        "target_rank": 656
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9779665470123291,
+        "target_rank": 4
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8688013553619385,
+        "target_rank": 141
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9908005595207214,
+        "target_rank": 6
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": true,
+        "target_prob_eight": 0.9988790154457092,
+        "target_rank": 1
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.030912376940250397,
+        "target_rank": 6626
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.8275557160377502,
+        "target_rank": 79
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9942089319229126,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.75,
+    "greedy_accuracy": 0.125,
+    "mean_target_prob_eight": 0.665041193831712,
+    "seconds": 4.94
+  },
+  {
+    "checkpoint": "mamba3-siso-187m",
+    "length": 8192,
+    "mode": "guard16_8_trig8",
+    "cases": [
+      {
+        "word": "apple",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.02628355845808983,
+        "target_rank": 6845
+      },
+      {
+        "word": "apple",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.02860237844288349,
+        "target_rank": 6449
+      },
+      {
+        "word": "apple",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.868511438369751,
+        "target_rank": 34
+      },
+      {
+        "word": "river",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.016517026349902153,
+        "target_rank": 12585
+      },
+      {
+        "word": "river",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.016756610944867134,
+        "target_rank": 12073
+      },
+      {
+        "word": "river",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.5225352048873901,
+        "target_rank": 98
+      },
+      {
+        "word": "music",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.16729004681110382,
+        "target_rank": 656
+      },
+      {
+        "word": "music",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.16253894567489624,
+        "target_rank": 669
+      },
+      {
+        "word": "music",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.7093623876571655,
+        "target_rank": 29
+      },
+      {
+        "word": "paper",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.04104949161410332,
+        "target_rank": 2746
+      },
+      {
+        "word": "paper",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.0421699658036232,
+        "target_rank": 2458
+      },
+      {
+        "word": "paper",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.4320027530193329,
+        "target_rank": 48
+      },
+      {
+        "word": "green",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.07953433692455292,
+        "target_rank": 1519
+      },
+      {
+        "word": "green",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.08450780808925629,
+        "target_rank": 1404
+      },
+      {
+        "word": "green",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9629322290420532,
+        "target_rank": 8
+      },
+      {
+        "word": "horse",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.026573529466986656,
+        "target_rank": 2618
+      },
+      {
+        "word": "horse",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.026905355975031853,
+        "target_rank": 2496
+      },
+      {
+        "word": "horse",
+        "fraction": 0.9,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.2408958226442337,
+        "target_rank": 324
+      },
+      {
+        "word": "water",
+        "fraction": 0.1,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6116016507148743,
+        "target_rank": 145
+      },
+      {
+        "word": "water",
+        "fraction": 0.5,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.6215667724609375,
+        "target_rank": 140
+      },
+      {
+        "word": "water",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9723082780838013,
+        "target_rank": 3
+      },
+      {
+        "word": "stone",
+        "fraction": 0.1,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.013200596906244755,
+        "target_rank": 7927
+      },
+      {
+        "word": "stone",
+        "fraction": 0.5,
+        "constrained_correct": false,
+        "greedy_correct": false,
+        "target_prob_eight": 0.016892973333597183,
+        "target_rank": 6075
+      },
+      {
+        "word": "stone",
+        "fraction": 0.9,
+        "constrained_correct": true,
+        "greedy_correct": false,
+        "target_prob_eight": 0.9923478364944458,
+        "target_rank": 2
+      }
+    ],
+    "n": 24,
+    "constrained_accuracy": 0.3333333333333333,
+    "greedy_accuracy": 0.0,
+    "mean_target_prob_eight": 0.3201202915903802,
+    "seconds": 14.75
+  }
+]

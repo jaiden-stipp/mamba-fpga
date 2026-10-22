@@ -1,0 +1,14 @@
+{
+  "checks": "PASS",
+  "analytic_rows": 540,
+  "confirmation_rows": 612,
+  "confirmation_streams": 36,
+  "learned_models": 3,
+  "training_steps_per_model": 600,
+  "training_events": 11059200,
+  "max_confirm_persistent_bytes": 4090,
+  "HTML_embedded_figures": 3,
+  "semantic_tests": "Overwrite/deletion, independent-key protection, packed signatures, causality, evaluator isolation passed.",
+  "neural_inference_check": "Torch and Numba predictions agree on test queries; 4080-byte matrix.",
+  "source_syntax": "All Python files compile."
+}

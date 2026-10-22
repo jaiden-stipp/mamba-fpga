@@ -1,0 +1,26 @@
+{
+  "gpu": {
+    "used_MiB": 18461.0,
+    "free_MiB": 5866.0,
+    "util_percent": 0.0,
+    "temperature_C": 45.0,
+    "clock_MHz": 210.0
+  },
+  "arguments": {
+    "gpu": 0,
+    "port": 18673,
+    "slots": "1",
+    "formats": "f16",
+    "tag": "preflight",
+    "allow_busy_gpu": false,
+    "smoke": true
+  },
+  "slo": {
+    "ttft_s": 20.0,
+    "mean_tpot_s": 0.1,
+    "completion_s": 45.0
+  },
+  "python": "3.12.14",
+  "status": "blocked_competing_allocations",
+  "note": "No other process unloaded or terminated by this check."
+}

@@ -1,0 +1,9 @@
+# Fresh confirmation after improving the explicit-cache control
+
+The initial cache grid (.3, .5, .7, .9, .99) may undersample useful thresholds, particularly for clustered identities. This was noticed after inspecting the analytic screen, before inspecting any learned model's final accuracy. Record this as an adaptive follow-up rather than rewriting the original protocol.
+
+Select cache thresholds from .30 to .95 in .05 steps plus .99, using only the original calibration seeds 100-102 and 4,096-event streams. Freeze one configuration per representation (signature32, signature64, int8, FP32) and one best global cache. The representation-specific results are secondary controls, not test-selected winners. Keep all other methods and learned checkpoints fixed.
+
+Evaluate every frozen analytic control, all three learned and identically initialized untrained models, and all cache representations on NEW confirmation streams: seeds 700-707 for 12,288 events; 800-803 for 49,152 events with a moving hot set. No confirmation result selects a hyperparameter or checkpoint. Average neural models across initialization seeds within each stream, then use paired stream-seed bootstrap intervals; also report initialization variation. This remains a synthetic pilot, not a new algorithm or a full-model result.
+
+Before any confirmation evaluation, add 16D and 32D int8 random-projection key caches to the same calibration grid. These are ordinary dimensionality-reduction controls: normalize a fixed Gaussian projection, quantize to int8, and charge every stored coordinate plus value and timestamp. Shared projection weights count separately. A compact continuous key may outperform sign signatures without any learned memory innovation. Preserve the earlier threshold-only selection record and rerun calibration with the expanded candidate set before evaluating the confirmation streams.

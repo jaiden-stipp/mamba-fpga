@@ -1,0 +1,140 @@
+[
+  {
+    "id": "Dynamo",
+    "title": "NVIDIA Dynamo feature benchmarks",
+    "url": "https://docs.dynamo.nvidia.com/dynamo/dev/recipes/benchmarks",
+    "evidence": "Official development documentation; retrieved 2026-10-19"
+  },
+  {
+    "id": "MLPerfRAG",
+    "title": "MLPerf End-to-End RAG benchmark",
+    "url": "https://mlcommons.org/2026/08/endtoend-inference/",
+    "evidence": "Official benchmark announcement; 2026-08-26"
+  },
+  {
+    "id": "LMCache",
+    "title": "LMCache architecture and CacheBlend modules",
+    "url": "https://docs.lmcache.ai/mp/architecture.html",
+    "evidence": "Official documentation; retrieved 2026-10-19"
+  },
+  {
+    "id": "CacheBlend",
+    "title": "CacheBlend: cached knowledge fusion",
+    "url": "https://arxiv.org/abs/2405.16444",
+    "evidence": "Primary paper; abstract-level screening"
+  },
+  {
+    "id": "C2KV",
+    "title": "Compressed and composable KV reuse",
+    "url": "https://arxiv.org/abs/2607.17715",
+    "evidence": "Primary paper; submitted 2026-07-20; abstract and selected HTML"
+  },
+  {
+    "id": "Range",
+    "title": "Range: KV storage granularity and overhead",
+    "url": "https://arxiv.org/abs/2610.21241",
+    "evidence": "Preprint; submitted 2026-10-15; selected full-text sections"
+  },
+  {
+    "id": "DFlash",
+    "title": "DFlash: block diffusion speculative decoding",
+    "url": "https://arxiv.org/abs/2602.06036",
+    "evidence": "Preprint; submitted 2026-02-05; abstract-level screening"
+  },
+  {
+    "id": "DFlare",
+    "title": "DFlare: scaling block diffusion drafts",
+    "url": "https://arxiv.org/abs/2606.02091",
+    "evidence": "Preprint; submitted 2026-06-01; abstract-level screening"
+  },
+  {
+    "id": "SpecStream",
+    "title": "Resource-efficient long-context speculation",
+    "url": "https://arxiv.org/abs/2609.33184",
+    "evidence": "Preprint; submitted 2026-09-27; abstract and selected HTML"
+  },
+  {
+    "id": "TurboQuant",
+    "title": "Google Research: TurboQuant",
+    "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
+    "evidence": "Official research explanation; 2026-03-24"
+  },
+  {
+    "id": "QAD",
+    "title": "NVIDIA NVFP4 quantization-aware distillation",
+    "url": "https://research.nvidia.com/labs/nemotron/nemotron-qad/",
+    "evidence": "Official research explanation; 2026-01-20"
+  },
+  {
+    "id": "CRAFT",
+    "title": "Cost-aware expert replication",
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/3a7f9e485845dac27423375c934cb4db-Abstract-Conference.html",
+    "evidence": "MLSys 2026 proceedings; abstract inspected"
+  },
+  {
+    "id": "LayeredPrefill",
+    "title": "Layered prefill for MoE serving",
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/c0f460c6d63599ea870ba9db63dc96a9-Abstract-Conference.html",
+    "evidence": "MLSys 2026 proceedings; abstract inspected"
+  },
+  {
+    "id": "SmartGen",
+    "title": "Selective KV transfer for disaggregated inference",
+    "url": "https://arxiv.org/abs/2607.28150",
+    "evidence": "Preprint; abstract-level screening"
+  },
+  {
+    "id": "ACID",
+    "title": "One Threshold Is Not Enough: video diffusion caching",
+    "url": "https://arxiv.org/abs/2607.12358v3",
+    "evidence": "Preprint; 2026-07-14, revised 2026-09-26; abstract inspected"
+  },
+  {
+    "id": "SoftCache",
+    "title": "SoftCache: adaptive step-size caching",
+    "url": "https://arxiv.org/abs/2610.22369",
+    "evidence": "Preprint; submitted 2026-10-15; abstract-level screening"
+  },
+  {
+    "id": "FA4",
+    "title": "FlashAttention-4",
+    "url": "https://arxiv.org/abs/2603.05451",
+    "evidence": "Preprint; submitted 2026-03-05; abstract inspected"
+  },
+  {
+    "id": "FlashInfer",
+    "title": "FlashInfer inference attention engine",
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2025/hash/dbf02b21d77409a2db30e56866a8ab3a-Abstract-Conference.html",
+    "evidence": "MLSys 2025 proceedings; abstract-level screening"
+  },
+  {
+    "id": "FlashInferBench",
+    "title": "FlashInfer-Bench",
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/37e44c4b5321605735be9761f9b758fc-Abstract-Conference.html",
+    "evidence": "MLSys 2026 proceedings; abstract-level screening"
+  },
+  {
+    "id": "AReaL",
+    "title": "Asynchronous RL for language reasoning",
+    "url": "https://arxiv.org/abs/2505.24298v5",
+    "evidence": "Primary paper; 2025-05-30, revised 2026-03-02; abstract inspected"
+  },
+  {
+    "id": "ReSpec",
+    "title": "Speculative decoding in RL systems",
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/dcb38c6ad7911842ab31081be9540b89-Abstract-Conference.html",
+    "evidence": "MLSys 2026 proceedings; abstract-level screening"
+  },
+  {
+    "id": "HetRL",
+    "title": "RL training on heterogeneous resources",
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/5321b1dabcd2be188d796c21b733e8c7-Abstract-Conference.html",
+    "evidence": "MLSys 2026 proceedings; abstract inspected"
+  },
+  {
+    "id": "BiDiRL",
+    "title": "Resource scheduling for asynchronous RL",
+    "url": "https://arxiv.org/abs/2607.09207v2",
+    "evidence": "Preprint; revised 2026-08-05; abstract inspected"
+  }
+]

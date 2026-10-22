@@ -1,0 +1,9 @@
+{
+  "main_rows": 36,
+  "exploratory_8bit_rows": 12,
+  "paired_main_prompts": 12,
+  "cache_byte_formula_matches": 48,
+  "packed_uint8_verified": true,
+  "no_duplicate_main_cases": true,
+  "note": "Integrity checks, not independent replication or proof of quality neutrality."
+}

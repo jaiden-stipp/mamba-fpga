@@ -1,0 +1,52 @@
+{
+  "seed": 0,
+  "history": [
+    {
+      "step": 1,
+      "train_loss": 0.8029627203941345,
+      "validation_loss": 1.8012583255767822,
+      "seconds": 1.1770033836364746
+    },
+    {
+      "step": 100,
+      "train_loss": 0.9578335285186768,
+      "validation_loss": 1.021482229232788,
+      "seconds": 38.09169816970825
+    },
+    {
+      "step": 200,
+      "train_loss": 0.8951460123062134,
+      "validation_loss": 1.0174068212509155,
+      "seconds": 83.68716645240784
+    },
+    {
+      "step": 300,
+      "train_loss": 0.6851385831832886,
+      "validation_loss": 1.0045242309570312,
+      "seconds": 129.88118624687195
+    },
+    {
+      "step": 400,
+      "train_loss": 0.6608098149299622,
+      "validation_loss": 0.9856889247894287,
+      "seconds": 173.81079840660095
+    },
+    {
+      "step": 500,
+      "train_loss": 1.1050528287887573,
+      "validation_loss": 0.9792678356170654,
+      "seconds": 219.25116515159607
+    },
+    {
+      "step": 600,
+      "train_loss": 1.1260102987289429,
+      "validation_loss": 0.9607357978820801,
+      "seconds": 264.14108443260193
+    }
+  ],
+  "best_step": 600,
+  "persistent_bytes": 4080,
+  "shared_parameters": 34305,
+  "shared_parameter_bytes": 137220,
+  "protocol_sha256": "429d120eec12b80289f0bc51bfc4bc846676e50425f2a15b2a3107e55508406d"
+}

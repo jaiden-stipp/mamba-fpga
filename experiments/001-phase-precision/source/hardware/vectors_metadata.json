@@ -1,0 +1,10 @@
+{
+  "vectors": 1024,
+  "corner_vectors": 16,
+  "remaining_vectors": "Validation layer-0 head-0 first rotary pair from official SISO/MIMO checkpoints; x/y Q5.10 inputs.",
+  "phase_guard_final": 40479,
+  "phase_low_final": 181,
+  "max_product_sum_abs": 4170536,
+  "coefficient_scale": 127,
+  "core_scope": "Prequantized phase increments, phase accumulation, lookup and integer rotation; excludes tanh/dt, /127 output scaling, and recurrent SSM."
+}

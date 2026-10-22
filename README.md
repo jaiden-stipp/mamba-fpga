@@ -1,44 +1,54 @@
-# Mamba-3 phase precision and DE2-115 experiments
+# FPGA and ML inference research
 
-An initial investigation of phase precision in the official 187M-parameter Mamba-3 SISO and MIMO models, with a tested phase-rotation design for the Terasic DE2-115 FPGA board.
+A research workspace for FPGA/RTL acceleration, numerical precision, and memory-efficient inference. The repository began with Mamba-3 phase arithmetic and now includes bounded-memory experiments and transformer KV-cache studies.
 
-This repository contains the completed numerical study, recorded results, source code, and FPGA evidence. It does not establish a new algorithm or guaranteed unpublished research direction. Separating phase-accumulator precision from lookup precision is an established technique; the report discusses related work and the limits of the experiment.
+**Start here:** [experiment index](experiments/README.md), [architecture](architecture/README.md), [research ideas](ideas/README.md), [reading path](literature/README.md), and [roadmap](ROADMAP.md).
 
-## Main findings
+## Research status
 
-- A 16-bit phase accumulator with an 8-bit lookup address and 8-bit sine/cosine coefficients stayed close to the reference: relative perplexity increased by **0.0093% (SISO)** and **0.0130% (MIMO)** across 32 selected, disjoint 2K-token WikiText windows per model.
-- The investigated mixed 8/16-bit selection policies did not beat uniform 10-bit accumulated phase on mean perplexity. These results do not support a positive adaptive-precision algorithm claim.
-- A DE2-115 phase-rotation test passed **1,024 distinct vectors**, repeated ten times, with zero arithmetic mismatches in both cores. Each core was compared against its own quantized arithmetic reference.
-- In the shared fitted test harness, the 16-bit accumulator core used 14 more logic elements and 19 more registers than the 8-bit core, with the same reported M9K and DSP counts. These are hierarchy measurements within one build, not separate accelerator implementations.
+| ID | Investigation | Status | What the evidence supports |
+|---|---|---|---|
+| [E001](experiments/001-phase-precision/README.md) | Mamba-3 phase precision and DE2-115 RTL | Completed pilot + hardware validation | Numerical tradeoffs and a verified phase-rotation component; no full-model FPGA acceleration claim |
+| [E002](experiments/002-budgeted-memory/README.md) | Useful, updatable memory under a byte budget | Completed synthetic study | Learned-memory controls and ordinary caches compared on fresh confirmation streams; no competitive new memory method established |
+| [E003](experiments/003-kv-compression/README.md) | Low-bit KV storage in Qwen3-4B | Completed feasibility pilot | Smaller stored KV can coexist with worse accuracy and slower decoding |
+| [E004](experiments/004-kv-serving/README.md) | Packed-KV serving at fixed deadlines | Prepared; integration checks passed | Model conversion, HTTP/SSE timing, and workload preparation; **zero GPU serving runs** recorded |
 
-The FPGA implements phase accumulation, rounded lookup, and signed rotation. It does **not** run the SSM recurrence or a complete language model. The language-model measurements use a portable FP32 implementation checked against official reference equations, rather than the native optimized kernels. Selected-window perplexity is not a canonical whole-test-set benchmark. The report includes these and other limitations.
+The current question is whether compressed memory can support more useful, simultaneous long-context requests at matched quality and response deadlines. This broad direction already has substantial prior work. Candidate contributions and novelty checks belong in [ideas/](ideas/README.md); measured claims belong in [docs/claims.md](docs/claims.md).
 
-## Read the results
+## Repository map
 
-- [Full research report](research_report.md): methods, tables, figures, related work, limitations, and next experiments.
-- [Standalone HTML report](research_report.html): download and open locally for a self-contained version with embedded figures.
-- [Research-opportunity literature audit](research_opportunities.md).
-- [Reproduction instructions](REPRODUCING.md).
-- [Complete original reproducibility ZIP](downloads/mamba_phase_precision_reproducibility.zip).
+```text
+experiments/    Per-study protocols, source, recorded results, evidence, and reports
+ideas/          Hypotheses, closest prior work, decision gates, and idea template
+architecture/   Implemented RTL scope, proposed dataflows, and design decisions
+literature/     Reading path, source registers, and historical landscape review
+docs/           Research method, reproducibility, provenance, and claim boundaries
+tools/          Lightweight repository validation and experiment packaging
+.github/        Validation workflow and structured research issue templates
+ROADMAP.md      Milestones tied to evidence and dependencies
+```
 
-| Path | Contents |
-| --- | --- |
-| `source/` | Experiment, validation, analysis, and report-generation scripts |
-| `source/hardware/` | Verilog, Quartus project, ROM vectors, testbench, and board-test Tcl |
-| `source/results/` | Recorded numerical inputs for rebuilding analyses |
-| `evidence/` | Raw results, asset hashes, build reports, board runs, and tested `phase_lab.sof` |
-| `figures/` | Scientific figures used in the report |
-| `language_model_results.csv` | Tabular language-model results |
-| `summary.json`, `hardware_results.json` | Machine-readable summaries |
+## Quick checks
 
-## Reproduce
+From the repository root, with Python 3.12 or later:
 
-See [REPRODUCING.md](REPRODUCING.md) for the full workflow. Run the Python scripts from `source/`; the dependency lock is `source/requirements-lock.txt`. The existing scripts generate reports under `../outputs/phase_precision_results` relative to the repository root. The recorded inputs are included, so rebuilding the analysis does not require downloading model weights. Re-running inference does require the separately downloaded assets and an appropriate Python/PyTorch environment.
+```sh
+python tools/validate_repository.py
+```
 
-The tested hardware project is `source/hardware/phase_lab.qpf`, targeting `EP4CE115F29C7` with Quartus Lite 18.1 and a 50 MHz board clock. The programming image is `evidence/phase_lab.sof`. Verify the device and pin map before using it on another board. The test used volatile configuration; board flash was not modified.
+This checks navigation, study manifests, recorded row counts, and status consistency without GPU access or downloaded models. Experiment-specific commands and dependencies are in each experiment's README. Reports and raw results are included; large external models, datasets, CUDA binaries, environments, and generated vendor databases stay outside Git.
 
-## Provenance and redistribution
+## Selected measured results
 
-Model, source, and tokenizer revisions are recorded in [evidence/asset_manifest.json](evidence/asset_manifest.json). The dataset download URLs resolve a moving branch; compare the recorded hashes before claiming reproduction. Model weights, datasets, Python environments, and vendor tool installations are not redistributed here. Small recorded experimental tensors and losses are included.
+- **E001:** a 16-bit phase accumulator / 8-bit lookup / 8-bit coefficients produced +0.0093% and +0.0130% relative perplexity on selected SISO/MIMO evaluation windows. The DE2-115 datapaths matched their own quantized references on 1,024 distinct vectors repeated over 10 runs at 50 MHz.
+- **E003:** at 16K context, HQQ4 stored 0.643 GiB of KV versus 2.254 GiB for BF16, while retrieving 4/6 codes versus 6/6 and taking about 19% longer per decode token. Only 1/6 HQQ4 responses followed the strict output format. Cache-only compression is not whole-model memory reduction or inference acceleration.
 
-Upstream source retains its [Apache-2.0 license](source/assets/upstream/LICENSE). Vendor tools and IP remain subject to their applicable licenses. The downloadable ZIP preserves the original delivered package; this repository additionally provides this overview, reproduction notes, and the research-opportunity audit.
+See [claims and limitations](docs/claims.md) before reusing numbers in a presentation or resume. The recorded studies are small and have explicit scope limits; prepared experiments are not results.
+
+## Working conventions
+
+Give experiments and ideas stable IDs, freeze an evaluation protocol before measuring, keep exploratory changes visible, and preserve failed outputs. A new experiment starts from [the experiment template](experiments/TEMPLATE.md); a new hypothesis starts from [the idea template](ideas/TEMPLATE.md). Link related literature and architecture decisions. Archive conclusions even when an idea fails.
+
+## Provenance and licensing
+
+Original evidence is retained with documented repository-portability edits in [PROVENANCE.md](PROVENANCE.md). Upstream files keep their existing licenses, including the [Mamba source Apache-2.0 license](experiments/001-phase-precision/source/assets/upstream/LICENSE). Model and vendor-tool licenses apply separately. No blanket license is asserted over third-party material; see [licensing notes](docs/licensing.md).
