@@ -2,7 +2,7 @@
 
 Organized locally on 2026-10-22 in the existing clone of `jaiden-stipp/mamba-fpga`. The remote was public and empty when checked; organization itself did not publish files.
 
-E001 comes from the previously prepared phase-precision Git snapshot and original delivery ZIP. E002, E003 and E004 come from their local delivered study folders. E004 has no GPU serving data. The dated industry-landscape review is historical literature context.
+E001 comes from the previously prepared phase-precision Git snapshot and original delivery ZIP. E002, E003 and E004 come from their local delivered study folders. At organization time E004 had no GPU serving data. The separately documented 2026-10-22 update adds the serving pilot, its operational recovery, E005 analytical screening, and the dated literature/protocol package. The dated industry-landscape review is historical literature context.
 
 Files were grouped into stable experiment folders. E001 analysis now writes locally. E003 supports local assets and QWEN3_MODEL_DIR. E004 supports repository-relative defaults plus asset overrides. Package entrypoints delegate to a common tool. Current READMEs describe the organized layout; generated historical reports may retain original command descriptions.
 

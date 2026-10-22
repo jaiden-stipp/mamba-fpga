@@ -1,0 +1,14 @@
+{
+  "converted_model_tensors_verified": 398,
+  "original_parameter_values_verified": 4022468096,
+  "CPU_smoke": "passed; not GPU performance",
+  "tokenizer_ID_parity": "passed on smoke prompt",
+  "HTTP_SSE_client_test": "passed",
+  "resident_cache_counter": "cache_n verified; final occupancy not used",
+  "documents": 8,
+  "queries": 32,
+  "identical_document_prefix_per_conversation": true,
+  "gpu_serving_runs_completed": 0,
+  "gpu_preflight": "competing LM Studio/Ollama allocations; no unload authorized",
+  "note": "Preparation and integration checks only. No serving improvement or quality noninferiority established."
+}

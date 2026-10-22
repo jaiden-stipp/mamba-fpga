@@ -1,0 +1,29 @@
+0.00.158.752 I srv  llama_server: initializing ...
+0.00.158.767 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.162.466 I srv  init_listene: The UI is disabled
+0.00.162.475 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.163.562 W srv  llama_server: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.191.830 I srv    load_model: loading model 'C:\Users\Orb1t\Documents\Codex\2026-10-19\base\work\kv-serving\Qwen3-4B-BF16.gguf'
+0.00.897.694 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.08.410.987 I cmn          init: llama threadpool init, n_threads = 12
+0.08.784.165 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 17408, kv_unified = 'false'
+0.08.784.972 W srv          init: --cache-idle-slots requires --cache-ram, disabling
+0.08.806.883 I srv  llama_server: model loaded
+0.08.806.893 I srv  llama_server: listening on http://127.0.0.1:18673
+0.09.039.739 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.09.039.779 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.09.245.581 I slot print_timing: id  0 | task 0 | prompt eval time =      49.79 ms /     9 tokens (    5.53 ms per token,   180.74 tokens per second)
+0.09.245.590 I slot print_timing: id  0 | task 0 |        eval time =     155.97 ms /     8 tokens (   22.28 ms per token,    44.88 tokens per second)
+0.09.245.592 I slot print_timing: id  0 | task 0 |       total time =     205.76 ms /    17 tokens
+0.09.245.593 I slot print_timing: id  0 | task 0 |    graphs reused =          7
+0.09.245.609 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+0.09.245.639 I slot      release: id  0 | task 0 | stop processing: n_tokens = 16, truncated = 0
+0.09.294.370 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 16, t_last = 9089399
+0.09.294.775 I slot launch_slot_: id  0 | task 9 | processing task, is_child = 0
+0.12.337.713 I slot print_timing: id  0 | task 9 | prompt processing, n_tokens =  14336, progress = 0.88, t =   3.04 s / 4711.34 tokens per second
+0.13.133.971 I slot print_timing: id  0 | task 9 | prompt eval time =    3721.32 ms / 16355 tokens (    0.23 ms per token,  4394.95 tokens per second)
+0.13.133.980 I slot print_timing: id  0 | task 9 |        eval time =     117.84 ms /     9 tokens (   14.73 ms per token,    67.89 tokens per second)
+0.13.133.981 I slot print_timing: id  0 | task 9 |       total time =    3839.15 ms / 16364 tokens
+0.13.133.983 I slot print_timing: id  0 | task 9 |    graphs reused =         14
+0.13.133.984 I slot print_timing: id  0 | task 9 |   graph reallocs =          0    /     0        (same size) / (changed size)
+0.13.134.282 I slot      release: id  0 | task 9 | stop processing: n_tokens = 16363, truncated = 0

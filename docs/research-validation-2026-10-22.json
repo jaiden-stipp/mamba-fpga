@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-22",
+  "scope": "Literature, proposed experiments, analytical screen and GPU serving pilot",
+  "primary_sources_screened": 38,
+  "research_protocols": 6,
+  "additional_baseline_protocols": 1,
+  "selected_scored_GPU_requests": 188,
+  "unique_GPU_configurations": 8,
+  "total_pilot_recovery_raw_rows": 267,
+  "serving_analysis_assertions": 212,
+  "analytical_configurations": 147,
+  "analytical_assertions": 170,
+  "large_terminal_SSE_test": {
+    "answer_checker": "passed",
+    "real_HTTP_SSE_client": "passed",
+    "first_token_not_buffered": true,
+    "ttft_s": 0.05518279998796061,
+    "completion_s": 0.29723979998379946,
+    "mean_tpot_s": 0.08068566666527961
+  },
+  "regenerated_byte_identically": [
+    "experiments/004-kv-serving/serving_summary.json",
+    "experiments/004-kv-serving/serving_summary.csv",
+    "experiments/004-kv-serving/serving_report.md",
+    "experiments/004-kv-serving/serving_pilot.png",
+    "experiments/005-read-granularity/results.csv",
+    "experiments/005-read-granularity/summary.json",
+    "experiments/005-read-granularity/report.md"
+  ],
+  "digests": {
+    "experiments/004-kv-serving/serving_summary.json": "99baf45754e619f12801fd5dcea92b00089be9da09794add6497d1a1a98f7153",
+    "experiments/004-kv-serving/serving_summary.csv": "d6ec879f89a3561f09748b1520f88cae2106eeb628a13c2858aa9cbe36ca3013",
+    "experiments/004-kv-serving/serving_report.md": "7d21024c56995370d5bb27165388b41a7bd749622bccfb36326ec89e4147dca4",
+    "experiments/004-kv-serving/serving_pilot.png": "0d7f9e4ddeb7711586e29f50b225b0653af0f614289dc5e65e8d24b281371883",
+    "experiments/005-read-granularity/results.csv": "0d54dfb1e057fc1134ddf469f05329bc545c35a13a73ab3bc78253d3259766c7",
+    "experiments/005-read-granularity/summary.json": "43bb244971964f1d8d28c24e66e03507cbb3bccb7a30a4efbd9576979a48b1cc",
+    "experiments/005-read-granularity/report.md": "34d0b18929aef49d0983afe2f7f646de148136df60b01255b59373c05632c2e4"
+  },
+  "limitations": [
+    "Single timing trial; eight documents; no matched-quality superiority",
+    "E005 is an analytical lower-bound model, not device traffic or latency",
+    "No new RTL, synthesis or board measurements this update",
+    "One final configuration rerun after Windows summary-write failure; original raw rows retained",
+    "No novelty certification or external publication"
+  ]
+}

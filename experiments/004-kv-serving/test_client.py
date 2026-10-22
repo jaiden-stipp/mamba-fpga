@@ -17,7 +17,8 @@ class Handler(BaseHTTPRequestHandler):
         for text,tokens,delay in [('["',[1],.05),('123',[2],.08),('456',[3],.08),('"]',[4],.08)]:
             time.sleep(delay)
             self.wfile.write(('data: '+json.dumps({'content':text,'tokens':tokens,'stop':False})+'\n\n').encode());self.wfile.flush()
-        event={'content':'','tokens':[],'stop':True,'timings':{'predicted_n':4,'cache_n':16000},'truncated':False}
+        # A large terminal event must not add byte-at-a-time parsing delay.
+        event={'content':'','tokens':[],'stop':True,'timings':{'predicted_n':4,'cache_n':16000},'truncated':False,'diagnostic':'x'*50000}
         self.wfile.write(('data: '+json.dumps(event)+'\n\n').encode());self.wfile.flush()
 
 server=ThreadingHTTPServer(('127.0.0.1',0),Handler)

@@ -8,7 +8,14 @@
   "documents": 8,
   "queries": 32,
   "identical_document_prefix_per_conversation": true,
-  "gpu_serving_runs_completed": 0,
-  "gpu_preflight": "competing LM Studio/Ollama allocations; no unload authorized",
-  "note": "Preparation and integration checks only. No serving improvement or quality noninferiority established."
+  "gpu_serving_runs_completed": 8,
+  "gpu_preflight": "GPU 0 available; all own servers cleaned up; other services left running",
+  "note": "Single-trial GPU serving pilot completed. Eight unique configurations; final Q8/eight-slot execution repeated after summary-write failure. Capacity evidence, not matched-quality throughput superiority. See serving_report.md.",
+  "date": "2026-10-22",
+  "gpu_serving_configuration_executions_completed": 9,
+  "selected_scored_requests": 188,
+  "selected_resident_requests": 124,
+  "total_pilot_recovery_raw_rows": 267,
+  "excluded_integration_gpu_smoke_rows": 3,
+  "serving_analysis_assertions_passed": 212
 }

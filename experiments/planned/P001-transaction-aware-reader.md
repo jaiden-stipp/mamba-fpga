@@ -1,0 +1,17 @@
+# P001 — Transaction-aware progressive KV reader
+
+Status: proposed; E005 implements only the first analytical screen. Priority 1 for the FPGA appointment.
+
+**Hypothesis.** At matched answer quality, a reader that allocates useful precision in transaction-sized tiles can reduce total memory traffic and reader latency versus scalar/channel-granular decisions. The gain must survive metadata, selection work, padding and reduced allocation flexibility.
+
+**Novelty boundary.** [ReadKV](https://arxiv.org/abs/2610.11245) already allocates query-dependent prefixes and profiles physical traffic. [SAW-INT4](https://arxiv.org/abs/2604.19157) already makes quantization serving-compatible. [Embedded FPGA decoding](https://arxiv.org/abs/2502.10659) already packs KV scales/zero points efficiently. Neither bit planes nor aligned bursts alone are a contribution. A candidate contribution is a specific quality-aware allocation rule constrained by actual reader transactions, combined with an implemented dataflow and full-system benefit. That claim remains unconfirmed.
+
+**Stage A, traces and oracle.** Capture Q/K/V and dense attention outputs for Qwen3-4B and a second model family. Use 4K/16K/32K contexts within supported limits, multiple retrieval, update, multi-hop, code and reasoning tasks. Tune on disjoint documents; hold out final tasks. Reproduce an actual progressive codec before using prefixes: arbitrary top integer bits are not ReadKV. Compare uniform Q8/Q4, appropriate rotated INT4, scalar-granular adaptive allocation and an oracle transaction-aware allocator. Include K/V asymmetry, GQA shared-head reuse and random matched-budget selectors. Report layer attention error, logits and downstream answers separately.
+
+**Stage B, reader.** Compare group-major, tiled-plane and ordinary packed layouts; sweep group size 32/64/128, tile sizes, physical bus width, burst length and concurrent streams. Stream unpack/scale/attention accumulation without materializing the full FP16 cache. Count payload, scales, selectors, partial sums, decoded working set, insertion writes and alignment overhead. Avoid assuming that fewer requested bits means fewer transferred bytes.
+
+**Stage C, RTL.** Build a tile reader with a golden bit-exact software reference. Verify randomized backpressure, boundaries, signed codes, overflow and independent streams. Synthesize variants with equal resource constraints; report achieved clock, LUT/LE, FF, BRAM and DSP, cycles and external bytes. DE2-115 can validate a bounded datapath; it cannot demonstrate an HBM serving system. An HBM FPGA is justified only after the trace/oracle and reader stages pass.
+
+**Prospective gates.** First require at least 20% modeled total-byte reduction across real schedules at matched quality. Then require at least 15% reader-latency reduction including selection/decode work over the best compatible packed baseline. Finally target at least 20% higher quality-qualified request goodput, with a predeclared quality margin and paired uncertainty. Stop if gains exist only for uniform synthetic depths, if metadata/temporary traffic consumes the savings, or if full-model attention has too little latency share.
+
+**Presentation.** Show one real query: its precision map, the actual bursts fetched, the correct answer and full response latency. Pair this with a Pareto plot and resource table. The claim becomes compelling when the system delivers more useful answers with the same memory—not when a decoder alone processes more codes per cycle.

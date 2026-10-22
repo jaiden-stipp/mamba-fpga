@@ -29,11 +29,19 @@
     {
       "id": "E004",
       "path": "experiments/004-kv-serving",
-      "status": "prepared_integration_validated",
-      "report": "research_status.md",
-      "evidence": "validation.json",
-      "gpu_serving_results": false,
-      "gpu_serving_runs_completed": 0
+      "status": "completed_serving_pilot",
+      "report": "serving_report.md",
+      "evidence": "serving_summary.json",
+      "gpu_serving_results": true,
+      "gpu_serving_runs_completed": 8
+    },
+    {
+      "id": "E005",
+      "path": "experiments/005-read-granularity",
+      "status": "completed_analytical_screen",
+      "report": "report.md",
+      "evidence": "summary.json",
+      "gpu_serving_results": false
     }
   ]
 }

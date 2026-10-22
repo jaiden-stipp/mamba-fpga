@@ -1,0 +1,13 @@
+# P000 — Calibrate the serving baseline before claiming a new mechanism
+
+Status: proposed baseline extension, prompted by E004. This is required engineering/reproduction work, not the new research claim.
+
+E004's cold-burst F16/four-slot run contains early correct answers with first-token times below 20 seconds but mean token times around 0.44–0.47 seconds while other long prompts enter. A reader improvement may not fix this scheduler interaction. [Sarathi-Serve](https://www.usenix.org/conference/osdi24/presentation/agrawal) already addresses prefill/decode interference with chunking; [DistServe](https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin) separates their execution. [TaiChi](https://arxiv.org/abs/2508.01989) studies selecting aggregation/disaggregation under SLOs. Do not call ordinary chunk-size tuning novel.
+
+**Controlled extension.** Freeze the corrected client, same weights and scoring. Add explicit batch/microbatch and scheduling controls appropriate to the pinned engine, then tune on validation arrivals. Sweep prefill chunk/token budget, slot admission and arrival rate. Record per-request token timestamps so interruption can be aligned with prefill work. Compare fixed settings and the best validation-selected configuration for each cache type; use a common configuration as a secondary isolation control. Include cold bursts, resident-only traffic and mixed cold/resident arrivals.
+
+**Quality.** Keep the original 32-question workload as an archived diagnostic. Add independent documents and official RULER tasks covering tracing/aggregation, plus suitable code or reasoning tasks. Preserve difficult F16 failures, identify whether they are task/model capability or benchmark-construction problems, and freeze the new protocol before confirmation. Do not edit questions merely to make a quantizer win. Verify all expected answers independently from the document generator. Use the exact same prompts and token budgets for paired formats.
+
+**Confirmation.** Three or more timing trials, randomized/rotated order and held-out arrival traces; per-task paired quality uncertainty with clustering by document. Report all SLO components, active session capacity, loading and total wall time. A larger independent quality set requires a separate power analysis before a one-point noninferiority claim.
+
+**Output.** A quality-checked serving frontier under identical arrivals, with prefill/decode interference plots. P001/P002 must improve over this tuned baseline. If scheduling accounts for the entire apparent opportunity, redirect the mechanism rather than credit compression with an artifact of a weak baseline.

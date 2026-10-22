@@ -1,0 +1,608 @@
+[
+  {
+    "format": "q8_0",
+    "slots": 8,
+    "gpu": 0,
+    "tag": "research_recovery_20261022",
+    "phase": "cold",
+    "requests": 8,
+    "correct": 4,
+    "strict_correct": 4,
+    "qualified": 0,
+    "resident_cache_hits": 0,
+    "makespan_s": 33.49334280000767,
+    "qualified_requests_per_s": 0.0,
+    "output_tokens_per_s": 7.374599826445017,
+    "gpu_samples": [
+      {
+        "elapsed_s": 0.00025850001838989556,
+        "used_MiB": 18954.0,
+        "free_MiB": 5373.0,
+        "util_percent": 59.0,
+        "temperature_C": 46.0,
+        "clock_MHz": 1935.0
+      },
+      {
+        "elapsed_s": 1.0900152000249363,
+        "used_MiB": 18962.0,
+        "free_MiB": 5365.0,
+        "util_percent": 98.0,
+        "temperature_C": 53.0,
+        "clock_MHz": 1860.0
+      },
+      {
+        "elapsed_s": 2.185055800015107,
+        "used_MiB": 18962.0,
+        "free_MiB": 5365.0,
+        "util_percent": 99.0,
+        "temperature_C": 54.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 3.286869100003969,
+        "used_MiB": 18962.0,
+        "free_MiB": 5365.0,
+        "util_percent": 99.0,
+        "temperature_C": 55.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 4.396868500014534,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 55.0,
+        "clock_MHz": 1860.0
+      },
+      {
+        "elapsed_s": 5.513274700002512,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 56.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 6.598340199998347,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 57.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 7.686774500005413,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 92.0,
+        "temperature_C": 56.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 8.792271400016034,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 58.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 9.894380900019314,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 58.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 10.976808600011282,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 59.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 12.087724900018657,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 58.0,
+        "clock_MHz": 1860.0
+      },
+      {
+        "elapsed_s": 13.202615200018045,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 94.0,
+        "temperature_C": 60.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 14.312765600014245,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 94.0,
+        "temperature_C": 60.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 15.397950700018555,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 60.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 16.479465200012783,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 94.0,
+        "temperature_C": 61.0,
+        "clock_MHz": 1845.0
+      },
+      {
+        "elapsed_s": 17.58015580000938,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 93.0,
+        "temperature_C": 61.0,
+        "clock_MHz": 1815.0
+      },
+      {
+        "elapsed_s": 18.670247600006405,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 93.0,
+        "temperature_C": 62.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 19.756636300007813,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 62.0,
+        "clock_MHz": 1845.0
+      },
+      {
+        "elapsed_s": 20.851165400003083,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 62.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 21.94257590000052,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 62.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 23.03661050001392,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 97.0,
+        "temperature_C": 63.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 24.123466400022153,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 63.0,
+        "clock_MHz": 1845.0
+      },
+      {
+        "elapsed_s": 25.20505720001529,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 91.0,
+        "temperature_C": 64.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 26.29072100002668,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 64.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 27.38566100000753,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 64.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 28.4856764000142,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 64.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 29.577621200005524,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 64.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 30.66984380001668,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 65.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 31.75021570001263,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 85.0,
+        "temperature_C": 64.0,
+        "clock_MHz": 1740.0
+      },
+      {
+        "elapsed_s": 32.836951100005535,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 87.0,
+        "temperature_C": 64.0,
+        "clock_MHz": 1755.0
+      }
+    ]
+  },
+  {
+    "format": "q8_0",
+    "slots": 8,
+    "gpu": 0,
+    "tag": "research_recovery_20261022",
+    "phase": "resident_load",
+    "requests": 8,
+    "correct": 0,
+    "strict_correct": 0,
+    "qualified": 0,
+    "resident_cache_hits": 0,
+    "makespan_s": 26.06251310001244,
+    "qualified_requests_per_s": 0.0,
+    "output_tokens_per_s": 0.30695428216384024,
+    "gpu_samples": [
+      {
+        "elapsed_s": 0.00031110001145862043,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 86.0,
+        "temperature_C": 64.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 1.0948328000085894,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 65.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 2.1972779000061564,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 65.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 3.3043126999982633,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 66.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 4.397123600007035,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 66.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 5.501110799988965,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 91.0,
+        "temperature_C": 66.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 6.60435249999864,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 67.0,
+        "clock_MHz": 1785.0
+      },
+      {
+        "elapsed_s": 7.6845308000047226,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 87.0,
+        "temperature_C": 66.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 8.765916400006972,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 67.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 9.861781699990388,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 67.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 10.949998600000981,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 67.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 12.03906859998824,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 67.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 13.129913299984764,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 14.209929900011048,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 15.294438899989473,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 90.0,
+        "temperature_C": 67.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 16.39148630001,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 17.471065799996722,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1755.0
+      },
+      {
+        "elapsed_s": 18.55088860000251,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 19.65093450000859,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 20.851640600012615,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 21.946034299995517,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1770.0
+      },
+      {
+        "elapsed_s": 23.04523300001165,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1830.0
+      },
+      {
+        "elapsed_s": 24.14967670000624,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1800.0
+      },
+      {
+        "elapsed_s": 25.24067020000075,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 98.0,
+        "temperature_C": 69.0,
+        "clock_MHz": 1770.0
+      }
+    ]
+  },
+  {
+    "format": "q8_0",
+    "slots": 8,
+    "gpu": 0,
+    "tag": "research_recovery_20261022",
+    "phase": "resident_0",
+    "requests": 8,
+    "correct": 8,
+    "strict_correct": 8,
+    "qualified": 8,
+    "resident_cache_hits": 8,
+    "makespan_s": 0.8005540000158362,
+    "qualified_requests_per_s": 9.993079792046192,
+    "output_tokens_per_s": 89.93771812841572,
+    "gpu_samples": [
+      {
+        "elapsed_s": 0.0004180000105407089,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 99.0,
+        "temperature_C": 69.0,
+        "clock_MHz": 1755.0
+      }
+    ]
+  },
+  {
+    "format": "q8_0",
+    "slots": 8,
+    "gpu": 0,
+    "tag": "research_recovery_20261022",
+    "phase": "resident_1",
+    "requests": 8,
+    "correct": 1,
+    "strict_correct": 1,
+    "qualified": 1,
+    "resident_cache_hits": 8,
+    "makespan_s": 3.665453499997966,
+    "qualified_requests_per_s": 0.2728175381301536,
+    "output_tokens_per_s": 134.22622876003555,
+    "gpu_samples": [
+      {
+        "elapsed_s": 0.0002902999985963106,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 92.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1560.0
+      },
+      {
+        "elapsed_s": 1.1082149999856483,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 85.0,
+        "temperature_C": 67.0,
+        "clock_MHz": 1590.0
+      },
+      {
+        "elapsed_s": 2.194423699984327,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 92.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1545.0
+      },
+      {
+        "elapsed_s": 3.3033276999776717,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 92.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1545.0
+      }
+    ]
+  },
+  {
+    "format": "q8_0",
+    "slots": 8,
+    "gpu": 0,
+    "tag": "research_recovery_20261022",
+    "phase": "resident_2",
+    "requests": 8,
+    "correct": 4,
+    "strict_correct": 4,
+    "qualified": 4,
+    "resident_cache_hits": 8,
+    "makespan_s": 1.4867951000051107,
+    "qualified_requests_per_s": 2.6903505398869356,
+    "output_tokens_per_s": 86.09121727638194,
+    "gpu_samples": [
+      {
+        "elapsed_s": 0.00033999999868683517,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 92.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1605.0
+      },
+      {
+        "elapsed_s": 1.0953717000083998,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 91.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1620.0
+      }
+    ]
+  },
+  {
+    "format": "q8_0",
+    "slots": 8,
+    "gpu": 0,
+    "tag": "research_recovery_20261022",
+    "phase": "resident_3",
+    "requests": 8,
+    "correct": 8,
+    "strict_correct": 8,
+    "qualified": 8,
+    "resident_cache_hits": 8,
+    "makespan_s": 0.7429763999825809,
+    "qualified_requests_per_s": 10.767502171250069,
+    "output_tokens_per_s": 96.90751954125062,
+    "gpu_samples": [
+      {
+        "elapsed_s": 0.0003311999898869544,
+        "used_MiB": 18964.0,
+        "free_MiB": 5363.0,
+        "util_percent": 87.0,
+        "temperature_C": 68.0,
+        "clock_MHz": 1680.0
+      }
+    ]
+  }
+]

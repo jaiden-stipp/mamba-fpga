@@ -8,6 +8,6 @@ Hypothesis: a bounded working set of useful precision refinements could amortize
 
 Prior work overlaps strongly: ReadKV already separates retained bits from query-dependent reads; MixKVQ already uses query-aware precision; prefix reuse and cold-page compression already exist. See [literature](../literature/README.md). A new contribution would need a specific representation/reader/policy with end-to-end evidence over those methods.
 
-First gate: [E004](../experiments/004-kv-serving/README.md) establishes a quality-preserving optimized serving baseline. Then collect refinement reuse distances and topic changes. Compare an oracle with fixed quantization and ordinary decoded-page LRU at the same total retained + working-set memory. Stop if the oracle has little net benefit.
+First gate: [E004](../experiments/004-kv-serving/README.md) now contains a single-trial serving pilot; quality-preserving superiority is not established. Follow [P000](../experiments/planned/P000-serving-confirmation.md) before claiming a strong confirmed baseline, then [P002](../experiments/planned/P002-refinement-reuse.md). Then collect refinement reuse distances and topic changes. Compare an oracle with fixed quantization and ordinary decoded-page LRU at the same total retained + working-set memory. Stop if the oracle has little net benefit.
 
 Only then implement a policy and measure quality, request goodput, tail latency, actual DRAM traffic, and all temporary memory. [Proposed dataflow](../architecture/packed-kv-reader.md).

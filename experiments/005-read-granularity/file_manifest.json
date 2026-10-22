@@ -1,0 +1,32 @@
+[
+  {
+    "path": "PROTOCOL.md",
+    "bytes": 2609,
+    "sha256": "fc25b926b8c846d1dbf176a5e2894fd8febf612314ae9517f0021ea05a9d5fa2"
+  },
+  {
+    "path": "README.md",
+    "bytes": 945,
+    "sha256": "334ad18cf976a508312df8e6584247afef23b27b863cc7875e9771ddd4396a4a"
+  },
+  {
+    "path": "report.md",
+    "bytes": 1776,
+    "sha256": "34d0b18929aef49d0983afe2f7f646de148136df60b01255b59373c05632c2e4"
+  },
+  {
+    "path": "results.csv",
+    "bytes": 11817,
+    "sha256": "0d54dfb1e057fc1134ddf469f05329bc545c35a13a73ab3bc78253d3259766c7"
+  },
+  {
+    "path": "screen.py",
+    "bytes": 4886,
+    "sha256": "857b2ac206888183585b894f17b598985864d741f22a47e843c88e0870f42ad8"
+  },
+  {
+    "path": "summary.json",
+    "bytes": 6384,
+    "sha256": "43bb244971964f1d8d28c24e66e03507cbb3bccb7a30a4efbd9576979a48b1cc"
+  }
+]

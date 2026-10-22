@@ -1,0 +1,356 @@
+{
+  "review_date": "2026-10-22",
+  "accessible_primary_records": 38,
+  "not_a_novelty_certification": true,
+  "sources": [
+    {
+      "id": "S01",
+      "title": "KIVI",
+      "url": "https://arxiv.org/abs/2402.02750",
+      "version_note": ", revised July 2024",
+      "inspection_scope": "Abstract / prior local review",
+      "relevance": "Asymmetric low-bit keys/values and a residual path. A low-bit cache with greater batching capacity is established.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S02",
+      "title": "QServe",
+      "url": "https://arxiv.org/abs/2405.04532",
+      "version_note": ", v3 May 2025",
+      "inspection_scope": "Abstract",
+      "relevance": "Weight/activation/KV quantization and execution co-design. Keep weights fixed when isolating a KV mechanism.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S03",
+      "title": "QuaRot",
+      "url": "https://arxiv.org/abs/2404.00456",
+      "version_note": ", v2",
+      "inspection_scope": "Abstract",
+      "relevance": "Rotation-based end-to-end quantization. Rotation itself is not a novel FPGA method.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S04",
+      "title": "TurboQuant",
+      "url": "https://arxiv.org/abs/2504.19874",
+      "version_note": "",
+      "inspection_scope": "Abstract",
+      "relevance": "Vector quantization with geometric distortion objectives. A generic Hadamard-plus-uniform codec is not automatically a reproduction.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S05",
+      "title": "SAW-INT4",
+      "url": "https://arxiv.org/html/2604.19157v1",
+      "version_note": "",
+      "inspection_scope": "Full-text sections",
+      "relevance": "Token-wise INT4, block rotations, paged/fused serving. Compare with serving-compatible INT4, not only an unfused reference. Author code: [saw-int4](https://github.com/togethercomputer/saw-int4).",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S06",
+      "title": "ReadKV",
+      "url": "https://arxiv.org/html/2610.11245v1",
+      "version_note": ", October 8",
+      "inspection_scope": "Full-text sections",
+      "relevance": "Progressive retained/read precision, adaptive allocation, physical traffic and limited kernel timing. Full-model serving remains a distinct experiment.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S07",
+      "title": "UltraQuant",
+      "url": "https://arxiv.org/html/2606.20474v3",
+      "version_note": ", September 11",
+      "inspection_scope": "Full-text sections",
+      "relevance": "Native CDNA4 FP4 execution and agent serving. Its hardware path cannot be assumed to transfer to RTX 3090.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S08",
+      "title": "vLLM TurboQuant study",
+      "url": "https://vllm-project.github.io/2026/05/11/turboquant.html",
+      "version_note": ", May 11",
+      "inspection_scope": "Author evaluation",
+      "relevance": "Contrasts capacity gains with throughput losses on tested systems. The best baseline depends on backend and hardware precision support.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S09",
+      "title": "KVTuner",
+      "url": "https://arxiv.org/abs/2502.04420",
+      "version_note": ", v5",
+      "inspection_scope": "Abstract",
+      "relevance": "Offline layer-wise K/V precision search. Layer sensitivity and mixed precision are already covered.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S10",
+      "title": "MixKVQ",
+      "url": "https://arxiv.org/abs/2512.19206",
+      "version_note": "",
+      "inspection_scope": "Abstract",
+      "relevance": "Query-aware important key channels and mixed precision. Query awareness alone is not a contribution.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S11",
+      "title": "RateQuant",
+      "url": "https://arxiv.org/abs/2605.06675",
+      "version_note": ", v2",
+      "inspection_scope": "Abstract",
+      "relevance": "Quantizer-specific distortion calibration and bit allocation. Compare against calibrated allocation, not a poorly matched heuristic.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S12",
+      "title": "Runtime-certified attention",
+      "url": "https://arxiv.org/abs/2605.20868",
+      "version_note": "",
+      "inspection_scope": "Abstract",
+      "relevance": "Tiered compressed state with original-data fallback and local bounds. Count retained originals and fallback cost; local bounds do not certify whole-model answers.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S13",
+      "title": "KVarN",
+      "url": "https://arxiv.org/abs/2606.03458",
+      "version_note": "",
+      "inspection_scope": "Abstract",
+      "relevance": "Rotation/normalization for errors during long generation. Need natural autoregressive evaluation and a faithful method baseline.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S14",
+      "title": "PM-KVQ",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/afb8caec018d3c8f6ef8b81fa52386fe-Abstract-Conference.html",
+      "version_note": ", ICLR 2026",
+      "inspection_scope": "Proceedings abstract",
+      "relevance": "Progressive precision reduction and memory allocation for long reasoning. Age-dependent precision is already established.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S15",
+      "title": "KV\u00b2",
+      "url": "https://arxiv.org/abs/2610.03198v2",
+      "version_note": ", October 15",
+      "inspection_scope": "Abstract",
+      "relevance": "Selective reconstruction for reusable-context token eviction. Distinguish score refinement from retaining extra precision bits.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S16",
+      "title": "Budgeted Cache Repair",
+      "url": "https://arxiv.org/abs/2610.02233v2",
+      "version_note": ", October 8",
+      "inspection_scope": "Abstract",
+      "relevance": "Row selection/recomputation for cross-context reuse. Repair and random-selector controls already exist.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S17",
+      "title": "ReCache",
+      "url": "https://arxiv.org/abs/2608.19662",
+      "version_note": ", August 20",
+      "inspection_scope": "Abstract",
+      "relevance": "Composition-invariant tool-resource state with changed attention/positions. Arbitrary cache concatenation is not free.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S18",
+      "title": "CacheSlide",
+      "url": "https://www.usenix.org/conference/fast26/presentation/liu-yang",
+      "version_note": ", FAST 2026",
+      "inspection_scope": "Proceedings abstract",
+      "relevance": "Position-aware reuse and correction. Prefix/position correctness must be part of any reuse experiment.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S19",
+      "title": "TensorRT-LLM compression framework",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/blob/main/docs/source/blogs/tech_blog/blog30_KV_Cache_Compression_in_TensorRT-LLM.md",
+      "version_note": "",
+      "inspection_scope": "Author implementation documentation",
+      "relevance": "Cold-page compression and runtime integration are shipping design topics. Review and pin exact platform support before reproducing.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S20",
+      "title": "FlightLLM",
+      "url": "https://arxiv.org/abs/2401.03868",
+      "version_note": ", v2",
+      "inspection_scope": "Abstract / prior local review",
+      "relevance": "Complete FPGA mapping, arithmetic and memory hierarchy. Useful arithmetic/dataflow baseline.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S21",
+      "title": "AccLLM",
+      "url": "https://arxiv.org/abs/2505.03745",
+      "version_note": "",
+      "inspection_scope": "Abstract",
+      "relevance": "Sparse attention plus W2A8KV4 and FPGA co-design. Combining pruning and low bits is established.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S22",
+      "title": "FAST-Prefill",
+      "url": "https://arxiv.org/html/2602.20515v1",
+      "version_note": "",
+      "inspection_scope": "Full-text structure and method sections",
+      "relevance": "Dynamic sparse attention, index pipeline and liveness-based cache. Prefill and decode require different bottleneck analyses.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S23",
+      "title": "Embedded FPGA decoding",
+      "url": "https://arxiv.org/html/2502.10659v1",
+      "version_note": "",
+      "inspection_scope": "Full-text sections",
+      "relevance": "Memory-capacity/bandwidth limits, fused execution and scale/zero packing. Good concrete baseline for accounting and data arrangement.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S24",
+      "title": "GLITCHES",
+      "url": "https://ieee-hpec.org/wp-content/uploads/2024/09/112.pdf",
+      "version_note": ", HPEC 2024",
+      "inspection_scope": "Full-text sections",
+      "relevance": "GPU prefill/FPGA decode and scheduler-aware memory profiling. A hybrid split is not new and transfer costs must be charged.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S25",
+      "title": "LUT-LLM",
+      "url": "https://arxiv.org/html/2511.06174v2",
+      "version_note": ", FCCM 2026",
+      "inspection_scope": "Full-text sections",
+      "relevance": "Joint activation/weight VQ, centroid search and 2D lookup. Codebooks and on-chip read ports are part of the cost. Author code: [LUT-LLM](https://github.com/LUT-FPGA/LUT-LLM).",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S26",
+      "title": "LowRank-SSM",
+      "url": "https://arxiv.org/html/2608.02954v2",
+      "version_note": ", October 9",
+      "inspection_scope": "Full-text sections",
+      "relevance": "Rank search plus projection datapath and memory scheduling. Use revised results; low-rank factorization alone is not the full method.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S27",
+      "title": "LightMamba",
+      "url": "https://arxiv.org/abs/2502.15260",
+      "version_note": ", v2",
+      "inspection_scope": "Abstract",
+      "relevance": "Rotation-assisted quantization and partially unrolled FPGA execution. Generic low-bit Mamba hardware is covered.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S28",
+      "title": "FastMamba",
+      "url": "https://arxiv.org/abs/2505.18975",
+      "version_note": ", v4",
+      "inspection_scope": "Abstract / prior local review",
+      "relevance": "Quantization, element-wise/nonlinear execution and FPGA acceleration. Separate model sizes and prefill/decode timing boundaries.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S29",
+      "title": "Nemotron 3 Super",
+      "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf",
+      "version_note": ", April 3, \u00a74.3",
+      "inspection_scope": "Relevant full-text section/table",
+      "relevance": "State rounding, RNG cost and completion-length behavior. Compare cheap rounding hardware against a strong stochastic reference.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S30",
+      "title": "QuantSpec",
+      "url": "https://machinelearning.apple.com/research/quantspec",
+      "version_note": ", ICML 2025",
+      "inspection_scope": "Author research abstract",
+      "relevance": "Hierarchical quantized cache plus self-speculation. Compression plus speculative execution is not a new combination.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S31",
+      "title": "SpecKV",
+      "url": "https://arxiv.org/abs/2605.02888",
+      "version_note": ", v2",
+      "inspection_scope": "Abstract",
+      "relevance": "Compression-aware draft-length control. Compare with the best fixed draft length and wall time, not only accepted tokens per step.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S32",
+      "title": "RULER",
+      "url": "https://arxiv.org/abs/2404.06654",
+      "version_note": ", COLM 2024",
+      "inspection_scope": "Abstract",
+      "relevance": "Multi-needle, tracing and aggregation tasks. A stronger synthetic quality set than repeated two-code lookup.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S33",
+      "title": "LongBench v2",
+      "url": "https://arxiv.org/abs/2412.15204",
+      "version_note": ", v2",
+      "inspection_scope": "Abstract",
+      "relevance": "Realistic multi-task understanding/reasoning. Select only examples that fit the model's supported context; disclose filtering.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S34",
+      "title": "BABILong",
+      "url": "https://arxiv.org/abs/2406.10149",
+      "version_note": ", v2",
+      "inspection_scope": "Abstract",
+      "relevance": "Distributed facts and reasoning in distractor text. Useful for testing memory utility rather than merely reconstruction error.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S35",
+      "title": "KVFundaBench / ShotKV",
+      "url": "https://proceedings.mlr.press/v306/liu26dz.html",
+      "version_note": ", ICML 2026",
+      "inspection_scope": "Proceedings abstract",
+      "relevance": "Reasoning-sensitive compression evaluation and semantic-unit retention. Do not infer reasoning quality from sparse retrieval.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S36",
+      "title": "Sarathi-Serve",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/agrawal",
+      "version_note": ", OSDI 2024",
+      "inspection_scope": "Proceedings abstract",
+      "relevance": "Chunked prefill and decode-aware scheduling. A required scheduler baseline when cold requests stall active decodes.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S37",
+      "title": "DistServe",
+      "url": "https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin",
+      "version_note": ", OSDI 2024",
+      "inspection_scope": "Proceedings abstract",
+      "relevance": "Prefill/decode disaggregation under response SLOs. Charge communication and evaluate both TTFT and token latency.",
+      "checked_on": "2026-10-22"
+    },
+    {
+      "id": "S38",
+      "title": "TaiChi",
+      "url": "https://arxiv.org/abs/2508.01989",
+      "version_note": ", August 2025",
+      "inspection_scope": "Abstract",
+      "relevance": "Unified aggregation/disaggregation and SLO-aware scheduling. Hybrid execution alone is not a new system concept.",
+      "checked_on": "2026-10-22"
+    }
+  ],
+  "access_limited": [
+    {
+      "title": "HALO",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167739X26002803",
+      "inspection_scope": "Indexed publisher abstract; full page HTTP 403"
+    }
+  ]
+}

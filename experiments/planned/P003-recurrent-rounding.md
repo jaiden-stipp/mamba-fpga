@@ -1,0 +1,17 @@
+# P003 — Recurrent rounding, answer length and energy per correct answer
+
+Status: proposed. Best alternative if the project should return to Mamba/SSM hardware.
+
+**Hypothesis.** A low-cost recurrent-state format and rounding circuit can preserve model behavior better per byte and per joule than deterministic rounding. Accuracy alone can miss an increase in answer length that consumes the intended acceleration.
+
+**Prior art changes the question.** NVIDIA's [Nemotron 3 Super report, §4.3](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf) already studies FP16 recurrent state, INT16 block scaling and stochastic rounding, including answer-length effects. [LightMamba](https://arxiv.org/abs/2502.15260) already co-designs quantization and FPGA execution. Generic stochastic rounding or four-bit Mamba is not new. The potential contribution is an explicitly cheaper hardware implementation with characterized temporal/cross-lane correlation, and a demonstrated quality/answer-cost benefit over a high-quality random-rounding reference. It may prove that the cheap circuit is inadequate.
+
+**Model experiment.** Use an accessible pretrained Mamba-2 checkpoint; add a suitable hybrid or Mamba-3 checkpoint only with a validated recurrent reference. Baselines: original state precision; FP16 nearest rounding; FP16 stochastic rounding with a high-quality independent RNG; scaled INT16; candidate INT8/block floating point; cheaper RNG variants. Keep weights/activations fixed at first. Execute quantization inside every state update with feedback into the next step. Frozen-state reconstruction from E001 cannot answer this question.
+
+Use teacher-forced token likelihood to isolate numerical effects, then natural-EOS generation to measure task behavior. Include structured updates/deletes, multi-hop state tracking, distractor gaps, code or math problems with deterministic answer checks, and ordinary held-out text. Sweep context and generated length separately. Run multiple sampling/RNG seeds; greedy decoding does not remove stochastic-rounding variance. Count full state plus scales/RNG state, checkpoint buffers and any replay mechanism.
+
+**RTL experiment.** Compare Philox-style reference hardware, LFSR/counter candidates and deterministic rounding under equal lanes and clock targets. Verify rounding probabilities on boundary values, saturation, reset, stream independence and backpressure. Measure LUT/FF/DSP/BRAM, timing and toggling; if using tool power estimates label them estimates. Correlations across time and lanes matter more than merely passing a marginal uniformity test. Do not claim cryptographic properties.
+
+**Primary outcome.** Quality-qualified answers per joule and per second at a fixed memory budget. Also report output length, truncation, repetitions and state-drift trajectories. Never enforce identical output length in the primary evaluation, because that hides the behavior under study. A separate fixed-token microbenchmark isolates circuit speed.
+
+**Prospective gate.** A candidate must preserve per-task quality within a predeclared margin, avoid material answer-length inflation, and improve complete inference cost after RNG and scale overhead. If state IO is a small part of full-model runtime, a fast state circuit alone does not justify a model-acceleration claim. Present the paired answer-cost plot and implemented circuit, not only a drift heatmap.

@@ -1,3 +1,5 @@
+> Historical preparation snapshot from 2026-10-20. Superseded for current results by [the 2026-10-22 GPU report](serving_report.md); statements about zero GPU runs and unavailable memory below describe that earlier phase.
+
 # Can cheaper compressed-memory reads improve long-context serving?
 
 Status: 2026-10-20. **The serving experiment is prepared and integration-tested. No GPU serving results have been collected in this phase.**

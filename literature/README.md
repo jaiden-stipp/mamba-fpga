@@ -1,5 +1,7 @@
 # Literature and reading path
 
+New: [2026-10-22 extensive review and experiment recommendations](review-2026-10-22.md), [38-source register](sources-2026-10-22.json), and [ranked experiment protocols](../experiments/planned/README.md). Inspection depth and novelty limits are explicit.
+
 Review focus: memory-aware FPGA acceleration of low-bit inference. Ask how representation, on-chip buffering, and arithmetic dataflow together turn smaller storage into useful full-system gains. Primary links were reviewed on 2026-10-20; this is not an exhaustive novelty certification.
 
 | Order | Primary source | Review focus |

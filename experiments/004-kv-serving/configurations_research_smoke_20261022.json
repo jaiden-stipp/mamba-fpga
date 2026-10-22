@@ -1,0 +1,47 @@
+[
+  {
+    "format": "f16",
+    "slots": 1,
+    "gpu": 0,
+    "tag": "research_smoke_20261022",
+    "status": "failed",
+    "error": "Server exited 1; see research_smoke_20261022_f16_c1.log",
+    "gpu_after_failure": {
+      "used_MiB": 0.0,
+      "free_MiB": 24326.0,
+      "util_percent": 0.0,
+      "temperature_C": 45.0,
+      "clock_MHz": 210.0
+    }
+  },
+  {
+    "format": "q8_0",
+    "slots": 1,
+    "gpu": 0,
+    "tag": "research_smoke_20261022",
+    "status": "failed",
+    "error": "Server exited 1; see research_smoke_20261022_q8_0_c1.log",
+    "gpu_after_failure": {
+      "used_MiB": 0.0,
+      "free_MiB": 24326.0,
+      "util_percent": 0.0,
+      "temperature_C": 45.0,
+      "clock_MHz": 210.0
+    }
+  },
+  {
+    "format": "q4_0",
+    "slots": 1,
+    "gpu": 0,
+    "tag": "research_smoke_20261022",
+    "status": "failed",
+    "error": "Server exited 1; see research_smoke_20261022_q4_0_c1.log",
+    "gpu_after_failure": {
+      "used_MiB": 0.0,
+      "free_MiB": 24326.0,
+      "util_percent": 0.0,
+      "temperature_C": 45.0,
+      "clock_MHz": 210.0
+    }
+  }
+]

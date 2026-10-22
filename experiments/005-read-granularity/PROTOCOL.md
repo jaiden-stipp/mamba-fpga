@@ -1,0 +1,13 @@
+# E005 protocol — fixed before running the sweep, 2026-10-22
+
+Question: can arranging progressive code bits across groups prevent a nominal four-bit read from fetching an entire eight-bit backing representation?
+
+Use 512 groups of 64 scalar codes, eight retained bits each. This is a 256-token × 128-dimensional tile, not a complete Qwen cache. Give each group one two-byte scale; an adaptive schedule uses one byte per group. All layouts retain identical data and receive identical requested per-group depths. Numerical code construction and quality are deliberately outside this screening model.
+
+Layouts: ordinary byte codes; group-major progressive planes; tiled plane-major storage over 4/8/16/64 groups; globally plane-major storage over all 512 groups. A plane contributes eight contiguous bytes per group. Sweep assumed fetch granules 32/64/128 bytes and group depths: uniform 2/4/8; alternating 2/6; seeded random half 2, half 6; clustered half 2, half 6; one-quarter 8 and remaining 2. This gives 147 configurations. Random schedule seed 20261022.
+
+Place payload, scales and selection bytes in separate aligned regions. Count all scales and selectors, with no free metadata cache. Count the union of aligned fetch units touched within one call. This assumes perfect reuse of a fetched unit for the duration of the call and excludes writes, bank conflicts, caches across calls, decoder/intermediate accesses, scheduling time, arithmetic and IO. Therefore it is an optimistic lower bound for the stipulated interface, **not measured hardware traffic**. A real GPU sector/FPGA burst is not assumed to equal any one of these granules.
+
+Report logical requested payload, backing capacity, fetch units, modeled transferred bytes and ratio to full-byte-code reads with the same metadata. Do not equate that ratio to speedup or quality. Verify: no count below requested bytes; a full eight-bit read has identical totals across layouts; uniform four-bit group-major storage loses its payload savings at a 64-byte granule; global planes preserve approximately half payload traffic for a uniform four-bit schedule. Mixed schedules may invalidate a layout that wins on uniform reads.
+
+Decision gate: proceed to real Q/K/V traces only if a layout reduces the modeled total by at least 20% across more than the uniform schedule at 64/128-byte granules. Even passing this gate says nothing about scheduling/decoding cost or novelty. Closest work: [ReadKV](https://arxiv.org/abs/2610.11245), [SAW-INT4](https://arxiv.org/abs/2604.19157), and [embedded FPGA scale/zero packing](https://arxiv.org/abs/2502.10659).
