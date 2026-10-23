@@ -35,6 +35,33 @@ Simulate phase_rotator.v, phase_lab.v, tb_phase_lab.v with ModelSim (simulated
 altsource_probe stand-in is defined in the testbench). Expected result: PASS,
 1024 vectors, 1028 cycles, zero errors for both cores.
 
+Additional seed-locked corner regression (2026-10-23), from this experiment directory:
+
+```sh
+python source/phase_corner_regression.py --modelsim-bin C:/intelFPGA/18.1/modelsim_ase/win32aloem
+```
+
+This uses only Python's standard library and ModelSim; it needs no checkpoints,
+GPU, or model dependencies. Omit `--modelsim-bin` if vlib, vlog, and vsim are on
+PATH. It compiles the existing core and extended parameterized harness, runs the
+original 1,024 vectors and 4,096 unique new vectors from separate resets, exports
+every core result, compares integer arithmetic and LUT addresses, measures error
+against a float64 rotation reference, and requires an intentionally corrupted
+golden word to cause RTL failure. Expected totals: 5,120 vectors / 10,240 core
+results, zero mismatches, 1,028 legacy cycles and 4,100 new-sequence cycles.
+
+Evidence is written to `evidence/phase_corner_regression/`; `--output` selects an
+alternative directory for a reproducibility check. Simulator compilation occurs
+in a temporary directory. The original hardware ROM files and recorded board
+results are not overwritten. On this Windows setup the simulator requires execution
+outside the Codex sandbox because its executables encounter a DLL relocation
+error inside it; this is not an RTL failure. ModelSim can return process code zero
+on a fatal test failure, so the runner also requires the explicit PASS marker,
+correct counters, and all per-vector comparisons. Consult
+[PHASE_CORNER_REGRESSION.md](PHASE_CORNER_REGRESSION.md) for precision units,
+coverage, limitations, and evidence paths. The retained original delivery ZIP
+predates this extension; use the repository files to reproduce this regression.
+
 The included SOF is the exact volatile test image, not a full-model accelerator.
 Before programming another board, verify its device, pin map, and JTAG chain.
 run_board_test.tcl intentionally requires one device with ID 0x020F70DD and the

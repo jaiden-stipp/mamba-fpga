@@ -1,0 +1,200 @@
+{
+  "status": "PASS",
+  "evidence_type": "RTL_simulation_not_new_board_measurement",
+  "seed": 3758178454,
+  "seed_hex": "0xe0014096",
+  "prng": "LCG32: state=(1664525*state+1013904223) mod 2^32; upper 16 bits for coordinates",
+  "legacy_vectors": 1024,
+  "new_vectors": 4096,
+  "total_vectors": 5120,
+  "checked_core_results": 10240,
+  "simulator_version": "Model Technology ModelSim ALTERA STARTER EDITION vsim 10.5b Simulator 2016.10 Oct  5 2016",
+  "legacy_simulation": {
+    "completed": 1024,
+    "guard_errors": 0,
+    "low_errors": 0,
+    "cycles": 1028,
+    "phase_guard": 40479,
+    "phase_low": 181
+  },
+  "extended_simulation": {
+    "completed": 4096,
+    "guard_errors": 0,
+    "low_errors": 0,
+    "cycles": 4100,
+    "phase_guard": 65535,
+    "phase_low": 86
+  },
+  "simulator_exit_code": 0,
+  "negative_control": {
+    "status": "PASS_expected_RTL_failure_detected",
+    "corrupted_index": 0,
+    "corrupted_golden_bits": [
+      0,
+      50
+    ],
+    "simulator_exit_code": 0,
+    "observed": {
+      "completed": 4096,
+      "guard_errors": 1,
+      "low_errors": 1,
+      "cycles": 4100,
+      "phase_guard": 65535,
+      "phase_low": 86
+    }
+  },
+  "coverage": {
+    "new_vectors_per_category": {
+      "phase_wraparound": 1024,
+      "signed_extrema": 1024,
+      "zero_increments": 1024,
+      "rounding_boundaries": 1024
+    },
+    "unique_new_vectors": 4096,
+    "overlap_with_legacy_vectors": 0,
+    "positive_phase_wraps_in_wrap_category": 512,
+    "negative_phase_wraps_in_wrap_category": 512,
+    "rounding_lut_bins": 256,
+    "rounding_fractions_per_bin": [
+      127,
+      128,
+      129,
+      255
+    ],
+    "even_bin_halfway_ties": 128,
+    "odd_bin_halfway_ties": 128,
+    "rounding_address_wrap_cases": 3,
+    "zero_increment_phase_hold_checks_per_core": 1024,
+    "signed_min_x_cases": 259,
+    "signed_max_x_cases": 259,
+    "signed_min_y_cases": 259,
+    "signed_max_y_cases": 260,
+    "signed_min_increment16_cases": 1,
+    "signed_max_increment16_cases": 1
+  },
+  "legacy_quantized_reference_mismatches": {
+    "guard": 0,
+    "low": 0
+  },
+  "quantized_reference_mismatches": {
+    "guard": 0,
+    "low": 0
+  },
+  "max_quantized_reference_integer_error": {
+    "guard": 0,
+    "low": 0
+  },
+  "higher_precision_reference": {
+    "scope": "Phase-rotation block only, not model logits/perplexity or full Mamba-3",
+    "vectors": 4096,
+    "initial_state_after_reset": {
+      "guard": 0,
+      "low": 0,
+      "higher_precision_ticks": 0
+    },
+    "phase": "Exact modular integer accumulation of signed increments at 2^24 ticks/turn; float64 sin/cos",
+    "inputs": "Same exact Q5.10 inputs as RTL; no additional input-quantization error",
+    "output_units": "Input coordinate units: RTL signed product sums divided by 127*1024",
+    "error_includes": "Increment quantization, accumulation differences, address rounding, and 8-bit trig coefficients",
+    "limitation": "Synthetic block-level stress sequence only. Legacy raw floating increments are unavailable, so higher-precision errors are reported only for the separately reset new sequence."
+  },
+  "higher_precision_errors": {
+    "guard": {
+      "all_new": {
+        "vectors": 4096,
+        "max_abs_component_error": 0.6277184592936287,
+        "max_component_error_vector_index": 1339,
+        "max_l2_vector_error": 0.6452173833481328,
+        "component_rmse": 0.14633793431697278
+      },
+      "phase_wraparound": {
+        "vectors": 1024,
+        "max_abs_component_error": 0.1890321730384965,
+        "max_component_error_vector_index": 895,
+        "max_l2_vector_error": 0.23238404901279922,
+        "component_rmse": 0.06526926680938523
+      },
+      "signed_extrema": {
+        "vectors": 1024,
+        "max_abs_component_error": 0.6277184592936287,
+        "max_component_error_vector_index": 1339,
+        "max_l2_vector_error": 0.6452173833481328,
+        "component_rmse": 0.20024322170122263
+      },
+      "zero_increments": {
+        "vectors": 1024,
+        "max_abs_component_error": 0.053694042180616464,
+        "max_component_error_vector_index": 2055,
+        "max_l2_vector_error": 0.06216866675447082,
+        "component_rmse": 0.025368472551425065
+      },
+      "rounding_boundaries": {
+        "vectors": 1024,
+        "max_abs_component_error": 0.619129308002325,
+        "max_component_error_vector_index": 3182,
+        "max_l2_vector_error": 0.634050633485877,
+        "component_rmse": 0.20163873549970998
+      }
+    },
+    "low": {
+      "all_new": {
+        "vectors": 4096,
+        "max_abs_component_error": 79.77220152773316,
+        "max_component_error_vector_index": 3686,
+        "max_l2_vector_error": 87.8470320492083,
+        "component_rmse": 14.278207994237539
+      },
+      "phase_wraparound": {
+        "vectors": 1024,
+        "max_abs_component_error": 0.1890321730384965,
+        "max_component_error_vector_index": 895,
+        "max_l2_vector_error": 0.23238404901279922,
+        "component_rmse": 0.06526926680938523
+      },
+      "signed_extrema": {
+        "vectors": 1024,
+        "max_abs_component_error": 4.866086103444047,
+        "max_component_error_vector_index": 1753,
+        "max_l2_vector_error": 5.306356306630358,
+        "component_rmse": 1.3980941178456918
+      },
+      "zero_increments": {
+        "vectors": 1024,
+        "max_abs_component_error": 1.0392091870469833,
+        "max_component_error_vector_index": 2055,
+        "max_l2_vector_error": 1.0405953990906098,
+        "component_rmse": 0.42462412654315845
+      },
+      "rounding_boundaries": {
+        "vectors": 1024,
+        "max_abs_component_error": 79.77220152773316,
+        "max_component_error_vector_index": 3686,
+        "max_l2_vector_error": 87.8470320492083,
+        "component_rmse": 28.51893513472142
+      }
+    }
+  },
+  "source_sha256": {
+    "source/hardware/phase_rotator.v": "22d58ad29407bb3e10b7e5a3efdbc17485fffa3275d270e7fc420daa43282865",
+    "source/hardware/phase_lab.v": "d16e464301bfcdae4d8f374a7228cde3f2ab2467d630627ad070b3173e5f60d8",
+    "source/hardware/tb_phase_lab.v": "9283eb17072aee9caad4b976b8fc6304cca7e20f21c87a8ab768ed661db9b82b",
+    "source/hardware/cos.hex": "19ea1891cbe812123bdcb66435be8fa697dedbd52c7b3570061bdaa6d3d87abc",
+    "source/hardware/sin.hex": "ba197dc70df7f40a7e617f5317e4cb340126328b9a2fa72ee226fadaa835312c",
+    "source/hardware/vectors.hex": "95644380aa6d6b6e1f41b7390218b4ff24d4dc83235b2586ecc4f9af28531b33",
+    "source/hardware/golden.hex": "e0d3e8e74a02d8b9e8693a6ab26aa0c4386ed4c17225c0c7716f5d8ff5a2d852",
+    "source/phase_reference.py": "56cead188e92766af3fd873e83622a69319ee2009dd4bc789a9eba9b5e06f002",
+    "source/phase_corner_regression.py": "2aa01e9b46149124ea991eaf1e0d5f9e9214f5eb5b09174b18e509bc521f33d1",
+    "source/hardware_vectors.py": "ef68c7e81351467ec54fef8ef05c47f0bc8a61faf4240a5fcad9f9a26925b92c"
+  },
+  "artifact_sha256": {
+    "vectors.hex": "fa167afacc039f89b954cafb08d8cda876b3e88d4ba05b67ec40698066d85a5b",
+    "golden.hex": "fbfa0c6de8277ccbe7380be6a126d271bb5a47b77a397212c66b14b47b0fac28",
+    "new_vectors.jsonl": "e2f163213963374a70a7369c5bac5a51fa2a299ce8d89cbccf16724abab06079",
+    "per_vector_comparison.csv": "88cbba660a9b884171a88972e89d8cb0c1773d0e7b4b84eee6b80e4781facc8e",
+    "legacy_per_vector_comparison.csv": "51d10e469bb360e634caf4b93fa7179d7f735823f606dedb41cfcc143247cd00",
+    "compile.log": "f6ecab949c7e41db45ef361856f0549c1066825046787507aa4a130ad35cb39a",
+    "legacy_transcript.log": "51d72e044c8766017efbd363e82de580eb241fa2999dcb76f4d453a35cf935f5",
+    "extended_transcript.log": "d79b74b8cac2b30ff3d9ed3c80fce899360861d34351d176ae315716953731d4",
+    "negative_control_transcript.log": "57719ee4e042f765f0c210daa60265ee3fef25d6fe326cae790c82f3a0322446"
+  }
+}

@@ -1,0 +1,20 @@
+PASS seed=0xe0014096
+Scope: RTL simulation; no new FPGA board run.
+PASS legacy=1024 new=4096 total=5120 unique_new=4096 legacy_overlap=0
+PASS regenerated seed-locked vectors and golden data are identical
+PASS original 1024 golden words reproduced by shared integer reference
+PASS checked_core_results=10240 legacy_cycles=1028 new_cycles=4100
+PASS quantized reference: guard mismatches=0 max_integer_error=0; low mismatches=0 max_integer_error=0
+PASS coverage phase_wraparound=1024
+PASS coverage signed_extrema=1024
+PASS coverage zero_increments=1024
+PASS coverage rounding_boundaries=1024
+PASS phase wraps: positive=512 negative=512
+PASS rounding: all 256 bins; fractions 127,128,129,255; even/odd ties and address wrap
+PASS negative control: one corrupt expected real result per core detected as RTL FAIL
+HIGH_PRECISION guard: max_abs_component_error=0.627718459294 max_l2_vector_error=0.645217383348 component_rmse=0.146337934317 worst_vector_index=1339
+HIGH_PRECISION low: max_abs_component_error=79.7722015277 max_l2_vector_error=87.8470320492 component_rmse=14.2782079942 worst_vector_index=3686
+Higher-precision errors use input coordinate units; both cores and float64 rotation start from zero phase.
+VECTORS_SHA256 fa167afacc039f89b954cafb08d8cda876b3e88d4ba05b67ec40698066d85a5b
+GOLDEN_SHA256 fbfa0c6de8277ccbe7380be6a126d271bb5a47b77a397212c66b14b47b0fac28
+PER_VECTOR_SHA256 88cbba660a9b884171a88972e89d8cb0c1773d0e7b4b84eee6b80e4781facc8e

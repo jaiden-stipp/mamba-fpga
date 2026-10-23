@@ -555,6 +555,61 @@
     "sha256": "014463aaf2907902140df6ca4c2c6e9bf5500733f4b135c0691b9c5b2cf03992"
   },
   {
+    "path": "evidence/phase_corner_regression/compile.log",
+    "bytes": 156,
+    "sha256": "f6ecab949c7e41db45ef361856f0549c1066825046787507aa4a130ad35cb39a"
+  },
+  {
+    "path": "evidence/phase_corner_regression/extended_transcript.log",
+    "bytes": 127,
+    "sha256": "d79b74b8cac2b30ff3d9ed3c80fce899360861d34351d176ae315716953731d4"
+  },
+  {
+    "path": "evidence/phase_corner_regression/golden.hex",
+    "bytes": 122880,
+    "sha256": "fbfa0c6de8277ccbe7380be6a126d271bb5a47b77a397212c66b14b47b0fac28"
+  },
+  {
+    "path": "evidence/phase_corner_regression/legacy_per_vector_comparison.csv",
+    "bytes": 95751,
+    "sha256": "51d10e469bb360e634caf4b93fa7179d7f735823f606dedb41cfcc143247cd00"
+  },
+  {
+    "path": "evidence/phase_corner_regression/legacy_transcript.log",
+    "bytes": 128,
+    "sha256": "51d72e044c8766017efbd363e82de580eb241fa2999dcb76f4d453a35cf935f5"
+  },
+  {
+    "path": "evidence/phase_corner_regression/negative_control_transcript.log",
+    "bytes": 186,
+    "sha256": "57719ee4e042f765f0c210daa60265ee3fef25d6fe326cae790c82f3a0322446"
+  },
+  {
+    "path": "evidence/phase_corner_regression/new_vectors.jsonl",
+    "bytes": 1674056,
+    "sha256": "e2f163213963374a70a7369c5bac5a51fa2a299ce8d89cbccf16724abab06079"
+  },
+  {
+    "path": "evidence/phase_corner_regression/PASS_FAIL.log",
+    "bytes": 1450,
+    "sha256": "b83be40c90ec8579aa532c0fe8704560e435a16ed30ea93dbc73c19d8a67e3d7"
+  },
+  {
+    "path": "evidence/phase_corner_regression/per_vector_comparison.csv",
+    "bytes": 797526,
+    "sha256": "88cbba660a9b884171a88972e89d8cb0c1773d0e7b4b84eee6b80e4781facc8e"
+  },
+  {
+    "path": "evidence/phase_corner_regression/summary.json",
+    "bytes": 7733,
+    "sha256": "05968c2e7015da13002cd8794b64b56fb31edc4814dd114f69b2f1aa0837ca83"
+  },
+  {
+    "path": "evidence/phase_corner_regression/vectors.hex",
+    "bytes": 61440,
+    "sha256": "fa167afacc039f89b954cafb08d8cda876b3e88d4ba05b67ec40698066d85a5b"
+  },
+  {
     "path": "evidence/phase_lab.asm.rpt",
     "bytes": 5194,
     "sha256": "b5661b6623cc8294a8f2331c52b4c2d95156fc92041778310ead21d0112a524e"
@@ -655,14 +710,19 @@
     "sha256": "7db408232b950f020f1c69f1de56072b7359fc46bac1df37cf2294fb4a886805"
   },
   {
+    "path": "PHASE_CORNER_REGRESSION.md",
+    "bytes": 6237,
+    "sha256": "b8788beffa126991f64985b0bd06247f0b472322a92995b65e1ec56d38daf487"
+  },
+  {
     "path": "README.md",
-    "bytes": 1933,
-    "sha256": "a4a0a6f3345c510d36c4643ffb33d96abfa1c2c5a184ce63326417f52fa32cc3"
+    "bytes": 2543,
+    "sha256": "12d4a98ec20d6e3d973f533f47f5810b9243da7800e59b550a2d38f49308fe81"
   },
   {
     "path": "REPRODUCING.md",
-    "bytes": 3173,
-    "sha256": "0ed765b81ccb6e5602d9124a0123d702447f31d96fcefb1317af82cfeff062c5"
+    "bytes": 4894,
+    "sha256": "f331102c4e346f7fd4bd4b7d9edbfaadd98ec77dda45211d8e0b1779a46055ad"
   },
   {
     "path": "research_report.html",
@@ -931,8 +991,8 @@
   },
   {
     "path": "source/hardware/phase_lab.v",
-    "bytes": 2478,
-    "sha256": "8b4769f0c84eb641713e0d1f8f6e4de3f46190e0218a49e7fbc6ebc7847b5123"
+    "bytes": 2809,
+    "sha256": "d16e464301bfcdae4d8f374a7228cde3f2ab2467d630627ad070b3173e5f60d8"
   },
   {
     "path": "source/hardware/phase_rotator.v",
@@ -951,8 +1011,8 @@
   },
   {
     "path": "source/hardware/tb_phase_lab.v",
-    "bytes": 1041,
-    "sha256": "42bd455cfdf1c9cbc7eb56692ecedd98391be48a73790767a6cc85f5c1f3c659"
+    "bytes": 2229,
+    "sha256": "9283eb17072aee9caad4b976b8fc6304cca7e20f21c87a8ab768ed661db9b82b"
   },
   {
     "path": "source/hardware/vectors.hex",
@@ -966,13 +1026,23 @@
   },
   {
     "path": "source/hardware_vectors.py",
-    "bytes": 2921,
-    "sha256": "1a9e0bcd5363eff8fecf1019a991a108ca3b8715c86d03dac9dfb15c1f8ef720"
+    "bytes": 2849,
+    "sha256": "ef68c7e81351467ec54fef8ef05c47f0bc8a61faf4240a5fcad9f9a26925b92c"
   },
   {
     "path": "source/make_report.py",
     "bytes": 36331,
     "sha256": "3df349c5d93d9b5fec342bba4476d3641e82d4fdb8e5e2bcb81bba1f2302b58c"
+  },
+  {
+    "path": "source/phase_corner_regression.py",
+    "bytes": 22526,
+    "sha256": "2aa01e9b46149124ea991eaf1e0d5f9e9214f5eb5b09174b18e509bc521f33d1"
+  },
+  {
+    "path": "source/phase_reference.py",
+    "bytes": 1642,
+    "sha256": "56cead188e92766af3fd873e83622a69319ee2009dd4bc789a9eba9b5e06f002"
   },
   {
     "path": "source/portable.py",

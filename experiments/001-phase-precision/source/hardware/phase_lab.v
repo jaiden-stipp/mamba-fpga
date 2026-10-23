@@ -1,17 +1,19 @@
-module phase_lab(input wire CLOCK_50);
+// Default geometry/ROMs retain the original 1,024-vector board workload.
+module phase_lab #(parameter VECTOR_COUNT=1024)(input wire CLOCK_50);
     wire [7:0] control;
     wire reset=control[0];
     wire [191:0] probe;
     altsource_probe #(.instance_id("PHASELAB"),.probe_width(192),.source_width(8),
         .source_initial_value("1"),.enable_metastability("YES")) debug_link(
         .probe(probe),.source(control),.source_clk(CLOCK_50),.source_ena(1'b1));
-    reg [55:0] vectors[0:1023];
-    reg [115:0] golden[0:1023];
+    localparam INDEX_BITS=(VECTOR_COUNT>1) ? $clog2(VECTOR_COUNT) : 1;
+    reg [55:0] vectors[0:VECTOR_COUNT-1];
+    reg [115:0] golden[0:VECTOR_COUNT-1];
     initial begin
         $readmemh("vectors.hex",vectors);
         $readmemh("golden.hex",golden);
     end
-    reg [10:0] issue;
+    reg [INDEX_BITS:0] issue;
     reg [55:0] data;
     reg [115:0] gold_0,gold_1,gold_2,gold_3;
     reg input_valid;
@@ -28,10 +30,11 @@ module phase_lab(input wire CLOCK_50);
         .x_in(data[31:16]),.y_in(data[15:0]),.out_valid(valid_low),
         .real_out(rl),.imag_out(il),.address_out(al),.phase(phase_low));
     reg [31:0] completed,errors_guard,errors_low,cycles;
-    wire done=(completed==1024);
+    wire done=(completed==VECTOR_COUNT);
+    wire [INDEX_BITS-1:0] read_index=(issue<VECTOR_COUNT) ? issue[INDEX_BITS-1:0] : {INDEX_BITS{1'b0}};
     always @(posedge CLOCK_50) begin
-        data<=vectors[issue[9:0]];
-        gold_0<=golden[issue[9:0]];
+        data<=vectors[read_index];
+        gold_0<=golden[read_index];
     end
     always @(posedge CLOCK_50) begin
         if (reset) begin
@@ -39,9 +42,9 @@ module phase_lab(input wire CLOCK_50);
             input_valid<=0;completed<=0;errors_guard<=0;errors_low<=0;cycles<=0;
         end else begin
             if (!done) cycles<=cycles+1;
-            input_valid<=(issue<1024);
-            if (issue<1024) begin
-                issue<=issue+11'd1;
+            input_valid<=(issue<VECTOR_COUNT);
+            if (issue<VECTOR_COUNT) begin
+                issue<=issue+1'b1;
             end
             gold_1<=gold_0;gold_2<=gold_1;gold_3<=gold_2;
             if (valid_guard) begin

@@ -2,6 +2,7 @@ import json,math
 import numpy as np
 from portable import Model,ROOT,ASSETS,torch
 from experiment import prepare_data
+from phase_reference import quantized_rotation, pack_vector, pack_golden
 HW=ROOT/'hardware'
 
 def hexfile(name,values,width):
@@ -32,14 +33,12 @@ sin=np.rint(np.sin(np.arange(256)*2*np.pi/256)*127).astype(np.int64)
 hexfile('cos.hex',cos,8);hexfile('sin.hex',sin,8)
 vectors=[];gold=[];p16=0;p8=0;maxrot=0
 for i in range(1024):
-    p16=(p16+int(step16[i]))%65536;p8=(p8+int(step8[i]))%256
-    ag=int(np.rint(p16/256))%256;al=p8
-    rg=int(x[i]*cos[ag]-y[i]*sin[ag]);ig=int(x[i]*sin[ag]+y[i]*cos[ag])
-    rl=int(x[i]*cos[al]-y[i]*sin[al]);il=int(x[i]*sin[al]+y[i]*cos[al])
+    guard=quantized_rotation(p16,int(step16[i]),int(x[i]),int(y[i]),16,cos,sin)
+    low=quantized_rotation(p8,int(step8[i]),int(x[i]),int(y[i]),8,cos,sin)
+    p16,ag,rg,ig=guard;p8,al,rl,il=low
     maxrot=max(maxrot,abs(rg),abs(ig),abs(rl),abs(il))
-    vectors.append((int(step16[i])<<40)|(int(step8[i])<<32)|((int(x[i])&65535)<<16)|(int(y[i])&65535))
-    mask=(1<<25)-1
-    gold.append((rg&mask)|((ig&mask)<<25)|((rl&mask)<<50)|((il&mask)<<75)|(ag<<100)|(al<<108))
+    vectors.append(pack_vector(int(step16[i]),int(step8[i]),int(x[i]),int(y[i])))
+    gold.append(pack_golden(guard,low))
 hexfile('vectors.hex',vectors,56);hexfile('golden.hex',gold,116)
 metadata={'vectors':1024,'corner_vectors':16,'remaining_vectors':'Validation layer-0 head-0 first rotary pair from official SISO/MIMO checkpoints; x/y Q5.10 inputs.',
           'phase_guard_final':p16,'phase_low_final':p8,'max_product_sum_abs':maxrot,'coefficient_scale':127,'core_scope':'Prequantized phase increments, phase accumulation, lookup and integer rotation; excludes tanh/dt, /127 output scaling, and recurrent SSM.'}
