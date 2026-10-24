@@ -1,0 +1,17 @@
+{
+  "rank": 1,
+  "P": 8,
+  "N": 128,
+  "target": "EP4CE115F29C7",
+  "clock_constraint_MHz": 50,
+  "virtual_io": true,
+  "fitter_effort": "FAST_FIT",
+  "board_programmed": false,
+  "source_sha256": {
+    "mamba3_recurrent_tile.sv": "9e9e31c85926f66c6572383300314dcf010220bc723e36977962cda4a8a27b7f",
+    "mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+    "fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb"
+  },
+  "quartus_exit_code": 0,
+  "status": "PASS"
+}

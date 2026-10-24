@@ -21,6 +21,8 @@ The [registered trig lookup](phase_lookup_stage/REPORT.md) follows the resulting
 phase-ROM limiting path and records the inferred ROM resource tradeoff.
 The [trig output stage](trig_output_stage/REPORT.md) separates its ROM readout
 from multiplication and retains supplemental single-operation timing reports.
+The [RAM output stage](state_read_stage/REPORT.md) aligns compressed state and
+K/V/Q before multiplication, exposing widening as the next limiting operation.
 
 ## Data path
 

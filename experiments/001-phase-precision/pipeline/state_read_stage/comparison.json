@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "seed": 3758223410,
+  "baseline_commit": "b0b5cdf",
+  "scope": "One additional rank-1 RAM-output boundary before recurrent products. Routed virtual-I/O static timing only; no physical FPGA operation or inference speedup claim.",
+  "clock_constraint_MHz": 50,
+  "constraints_byte_identical": true,
+  "before": {
+    "worst_setup_slack_ns": -27.252,
+    "minimum_restricted_fmax_MHz": 21.16,
+    "fmax_corners": [
+      {
+        "fmax_MHz": 21.16,
+        "restricted_fmax_MHz": 21.16
+      },
+      {
+        "fmax_MHz": 23.02,
+        "restricted_fmax_MHz": 23.02
+      }
+    ],
+    "fit_logic_elements": 28687,
+    "fit_registers": 2699,
+    "fit_multiplier_9bit_elements": 105,
+    "virtual_pins": 447,
+    "worst_registered_path": {
+      "slack_ns": -27.252,
+      "from": "mamba3_cache_ram:cache_bank[0].k_ram|altsyncram:ram|altsyncram_1ed1:auto_generated|ram_block1a0~portb_re_reg",
+      "to": "kv_now_product[12]",
+      "data_delay_ns": 46.871
+    },
+    "meets_50MHz_setup": false
+  },
+  "after": {
+    "worst_setup_slack_ns": -26.971,
+    "minimum_restricted_fmax_MHz": 21.29,
+    "fmax_corners": [
+      {
+        "fmax_MHz": 21.29,
+        "restricted_fmax_MHz": 21.29
+      },
+      {
+        "fmax_MHz": 23.39,
+        "restricted_fmax_MHz": 23.39
+      }
+    ],
+    "fit_logic_elements": 28713,
+    "fit_registers": 2876,
+    "fit_multiplier_9bit_elements": 105,
+    "virtual_pins": 447,
+    "worst_registered_path": {
+      "slack_ns": -26.971,
+      "from": "read_state[6]",
+      "to": "kv_old_product[30]",
+      "data_delay_ns": 46.932
+    },
+    "meets_50MHz_setup": false
+  },
+  "worst_slack_change_ns": 0.2809999999999988,
+  "isolated_paths": {
+    "baseline-critical": {
+      "slack_ns": -27.252,
+      "from": "mamba3_cache_ram:cache_bank[0].k_ram|altsyncram:ram|altsyncram_1ed1:auto_generated|ram_block1a0~portb_re_reg",
+      "to": "kv_now_product[12]",
+      "data_delay_ns": 46.871,
+      "logic_levels": 36
+    },
+    "staged-first": {
+      "slack_ns": 12.942,
+      "from": "mamba3_cache_ram:cache_bank[0].k_ram|altsyncram:ram|altsyncram_1ed1:auto_generated|ram_block1a0~portb_re_reg",
+      "to": "read_k[21]",
+      "data_delay_ns": 6.655,
+      "logic_levels": 0
+    },
+    "staged-second": {
+      "slack_ns": -25.253,
+      "from": "read_v[1]",
+      "to": "kv_now_product[23]",
+      "data_delay_ns": 45.145,
+      "logic_levels": 36
+    }
+  },
+  "regression": [
+    {
+      "rank": 1,
+      "status": "PASS",
+      "state_writes": 65536,
+      "outputs": 512,
+      "max_bit_error": 0,
+      "oracle_and_stimuli_byte_identical": true,
+      "unstalled_cycles_before": 1467,
+      "unstalled_cycles_after": 1468
+    },
+    {
+      "rank": 4,
+      "status": "PASS",
+      "state_writes": 65536,
+      "outputs": 2048,
+      "max_bit_error": 0,
+      "oracle_and_stimuli_byte_identical": true,
+      "unstalled_cycles_before": 1993,
+      "unstalled_cycles_after": 1993
+    }
+  ],
+  "first_candidate_mismatch": null,
+  "artifact_sha256": {
+    "evidence/arithmetic.log": "32a1dfbe4d2ba9466d671480af0c5425582c661384db5ea8e5d6ed012c36f90a",
+    "evidence/compile.log": "1b04d7d55c93e25b7b96c7109cc936bde4551d209ddebd1feae822ca04325387",
+    "evidence/execution.json": "61f5dfd8f0379494cf2fc7f92a2b94b3dcb2e0511a7d6e0909125982b40b3c68",
+    "evidence/first_mismatch.json": "d1fc77d3f1c23a74d9b5ff0223ce79bb98c6a6c7308b4425b04ea3dde63a44b7",
+    "evidence/PASS_FAIL.log": "1cd13e928c8462e9947f4c7f6e3d1cf28e1f92f2d69852b722f1f20a7aa5cbc5",
+    "evidence/rank1/bc.hex": "9854e82d4182f7e01290d774b70bc6013e7aecb7297308a74dc11c1de4e8c3c8",
+    "evidence/rank1/commands.hex": "c4c79a05370962f4cd70b5482202a9919191ef75a64accf63784924970cdba2b",
+    "evidence/rank1/cos_fp32.hex": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f",
+    "evidence/rank1/negative_control.log": "21b21819f691c8a2773892b06c30ad6aed822101d2cc06cedb98b8c1a40eeac0",
+    "evidence/rank1/outputs.hex": "ab7f1449c2915c6312448f629644918065231f09eb9dd286d9e05234f3f66329",
+    "evidence/rank1/rtl_results.csv": "2b4b9375bd00d3af09464178db32fc3d3d94f6305f017228152eb7833ebdd652",
+    "evidence/rank1/simulation.log": "00d507d9f33a7fb93cbca1a2fb114d8a3c16c7fd825ce99d6b3481f58f1dd733",
+    "evidence/rank1/sin_fp32.hex": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e",
+    "evidence/rank1/states.hex": "884c2c8d0c75b894a94eef0c3f918d3d6020cd6a91aae958879b3807929a5b9b",
+    "evidence/rank1/values.hex": "d230e7ca927a83dbc1ec40a895bf1554dad24a68a491140a6c91ab74ca835de7",
+    "evidence/rank4/bc.hex": "8df23cd2fee17916b25220cf0129f9bbf222d70006bc3f9771aa70b38c0fc383",
+    "evidence/rank4/commands.hex": "777080153930d6c933f69df171d3a563e8bce7d77750277f6d63eb6c54b15b8e",
+    "evidence/rank4/cos_fp32.hex": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f",
+    "evidence/rank4/negative_control.log": "803889589cba53eae873b9a2aae059a6ae7ef1ddd46b49a4dda94e7615a129b5",
+    "evidence/rank4/outputs.hex": "31d4176b4ff950573d6b39fa33ffdd6feda2f606aae1e6d615b3c381a3025575",
+    "evidence/rank4/rtl_results.csv": "7398bc6c08d52f816c7d2db18f6dbaec0be17a2495bceb916cb41651eeeeee2b",
+    "evidence/rank4/simulation.log": "7094a0cd9963c9324c2be3575c3950ce16bf5b7e934e21e881e305a5c2fdefb6",
+    "evidence/rank4/sin_fp32.hex": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e",
+    "evidence/rank4/states.hex": "99c341d87e8a6906f862069792fb89439a4eb25b262676ba580c2261aa2914e6",
+    "evidence/rank4/values.hex": "d6b89bbc07d62c2e355337249e775686531fed5d420c7846c193f55992126bf9",
+    "evidence/runner.log": "c1b30db515e587c7da068e287e0d3ff16b116657ac176e59f0ce6af773b97140",
+    "evidence/summary.json": "168ea4329ff6252fd4ee54ac54c1fd10b70fa47238843acd905ca46c53904601",
+    "synthesis/build.log": "b4dc89640a921a4ffbb7b8c522d192ee81a4bce93bcbc6087c7a594ce7d5354b",
+    "synthesis/build_status.json": "5fc373fadec16faf0d2c01355a0d542aee0c0dca1aba1c0239fc9685d3b8257b",
+    "synthesis/execution.json": "88a9418a630ae194e399cd5b1593e582e1f771db361ab0a730d90823e31d9761",
+    "synthesis/pipeline.asm.rpt": "8767a8ac489b53fa933adf98c5368f0ad2f47b97c00d1ccf4ca1418da1e59e88",
+    "synthesis/pipeline.fit.rpt": "cfed9f9465aea6b6906ac6fe4a5f4886e30a304177ebe09e81fed1f536e662aa",
+    "synthesis/pipeline.fit.summary": "b63a7b288ab72aaa0718a08a712fcb2dca69bf77a7df091166b964450e1ff9b3",
+    "synthesis/pipeline.flow.rpt": "4a7ac50def981ddef5c5d6ce439c63e179d5685075c1d8bd0bd58d3bea5ad2ad",
+    "synthesis/pipeline.map.rpt": "27d1059d740f5b5db8d71ae1a79121a764a86ea6a15e9141c717665d177a7ef6",
+    "synthesis/pipeline.map.summary": "4420bdfc8932f59f98a5ed636627247e1fdb699ed1d8d12e3d596415b4cf6703",
+    "synthesis/pipeline.qsf": "e3d15a9e275e95b85366cb2363d51776330504429b2e276f39803b3f769d2c2b",
+    "synthesis/pipeline.sdc": "ade3d963fa6f75620b06a86e1f08ecf12acf6c78918c7dee6ba7cc7e71e15519",
+    "synthesis/pipeline.sta.rpt": "59305311b2148a91af10138a21cffc01e65681bb7f6c2c9eed89200008444727",
+    "synthesis/pipeline.sta.summary": "2d52354ffece3e7079490bff16e546c43b3d26abee833c57d0d8aa4cbb6046ba",
+    "synthesis/runner.log": "ef7f973426c17c16588984962e2ecc4be4d9e67ae2edc44001168d17dcf7c2b5",
+    "timing/baseline-critical.rpt": "da4ba71b957a689c2e0b329dff9314dbb2ed029c01f78f23113fa7d75e7dfa22",
+    "timing/baseline-extraction.log": "d5c1b48c5a2f554be710009791aaadcdd74ce80f7506b56f991906014862c361",
+    "timing/extraction_provenance.json": "0c5a2cc1078b5a0c7868ea03af7bff4dbf4b87536499b4a1c42a48b6d0a5a14d",
+    "timing/operator-accumulator-feedback.log": "8b6557bb206aa31f62270bad011974fed0613111fdc5e79dd75c0a194f4b49df",
+    "timing/operator-accumulator-feedback.rpt": "6634d668933babdfabe9c37dfc5b4041f5bbee0ef07d24a71db3a0b7491c40c8",
+    "timing/operator-readout-multiply.log": "d8e1c7eea231dda9b9872d25187b1ea837854446ff2cae139e2cfda8a85e7773",
+    "timing/operator-readout-multiply.rpt": "fd22063bc37df0ece400220335fecd8757973bad93b956547c5d471ed420cd61",
+    "timing/operator-state-final-add.log": "704737790b457e747b562a079968a4fc9deb989adcda274ad21cbc6a561a2efa",
+    "timing/operator-state-final-add.rpt": "d96574b9c4f0a0c00adaa75e48e93ff1ce34de9ea10c2f88702b8fb19fa3d8cf",
+    "timing/operator_floor.json": "d386d83329e143bb4551fb43aaee08945681b99984122e006c257d52141662de",
+    "timing/staged-extraction.log": "a3a61d68209f6693c456d6a0918db2188d51143eaf475f258beeb2ade4ae8fdb",
+    "timing/staged-first.rpt": "10dd31bdd32250021626bd7ed36e9555a431f036dabba9f443fc635d1e8e9398",
+    "timing/staged-second.rpt": "d6ccad85b19bea8e33e87c50b2341a966a9e44c76a1d8657cb4cab3522a48a62"
+  },
+  "baseline_report_sha256": {
+    "pipeline.asm.rpt": "0988d1a5c70a0c08d750936b0b4ec04356c3946e9b4575bff4ef8d890f00ae88",
+    "pipeline.fit.rpt": "9bdf232cd2b18fdc060ee2bda2ae28155f68c23cdbca0bf940c6f0b3fc223560",
+    "pipeline.fit.summary": "997944bb3cb76a9c35396c79fbceaad80ce858bccdc7ba6413479b3f81d84215",
+    "pipeline.flow.rpt": "41a5c22ccdb7b8ab4770a95c7163fe10456ddce3c396fe22a1624dfb889f998e",
+    "pipeline.map.rpt": "f5d29fdc742bbb738a3b6462f234685ceb18fbaf00fc8b30f0e168db13e3aa71",
+    "pipeline.map.summary": "8a780a9b7439010863777b244d90a4792b839f9498c00d294068d18f655ff257",
+    "pipeline.sta.rpt": "a1be96802de24a8ecd0ea56dd72382d76ee899f1c985e236f898aa2b8833a8cd",
+    "pipeline.sta.summary": "735a3df94d107c99132edd6e2b4fcbcc277cb55ba5beed4aa0fbd22d47681c2a"
+  }
+}

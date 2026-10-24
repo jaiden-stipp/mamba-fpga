@@ -1,0 +1,26 @@
+{
+  "baseline_commit": "b0b5cdf",
+  "scratch_id": "2340efa1703e",
+  "baseline_files": {
+    "regression.py": "63f2fe79f03968a50b1389992900d2011915588636a8d512680f94cf39fe28e8",
+    "synthesize.py": "578d08fb1a1009169865b77d347e50e2fb44902bc4d3f88f082d2d5747d2f5be",
+    "rtl/fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb",
+    "rtl/mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+    "rtl/mamba3_recurrent_tile.sv": "d934a52fc65ae5cf08de16ac123ed3c55e1fdfa6640185d5ae68e69c66d02cd4",
+    "rtl/tb_fp32.sv": "6e88c7defe9de04d69fc9ceb73484ba9f977e6f65696e60ff329d7dbe3ac2e91",
+    "rtl/tb_recurrent_tile.sv": "d38929b195993e3f685bd6b427b6a70a00e5ac02b6eeaee218ba7e50d19fd236"
+  },
+  "variant_files": {
+    "rtl/mamba3_recurrent_tile.sv": "9e9e31c85926f66c6572383300314dcf010220bc723e36977962cda4a8a27b7f",
+    "rtl/tb_recurrent_tile.sv": "2293310c0f38215ed72f281c32d5c2b13ac92b8b6cffcdc808ef1072e17d517d"
+  },
+  "runner_sha256": "3cccccf1722d2f2aeed97efbf58f5b70d14cfd97fc2d1b56839f937964993303",
+  "prior_variant_files": {
+    "rtl/mamba3_recurrent_tile.sv": "670d16e1a8765d84683b7089b933880b2559cb9008cc0d7ff7e1cd1ea7b69862",
+    "rtl/tb_recurrent_tile.sv": "cc7879950bc58bff016c4523cea19d7e543f3c499b15e65dd9fc3914bb33a624"
+  },
+  "traces": {
+    "mamba3-mimo-187m.npz": "6f0656c43ba1aba5e968ff4dc2d0c2ffbf437d84bf8accbaa08a1d39fb7a26b4",
+    "mamba3-siso-187m.npz": "c90ab67f72bdbdaa379cc62c496df86b76be13513b3521270eed92eb06e6a53d"
+  }
+}

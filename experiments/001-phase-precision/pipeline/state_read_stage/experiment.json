@@ -1,0 +1,26 @@
+{
+  "prior": "trig_output_stage",
+  "scratch_prefix": "e001-state-read-stage-",
+  "cycles": 1468,
+  "baseline_path": [
+    "*k_ram*",
+    "kv_now_product*"
+  ],
+  "first_path": [
+    "*k_ram*",
+    "read_k*"
+  ],
+  "second_path": [
+    "read_*",
+    "kv_now_product*"
+  ],
+  "markers": [
+    "# RESULT READ reset_inflight=checked",
+    "# RESULT READ admits=65536 consumes=65536",
+    "# RESULT ROMOUT admits=2048 consumes=2048",
+    "# RESULT PHASE admits=2048 consumes=2048",
+    "# RESULT SUM admits=65536 consumes=65536"
+  ],
+  "scope": "One additional rank-1 RAM-output boundary before recurrent products.",
+  "description": "Capture current/previous K and V, Q, compressed FP16 state and their coordinate address/valid together after the synchronous RAM read. Multiply from these registers one cycle later. Shift every later state-write/readout consumer and the existing KV/sum tag monitors by one cycle. Keep the 16-bit stored state compressed through the new read stage. Add independent checks of all six data fields plus address/valid and reset while this stage is active. Rank-1 latency adds one cycle/token; arithmetic, output association and coordinate issue order remain unchanged."
+}

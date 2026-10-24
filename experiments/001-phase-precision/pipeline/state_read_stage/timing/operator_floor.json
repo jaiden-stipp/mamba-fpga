@@ -1,0 +1,44 @@
+{
+  "scope": "Supplemental routed single-operation paths, slow 1200mV/85C, original 20ns clock. No hardware operation or inference-rate measurement.",
+  "source_sha256": {
+    "mamba3_recurrent_tile.sv": "9e9e31c85926f66c6572383300314dcf010220bc723e36977962cda4a8a27b7f",
+    "mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+    "fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb"
+  },
+  "project": ".artifacts/e001-state-read-stage-2340efa1703e/project/.artifacts/e001-recurrent-rank1-6e078015bd84",
+  "cases": {
+    "accumulator-feedback": {
+      "slack_ns": -23.509,
+      "from": "accum[0][0][28]",
+      "to": "accum[0][0][24]",
+      "data_delay_ns": 43.434,
+      "logic_levels": 49,
+      "source_glob": "accum*",
+      "target_glob": "accum*",
+      "operation": "Single fp_add(accum, product4); consecutive updates to the same P channel.",
+      "report_sha256": "6634d668933babdfabe9c37dfc5b4041f5bbee0ef07d24a71db3a0b7491c40c8"
+    },
+    "readout-multiply": {
+      "slack_ns": -25.4,
+      "from": "q3[0][1]",
+      "to": "product4[0][25]",
+      "data_delay_ns": 45.252,
+      "logic_levels": 38,
+      "source_glob": "*",
+      "target_glob": "product4*",
+      "operation": "Single fp_mul(updated3, q3) before the output reduction.",
+      "report_sha256": "fd22063bc37df0ece400220335fecd8757973bad93b956547c5d471ed420cd61"
+    },
+    "state-final-add": {
+      "slack_ns": -22.112,
+      "from": "update_partial[0]",
+      "to": "updated3[3]",
+      "data_delay_ns": 42.016,
+      "logic_levels": 43,
+      "source_glob": "update_*",
+      "target_glob": "updated3*",
+      "operation": "Single fp_add(update_partial, update_now).",
+      "report_sha256": "d96574b9c4f0a0c00adaa75e48e93ff1ce34de9ea10c2f88702b8fb19fa3d8cf"
+    }
+  }
+}
