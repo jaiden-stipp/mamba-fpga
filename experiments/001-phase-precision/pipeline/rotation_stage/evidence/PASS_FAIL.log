@@ -1,0 +1,4 @@
+PASS seed=0xe001f032
+Primitive vectors=96112, comparisons=384448
+PASS rank=1 tokens=64 state_writes=65536 outputs=512 quantized_reference_max_bit_error=0 negative_control=detected
+PASS rank=4 tokens=64 state_writes=65536 outputs=2048 quantized_reference_max_bit_error=0 negative_control=detected

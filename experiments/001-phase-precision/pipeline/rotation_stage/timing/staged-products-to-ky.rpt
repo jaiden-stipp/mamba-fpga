@@ -1,0 +1,436 @@
+----------------
+; Command Info ;
+----------------
+Report Timing: Found 1 setup paths (1 violated).  Worst case slack is -37.507 
+
+Tcl Command:
+    report_timing -setup -file {C:\Users\Orb1t\Documents\Codex\2026-10-19\base\work\github-mamba-fpga\experiments\001-phase-precision\pipeline\rotation_stage\timing\staged-products-to-ky.rpt} -from [get_registers {rot_k*}] -to [get_registers {ky*}] -npaths 1 -detail full_path
+
+Options:
+    -from [get_registers {rot_k*}] 
+    -to [get_registers {ky*}] 
+    -setup 
+    -npaths 1 
+    -detail full_path 
+    -file {C:\Users\Orb1t\Documents\Codex\2026-10-19\base\work\github-mamba-fpga\experiments\001-phase-precision\pipeline\rotation_stage\timing\staged-products-to-ky.rpt} 
+
+Delay Model:
+    Slow 1200mV 85C Model
+
++------------------------------------------------------------------------------------------------------+
+; Summary of Paths                                                                                     ;
++---------+------------+---------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node  ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+------------+---------+--------------+-------------+--------------+------------+------------+
+; -37.507 ; rot_kxs[1] ; ky[1]   ; clk          ; clk         ; 20.000       ; -0.126     ; 57.379     ;
++---------+------------+---------+--------------+-------------+--------------+------------+------------+
+
+Path #1: Setup slack is -37.507 (VIOLATED)
+===============================================================================
++-----------------------------------------+
+; Path Summary                            ;
++--------------------+--------------------+
+; Property           ; Value              ;
++--------------------+--------------------+
+; From Node          ; rot_kxs[1]         ;
+; To Node            ; ky[1]              ;
+; Launch Clock       ; clk                ;
+; Latch Clock        ; clk                ;
+; Data Arrival Time  ; 60.431             ;
+; Data Required Time ; 22.924             ;
+; Slack              ; -37.507 (VIOLATED) ;
++--------------------+--------------------+
+
++------------------------------------------------------------------------------------+
+; Statistics                                                                         ;
++------------------------+--------+-------+-------------+------------+-------+-------+
+; Property               ; Value  ; Count ; Total Delay ; % of Total ; Min   ; Max   ;
++------------------------+--------+-------+-------------+------------+-------+-------+
+; Setup Relationship     ; 20.000 ;       ;             ;            ;       ;       ;
+; Clock Skew             ; -0.126 ;       ;             ;            ;       ;       ;
+; Data Delay             ; 57.379 ;       ;             ;            ;       ;       ;
+; Number of Logic Levels ;        ; 47    ;             ;            ;       ;       ;
+; Physical Delays        ;        ;       ;             ;            ;       ;       ;
+;  Arrival Path          ;        ;       ;             ;            ;       ;       ;
+;   Clock                ;        ;       ;             ;            ;       ;       ;
+;    IC                  ;        ; 3     ; 1.760       ; 58         ; 0.000 ; 1.573 ;
+;    Cell                ;        ; 3     ; 1.292       ; 42         ; 0.000 ; 0.694 ;
+;   Data                 ;        ;       ;             ;            ;       ;       ;
+;    IC                  ;        ; 161   ; 30.921      ; 54         ; 0.000 ; 2.041 ;
+;    Cell                ;        ; 162   ; 26.226      ; 46         ; 0.000 ; 0.536 ;
+;    uTco                ;        ; 1     ; 0.232       ; 0          ; 0.232 ; 0.232 ;
+;  Required Path         ;        ;       ;             ;            ;       ;       ;
+;   Clock                ;        ;       ;             ;            ;       ;       ;
+;    IC                  ;        ; 3     ; 1.669       ; 57         ; 0.000 ; 1.489 ;
+;    Cell                ;        ; 3     ; 1.249       ; 43         ; 0.000 ; 0.694 ;
++------------------------+--------+-------+-------------+------------+-------+-------+
+Note: Negative delays are omitted from totals when calculating percentages
+
++------------------------------------------------------------------------------------------+
+; Data Arrival Path                                                                        ;
++----------+---------+----+------+--------+--------------------+---------------------------+
+; Total    ; Incr    ; RF ; Type ; Fanout ; Location           ; Element                   ;
++----------+---------+----+------+--------+--------------------+---------------------------+
+; 0.000    ; 0.000   ;    ;      ;        ;                    ; launch edge time          ;
+; 3.052    ; 3.052   ;    ;      ;        ;                    ; clock path                ;
+;   0.000  ;   0.000 ;    ;      ;        ;                    ; source latency            ;
+;   0.000  ;   0.000 ;    ;      ; 1      ; PIN_Y2             ; clk                       ;
+;   0.000  ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X0_Y36_N15  ; clk~input|i               ;
+;   0.694  ;   0.694 ; RR ; CELL ; 1      ; IOIBUF_X0_Y36_N15  ; clk~input|o               ;
+;   0.881  ;   0.187 ; RR ; IC   ; 1      ; CLKCTRL_G4         ; clk~inputclkctrl|inclk[0] ;
+;   0.881  ;   0.000 ; RR ; CELL ; 2164   ; CLKCTRL_G4         ; clk~inputclkctrl|outclk   ;
+;   2.454  ;   1.573 ; RR ; IC   ; 1      ; FF_X77_Y38_N29     ; rot_kxs[1]|clk            ;
+;   3.052  ;   0.598 ; RR ; CELL ; 1      ; FF_X77_Y38_N29     ; rot_kxs[1]                ;
+; 60.431   ; 57.379  ;    ;      ;        ;                    ; data path                 ;
+;   3.284  ;   0.232 ;    ; uTco ; 1      ; FF_X77_Y38_N29     ; rot_kxs[1]                ;
+;   3.284  ;   0.000 ; RR ; CELL ; 5      ; FF_X77_Y38_N29     ; rot_kxs[1]|q              ;
+;   5.325  ;   2.041 ; RR ; IC   ; 1      ; LCCOMB_X70_Y50_N10 ; LessThan147~3|datab       ;
+;   5.797  ;   0.472 ; RR ; CELL ; 1      ; LCCOMB_X70_Y50_N10 ; LessThan147~3|cout        ;
+;   5.797  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y50_N12 ; LessThan147~5|cin         ;
+;   5.863  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y50_N12 ; LessThan147~5|cout        ;
+;   5.863  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y50_N14 ; LessThan147~7|cin         ;
+;   5.929  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y50_N14 ; LessThan147~7|cout        ;
+;   5.929  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y50_N16 ; LessThan147~9|cin         ;
+;   5.995  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y50_N16 ; LessThan147~9|cout        ;
+;   5.995  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y50_N18 ; LessThan147~11|cin        ;
+;   6.061  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y50_N18 ; LessThan147~11|cout       ;
+;   6.061  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y50_N20 ; LessThan147~13|cin        ;
+;   6.127  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y50_N20 ; LessThan147~13|cout       ;
+;   6.127  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y50_N22 ; LessThan147~15|cin        ;
+;   6.193  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y50_N22 ; LessThan147~15|cout       ;
+;   6.193  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y50_N24 ; LessThan147~17|cin        ;
+;   6.259  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y50_N24 ; LessThan147~17|cout       ;
+;   6.259  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y50_N26 ; LessThan147~19|cin        ;
+;   6.325  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y50_N26 ; LessThan147~19|cout       ;
+;   6.325  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y50_N28 ; LessThan147~21|cin        ;
+;   6.391  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y50_N28 ; LessThan147~21|cout       ;
+;   6.391  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y50_N30 ; LessThan147~23|cin        ;
+;   6.457  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y50_N30 ; LessThan147~23|cout       ;
+;   6.457  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y49_N0  ; LessThan147~25|cin        ;
+;   6.523  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y49_N0  ; LessThan147~25|cout       ;
+;   6.523  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y49_N2  ; LessThan147~27|cin        ;
+;   6.589  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y49_N2  ; LessThan147~27|cout       ;
+;   6.589  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y49_N4  ; LessThan147~29|cin        ;
+;   6.655  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y49_N4  ; LessThan147~29|cout       ;
+;   6.655  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y49_N6  ; LessThan147~31|cin        ;
+;   6.721  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y49_N6  ; LessThan147~31|cout       ;
+;   6.721  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y49_N8  ; LessThan147~33|cin        ;
+;   6.787  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y49_N8  ; LessThan147~33|cout       ;
+;   6.787  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y49_N10 ; LessThan147~35|cin        ;
+;   6.853  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y49_N10 ; LessThan147~35|cout       ;
+;   6.853  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y49_N12 ; LessThan147~37|cin        ;
+;   6.919  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y49_N12 ; LessThan147~37|cout       ;
+;   6.919  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y49_N14 ; LessThan147~39|cin        ;
+;   6.985  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y49_N14 ; LessThan147~39|cout       ;
+;   6.985  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y49_N16 ; LessThan147~41|cin        ;
+;   7.051  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y49_N16 ; LessThan147~41|cout       ;
+;   7.051  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y49_N18 ; LessThan147~43|cin        ;
+;   7.117  ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y49_N18 ; LessThan147~43|cout       ;
+;   7.117  ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X70_Y49_N20 ; LessThan147~45|cin        ;
+;   7.183  ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y49_N20 ; LessThan147~45|cout       ;
+;   7.183  ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X70_Y49_N22 ; LessThan147~46|cin        ;
+;   7.617  ;   0.434 ; FF ; CELL ; 1      ; LCCOMB_X70_Y49_N22 ; LessThan147~46|combout    ;
+;   8.518  ;   0.901 ; FF ; IC   ; 1      ; LCCOMB_X68_Y47_N0  ; fp_add~412|datad          ;
+;   8.643  ;   0.125 ; FF ; CELL ; 1      ; LCCOMB_X68_Y47_N0  ; fp_add~412|combout        ;
+;   8.914  ;   0.271 ; FF ; IC   ; 1      ; LCCOMB_X68_Y47_N26 ; fp_add~413|datab          ;
+;   9.339  ;   0.425 ; FF ; CELL ; 66     ; LCCOMB_X68_Y47_N26 ; fp_add~413|combout        ;
+;   9.916  ;   0.577 ; FF ; IC   ; 1      ; LCCOMB_X69_Y47_N16 ; eb~61|dataa               ;
+;   10.316 ;   0.400 ; FF ; CELL ; 1      ; LCCOMB_X69_Y47_N16 ; eb~61|combout             ;
+;   10.733 ;   0.417 ; FF ; IC   ; 2      ; LCCOMB_X70_Y47_N10 ; Add277~0|dataa            ;
+;   11.231 ;   0.498 ; FR ; CELL ; 1      ; LCCOMB_X70_Y47_N10 ; Add277~0|cout             ;
+;   11.231 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X70_Y47_N12 ; Add277~2|cin              ;
+;   11.297 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y47_N12 ; Add277~2|cout             ;
+;   11.297 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X70_Y47_N14 ; Add277~4|cin              ;
+;   11.363 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y47_N14 ; Add277~4|cout             ;
+;   11.363 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X70_Y47_N16 ; Add277~6|cin              ;
+;   11.429 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X70_Y47_N16 ; Add277~6|cout             ;
+;   11.429 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X70_Y47_N18 ; Add277~8|cin              ;
+;   11.495 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X70_Y47_N18 ; Add277~8|cout             ;
+;   11.495 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X70_Y47_N20 ; Add277~10|cin             ;
+;   12.007 ;   0.512 ; RF ; CELL ; 2      ; LCCOMB_X70_Y47_N20 ; Add277~10|combout         ;
+;   12.291 ;   0.284 ; FF ; IC   ; 1      ; LCCOMB_X70_Y47_N0  ; LessThan148~0|datab       ;
+;   12.732 ;   0.441 ; FR ; CELL ; 5      ; LCCOMB_X70_Y47_N0  ; LessThan148~0|combout     ;
+;   13.976 ;   1.244 ; RR ; IC   ; 1      ; LCCOMB_X77_Y49_N18 ; Equal233~1|datad          ;
+;   14.131 ;   0.155 ; RR ; CELL ; 12     ; LCCOMB_X77_Y49_N18 ; Equal233~1|combout        ;
+;   15.153 ;   1.022 ; RR ; IC   ; 1      ; LCCOMB_X73_Y50_N6  ; ShiftLeft90~1|datad       ;
+;   15.292 ;   0.139 ; RF ; CELL ; 2      ; LCCOMB_X73_Y50_N6  ; ShiftLeft90~1|combout     ;
+;   15.707 ;   0.415 ; FF ; IC   ; 1      ; LCCOMB_X74_Y50_N6  ; Add278~1|datab            ;
+;   16.216 ;   0.509 ; FR ; CELL ; 1      ; LCCOMB_X74_Y50_N6  ; Add278~1|cout             ;
+;   16.216 ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X74_Y50_N8  ; Add278~3|cin              ;
+;   16.282 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y50_N8  ; Add278~3|cout             ;
+;   16.282 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X74_Y50_N10 ; Add278~5|cin              ;
+;   16.348 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y50_N10 ; Add278~5|cout             ;
+;   16.348 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y50_N12 ; Add278~6|cin              ;
+;   16.414 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y50_N12 ; Add278~6|cout             ;
+;   16.414 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y50_N14 ; Add278~8|cin              ;
+;   16.480 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y50_N14 ; Add278~8|cout             ;
+;   16.480 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y50_N16 ; Add278~10|cin             ;
+;   16.546 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y50_N16 ; Add278~10|cout            ;
+;   16.546 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y50_N18 ; Add278~12|cin             ;
+;   16.612 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y50_N18 ; Add278~12|cout            ;
+;   16.612 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y50_N20 ; Add278~14|cin             ;
+;   16.678 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y50_N20 ; Add278~14|cout            ;
+;   16.678 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y50_N22 ; Add278~16|cin             ;
+;   16.744 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y50_N22 ; Add278~16|cout            ;
+;   16.744 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y50_N24 ; Add278~18|cin             ;
+;   16.810 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y50_N24 ; Add278~18|cout            ;
+;   16.810 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y50_N26 ; Add278~20|cin             ;
+;   16.876 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y50_N26 ; Add278~20|cout            ;
+;   16.876 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y50_N28 ; Add278~22|cin             ;
+;   16.942 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y50_N28 ; Add278~22|cout            ;
+;   16.942 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y50_N30 ; Add278~24|cin             ;
+;   17.008 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y50_N30 ; Add278~24|cout            ;
+;   17.008 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y49_N0  ; Add278~26|cin             ;
+;   17.074 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y49_N0  ; Add278~26|cout            ;
+;   17.074 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y49_N2  ; Add278~28|cin             ;
+;   17.140 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y49_N2  ; Add278~28|cout            ;
+;   17.140 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y49_N4  ; Add278~30|cin             ;
+;   17.206 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y49_N4  ; Add278~30|cout            ;
+;   17.206 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y49_N6  ; Add278~32|cin             ;
+;   17.272 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y49_N6  ; Add278~32|cout            ;
+;   17.272 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y49_N8  ; Add278~34|cin             ;
+;   17.338 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y49_N8  ; Add278~34|cout            ;
+;   17.338 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y49_N10 ; Add278~36|cin             ;
+;   17.404 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y49_N10 ; Add278~36|cout            ;
+;   17.404 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y49_N12 ; Add278~38|cin             ;
+;   17.470 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y49_N12 ; Add278~38|cout            ;
+;   17.470 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y49_N14 ; Add278~40|cin             ;
+;   17.536 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y49_N14 ; Add278~40|cout            ;
+;   17.536 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y49_N16 ; Add278~42|cin             ;
+;   17.602 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y49_N16 ; Add278~42|cout            ;
+;   17.602 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y49_N18 ; Add278~44|cin             ;
+;   17.668 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y49_N18 ; Add278~44|cout            ;
+;   17.668 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y49_N20 ; Add278~46|cin             ;
+;   17.734 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y49_N20 ; Add278~46|cout            ;
+;   17.734 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X74_Y49_N22 ; Add278~48|cin             ;
+;   17.800 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X74_Y49_N22 ; Add278~48|cout            ;
+;   17.800 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X74_Y49_N24 ; Add278~50|cin             ;
+;   17.866 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X74_Y49_N24 ; Add278~50|cout            ;
+;   17.866 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X74_Y49_N26 ; Add278~52|cin             ;
+;   18.300 ;   0.434 ; FF ; CELL ; 1      ; LCCOMB_X74_Y49_N26 ; Add278~52|combout         ;
+;   18.715 ;   0.415 ; FF ; IC   ; 1      ; LCCOMB_X74_Y49_N30 ; shift_jam~667|datab       ;
+;   19.108 ;   0.393 ; FF ; CELL ; 1      ; LCCOMB_X74_Y49_N30 ; shift_jam~667|combout     ;
+;   19.996 ;   0.888 ; FF ; IC   ; 1      ; LCCOMB_X74_Y47_N30 ; shift_jam~668|datac       ;
+;   20.276 ;   0.280 ; FF ; CELL ; 1      ; LCCOMB_X74_Y47_N30 ; shift_jam~668|combout     ;
+;   20.987 ;   0.711 ; FF ; IC   ; 1      ; LCCOMB_X74_Y48_N4  ; shift_jam~669|datac       ;
+;   21.267 ;   0.280 ; FF ; CELL ; 1      ; LCCOMB_X74_Y48_N4  ; shift_jam~669|combout     ;
+;   21.501 ;   0.234 ; FF ; IC   ; 1      ; LCCOMB_X74_Y48_N22 ; shift_jam~670|datac       ;
+;   21.782 ;   0.281 ; FF ; CELL ; 3      ; LCCOMB_X74_Y48_N22 ; shift_jam~670|combout     ;
+;   22.508 ;   0.726 ; FF ; IC   ; 1      ; LCCOMB_X75_Y50_N4  ; Add280~1|datab            ;
+;   23.017 ;   0.509 ; FR ; CELL ; 1      ; LCCOMB_X75_Y50_N4  ; Add280~1|cout             ;
+;   23.017 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y50_N6  ; Add280~2|cin              ;
+;   23.083 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y50_N6  ; Add280~2|cout             ;
+;   23.083 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y50_N8  ; Add280~4|cin              ;
+;   23.149 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y50_N8  ; Add280~4|cout             ;
+;   23.149 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y50_N10 ; Add280~6|cin              ;
+;   23.215 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y50_N10 ; Add280~6|cout             ;
+;   23.215 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y50_N12 ; Add280~8|cin              ;
+;   23.281 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y50_N12 ; Add280~8|cout             ;
+;   23.281 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y50_N14 ; Add280~10|cin             ;
+;   23.347 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y50_N14 ; Add280~10|cout            ;
+;   23.347 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y50_N16 ; Add280~12|cin             ;
+;   23.413 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y50_N16 ; Add280~12|cout            ;
+;   23.413 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y50_N18 ; Add280~14|cin             ;
+;   23.479 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y50_N18 ; Add280~14|cout            ;
+;   23.479 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y50_N20 ; Add280~16|cin             ;
+;   23.545 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y50_N20 ; Add280~16|cout            ;
+;   23.545 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y50_N22 ; Add280~18|cin             ;
+;   23.611 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y50_N22 ; Add280~18|cout            ;
+;   23.611 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y50_N24 ; Add280~20|cin             ;
+;   23.677 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y50_N24 ; Add280~20|cout            ;
+;   23.677 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y50_N26 ; Add280~22|cin             ;
+;   23.743 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y50_N26 ; Add280~22|cout            ;
+;   23.743 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y50_N28 ; Add280~24|cin             ;
+;   23.809 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y50_N28 ; Add280~24|cout            ;
+;   23.809 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y50_N30 ; Add280~26|cin             ;
+;   23.875 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y50_N30 ; Add280~26|cout            ;
+;   23.875 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y49_N0  ; Add280~28|cin             ;
+;   23.941 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y49_N0  ; Add280~28|cout            ;
+;   23.941 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y49_N2  ; Add280~30|cin             ;
+;   24.007 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y49_N2  ; Add280~30|cout            ;
+;   24.007 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y49_N4  ; Add280~32|cin             ;
+;   24.073 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y49_N4  ; Add280~32|cout            ;
+;   24.073 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y49_N6  ; Add280~34|cin             ;
+;   24.139 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y49_N6  ; Add280~34|cout            ;
+;   24.139 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y49_N8  ; Add280~36|cin             ;
+;   24.205 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y49_N8  ; Add280~36|cout            ;
+;   24.205 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y49_N10 ; Add280~38|cin             ;
+;   24.271 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y49_N10 ; Add280~38|cout            ;
+;   24.271 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y49_N12 ; Add280~40|cin             ;
+;   24.337 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y49_N12 ; Add280~40|cout            ;
+;   24.337 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y49_N14 ; Add280~42|cin             ;
+;   24.403 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y49_N14 ; Add280~42|cout            ;
+;   24.403 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y49_N16 ; Add280~44|cin             ;
+;   24.469 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y49_N16 ; Add280~44|cout            ;
+;   24.469 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y49_N18 ; Add280~46|cin             ;
+;   24.535 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y49_N18 ; Add280~46|cout            ;
+;   24.535 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y49_N20 ; Add280~48|cin             ;
+;   24.601 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y49_N20 ; Add280~48|cout            ;
+;   24.601 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X75_Y49_N22 ; Add280~50|cin             ;
+;   24.667 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X75_Y49_N22 ; Add280~50|cout            ;
+;   24.667 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X75_Y49_N24 ; Add280~52|cin             ;
+;   24.733 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X75_Y49_N24 ; Add280~52|cout            ;
+;   24.733 ;   0.000 ; RR ; IC   ; 1      ; LCCOMB_X75_Y49_N26 ; Add280~54|cin             ;
+;   25.245 ;   0.512 ; RF ; CELL ; 3      ; LCCOMB_X75_Y49_N26 ; Add280~54|combout         ;
+;   26.090 ;   0.845 ; FF ; IC   ; 1      ; LCCOMB_X76_Y53_N26 ; Add279~105|datab          ;
+;   26.515 ;   0.425 ; FF ; CELL ; 85     ; LCCOMB_X76_Y53_N26 ; Add279~105|combout        ;
+;   27.823 ;   1.308 ; FF ; IC   ; 1      ; LCCOMB_X79_Y51_N0  ; total~133|dataa           ;
+;   28.177 ;   0.354 ; FF ; CELL ; 3      ; LCCOMB_X79_Y51_N0  ; total~133|combout         ;
+;   28.649 ;   0.472 ; FF ; IC   ; 1      ; LCCOMB_X79_Y51_N28 ; leading27~476|dataa       ;
+;   29.073 ;   0.424 ; FF ; CELL ; 1      ; LCCOMB_X79_Y51_N28 ; leading27~476|combout     ;
+;   29.299 ;   0.226 ; FF ; IC   ; 1      ; LCCOMB_X79_Y51_N22 ; leading27~616|datad       ;
+;   29.424 ;   0.125 ; FF ; CELL ; 1      ; LCCOMB_X79_Y51_N22 ; leading27~616|combout     ;
+;   30.167 ;   0.743 ; FF ; IC   ; 1      ; LCCOMB_X77_Y51_N26 ; leading27~617|dataa       ;
+;   30.591 ;   0.424 ; FF ; CELL ; 1      ; LCCOMB_X77_Y51_N26 ; leading27~617|combout     ;
+;   30.824 ;   0.233 ; FF ; IC   ; 1      ; LCCOMB_X77_Y51_N14 ; leading27~614|datac       ;
+;   31.105 ;   0.281 ; FF ; CELL ; 1      ; LCCOMB_X77_Y51_N14 ; leading27~614|combout     ;
+;   31.373 ;   0.268 ; FF ; IC   ; 1      ; LCCOMB_X77_Y51_N16 ; leading27~615|datab       ;
+;   31.777 ;   0.404 ; FF ; CELL ; 1      ; LCCOMB_X77_Y51_N16 ; leading27~615|combout     ;
+;   32.004 ;   0.227 ; FF ; IC   ; 1      ; LCCOMB_X77_Y51_N8  ; leading27~477|datad       ;
+;   32.129 ;   0.125 ; FF ; CELL ; 1      ; LCCOMB_X77_Y51_N8  ; leading27~477|combout     ;
+;   32.851 ;   0.722 ; FF ; IC   ; 1      ; LCCOMB_X76_Y53_N16 ; leading27~478|datad       ;
+;   32.976 ;   0.125 ; FF ; CELL ; 1      ; LCCOMB_X76_Y53_N16 ; leading27~478|combout     ;
+;   33.586 ;   0.610 ; FF ; IC   ; 1      ; LCCOMB_X74_Y53_N16 ; leading27~612|datac       ;
+;   33.866 ;   0.280 ; FF ; CELL ; 1      ; LCCOMB_X74_Y53_N16 ; leading27~612|combout     ;
+;   34.134 ;   0.268 ; FF ; IC   ; 1      ; LCCOMB_X74_Y53_N26 ; leading27~613|datab       ;
+;   34.538 ;   0.404 ; FF ; CELL ; 1      ; LCCOMB_X74_Y53_N26 ; leading27~613|combout     ;
+;   34.815 ;   0.277 ; FF ; IC   ; 1      ; LCCOMB_X74_Y53_N8  ; leading27~479|dataa       ;
+;   35.239 ;   0.424 ; FF ; CELL ; 1      ; LCCOMB_X74_Y53_N8  ; leading27~479|combout     ;
+;   35.471 ;   0.232 ; FF ; IC   ; 1      ; LCCOMB_X74_Y53_N10 ; leading27~480|datac       ;
+;   35.752 ;   0.281 ; FF ; CELL ; 1      ; LCCOMB_X74_Y53_N10 ; leading27~480|combout     ;
+;   36.194 ;   0.442 ; FF ; IC   ; 1      ; LCCOMB_X75_Y53_N14 ; leading27~481|dataa       ;
+;   36.598 ;   0.404 ; FF ; CELL ; 1      ; LCCOMB_X75_Y53_N14 ; leading27~481|combout     ;
+;   36.866 ;   0.268 ; FF ; IC   ; 1      ; LCCOMB_X75_Y53_N16 ; leading27~482|datab       ;
+;   37.291 ;   0.425 ; FF ; CELL ; 1      ; LCCOMB_X75_Y53_N16 ; leading27~482|combout     ;
+;   38.023 ;   0.732 ; FF ; IC   ; 1      ; LCCOMB_X76_Y52_N0  ; left~78|datab             ;
+;   38.448 ;   0.425 ; FF ; CELL ; 2      ; LCCOMB_X76_Y52_N0  ; left~78|combout           ;
+;   39.225 ;   0.777 ; FF ; IC   ; 1      ; LCCOMB_X76_Y51_N10 ; LessThan149~1|datac       ;
+;   39.506 ;   0.281 ; FF ; CELL ; 1      ; LCCOMB_X76_Y51_N10 ; LessThan149~1|combout     ;
+;   39.784 ;   0.278 ; FF ; IC   ; 1      ; LCCOMB_X76_Y51_N30 ; LessThan149~2|dataa       ;
+;   40.188 ;   0.404 ; FF ; CELL ; 1      ; LCCOMB_X76_Y51_N30 ; LessThan149~2|combout     ;
+;   40.463 ;   0.275 ; FF ; IC   ; 1      ; LCCOMB_X76_Y51_N16 ; LessThan149~3|dataa       ;
+;   40.887 ;   0.424 ; FF ; CELL ; 1      ; LCCOMB_X76_Y51_N16 ; LessThan149~3|combout     ;
+;   41.523 ;   0.636 ; FF ; IC   ; 1      ; LCCOMB_X73_Y51_N2  ; LessThan149~4|dataa       ;
+;   41.923 ;   0.400 ; FF ; CELL ; 8      ; LCCOMB_X73_Y51_N2  ; LessThan149~4|combout     ;
+;   42.339 ;   0.416 ; FF ; IC   ; 1      ; LCCOMB_X73_Y51_N30 ; left~80|datac             ;
+;   42.620 ;   0.281 ; FF ; CELL ; 17     ; LCCOMB_X73_Y51_N30 ; left~80|combout           ;
+;   42.902 ;   0.282 ; FF ; IC   ; 1      ; LCCOMB_X73_Y51_N6  ; ShiftLeft91~136|datac     ;
+;   43.163 ;   0.261 ; FR ; CELL ; 14     ; LCCOMB_X73_Y51_N6  ; ShiftLeft91~136|combout   ;
+;   44.235 ;   1.072 ; RR ; IC   ; 1      ; LCCOMB_X72_Y52_N0  ; ShiftLeft91~143|dataa     ;
+;   44.652 ;   0.417 ; RR ; CELL ; 3      ; LCCOMB_X72_Y52_N0  ; ShiftLeft91~143|combout   ;
+;   45.964 ;   1.312 ; RR ; IC   ; 1      ; LCCOMB_X80_Y51_N30 ; ShiftLeft91~144|datac     ;
+;   46.251 ;   0.287 ; RR ; CELL ; 2      ; LCCOMB_X80_Y51_N30 ; ShiftLeft91~144|combout   ;
+;   47.384 ;   1.133 ; RR ; IC   ; 1      ; LCCOMB_X75_Y52_N6  ; Equal242~2|datab          ;
+;   47.827 ;   0.443 ; RF ; CELL ; 2      ; LCCOMB_X75_Y52_N6  ; Equal242~2|combout        ;
+;   48.450 ;   0.623 ; FF ; IC   ; 1      ; LCCOMB_X73_Y52_N16 ; rounded~15|datad          ;
+;   48.600 ;   0.150 ; FR ; CELL ; 1      ; LCCOMB_X73_Y52_N16 ; rounded~15|combout        ;
+;   49.520 ;   0.920 ; RR ; IC   ; 2      ; LCCOMB_X72_Y51_N8  ; Add284~0|datab            ;
+;   49.992 ;   0.472 ; RR ; CELL ; 1      ; LCCOMB_X72_Y51_N8  ; Add284~0|cout             ;
+;   49.992 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y51_N10 ; Add284~2|cin              ;
+;   50.058 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y51_N10 ; Add284~2|cout             ;
+;   50.058 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y51_N12 ; Add284~4|cin              ;
+;   50.124 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y51_N12 ; Add284~4|cout             ;
+;   50.124 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y51_N14 ; Add284~6|cin              ;
+;   50.190 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y51_N14 ; Add284~6|cout             ;
+;   50.190 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y51_N16 ; Add284~8|cin              ;
+;   50.256 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y51_N16 ; Add284~8|cout             ;
+;   50.256 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y51_N18 ; Add284~10|cin             ;
+;   50.322 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y51_N18 ; Add284~10|cout            ;
+;   50.322 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y51_N20 ; Add284~12|cin             ;
+;   50.388 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y51_N20 ; Add284~12|cout            ;
+;   50.388 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y51_N22 ; Add284~14|cin             ;
+;   50.454 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y51_N22 ; Add284~14|cout            ;
+;   50.454 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y51_N24 ; Add284~16|cin             ;
+;   50.520 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y51_N24 ; Add284~16|cout            ;
+;   50.520 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y51_N26 ; Add284~18|cin             ;
+;   50.586 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y51_N26 ; Add284~18|cout            ;
+;   50.586 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y51_N28 ; Add284~20|cin             ;
+;   50.652 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y51_N28 ; Add284~20|cout            ;
+;   50.652 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y51_N30 ; Add284~22|cin             ;
+;   50.718 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y51_N30 ; Add284~22|cout            ;
+;   50.718 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y50_N0  ; Add284~24|cin             ;
+;   50.784 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y50_N0  ; Add284~24|cout            ;
+;   50.784 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y50_N2  ; Add284~26|cin             ;
+;   50.850 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y50_N2  ; Add284~26|cout            ;
+;   50.850 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y50_N4  ; Add284~28|cin             ;
+;   50.916 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y50_N4  ; Add284~28|cout            ;
+;   50.916 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y50_N6  ; Add284~30|cin             ;
+;   50.982 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y50_N6  ; Add284~30|cout            ;
+;   50.982 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y50_N8  ; Add284~32|cin             ;
+;   51.048 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y50_N8  ; Add284~32|cout            ;
+;   51.048 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y50_N10 ; Add284~34|cin             ;
+;   51.114 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y50_N10 ; Add284~34|cout            ;
+;   51.114 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y50_N12 ; Add284~36|cin             ;
+;   51.180 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y50_N12 ; Add284~36|cout            ;
+;   51.180 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y50_N14 ; Add284~38|cin             ;
+;   51.246 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y50_N14 ; Add284~38|cout            ;
+;   51.246 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y50_N16 ; Add284~40|cin             ;
+;   51.312 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y50_N16 ; Add284~40|cout            ;
+;   51.312 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y50_N18 ; Add284~42|cin             ;
+;   51.378 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y50_N18 ; Add284~42|cout            ;
+;   51.378 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X72_Y50_N20 ; Add284~44|cin             ;
+;   51.444 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X72_Y50_N20 ; Add284~44|cout            ;
+;   51.444 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X72_Y50_N22 ; Add284~46|cin             ;
+;   51.510 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X72_Y50_N22 ; Add284~46|cout            ;
+;   51.510 ;   0.000 ; FF ; IC   ; 1      ; LCCOMB_X72_Y50_N24 ; Add284~48|cin             ;
+;   51.914 ;   0.404 ; FR ; CELL ; 3      ; LCCOMB_X72_Y50_N24 ; Add284~48|combout         ;
+;   52.892 ;   0.978 ; RR ; IC   ; 2      ; LCCOMB_X69_Y51_N2  ; Add285~0|datab            ;
+;   53.364 ;   0.472 ; RR ; CELL ; 1      ; LCCOMB_X69_Y51_N2  ; Add285~0|cout             ;
+;   53.364 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X69_Y51_N4  ; Add285~2|cin              ;
+;   53.430 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X69_Y51_N4  ; Add285~2|cout             ;
+;   53.430 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X69_Y51_N6  ; Add285~4|cin              ;
+;   53.496 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X69_Y51_N6  ; Add285~4|cout             ;
+;   53.496 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X69_Y51_N8  ; Add285~6|cin              ;
+;   53.562 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X69_Y51_N8  ; Add285~6|cout             ;
+;   53.562 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X69_Y51_N10 ; Add285~8|cin              ;
+;   53.628 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X69_Y51_N10 ; Add285~8|cout             ;
+;   53.628 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X69_Y51_N12 ; Add285~10|cin             ;
+;   53.694 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X69_Y51_N12 ; Add285~10|cout            ;
+;   53.694 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X69_Y51_N14 ; Add285~12|cin             ;
+;   53.760 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X69_Y51_N14 ; Add285~12|cout            ;
+;   53.760 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X69_Y51_N16 ; Add285~14|cin             ;
+;   53.826 ;   0.066 ; RF ; CELL ; 1      ; LCCOMB_X69_Y51_N16 ; Add285~14|cout            ;
+;   53.826 ;   0.000 ; FF ; IC   ; 2      ; LCCOMB_X69_Y51_N18 ; Add285~16|cin             ;
+;   53.892 ;   0.066 ; FR ; CELL ; 1      ; LCCOMB_X69_Y51_N18 ; Add285~16|cout            ;
+;   53.892 ;   0.000 ; RR ; IC   ; 2      ; LCCOMB_X69_Y51_N20 ; Add285~18|cin             ;
+;   54.428 ;   0.536 ; RR ; CELL ; 1      ; LCCOMB_X69_Y51_N20 ; Add285~18|combout         ;
+;   54.663 ;   0.235 ; RR ; IC   ; 1      ; LCCOMB_X69_Y51_N0  ; LessThan150~0|datab       ;
+;   55.106 ;   0.443 ; RF ; CELL ; 2      ; LCCOMB_X69_Y51_N0  ; LessThan150~0|combout     ;
+;   55.401 ;   0.295 ; FF ; IC   ; 1      ; LCCOMB_X69_Y51_N30 ; LessThan150~3|datab       ;
+;   55.826 ;   0.425 ; FF ; CELL ; 2      ; LCCOMB_X69_Y51_N30 ; LessThan150~3|combout     ;
+;   56.734 ;   0.908 ; FF ; IC   ; 1      ; LCCOMB_X65_Y47_N18 ; ky[23]~12|datad           ;
+;   56.859 ;   0.125 ; FF ; CELL ; 24     ; LCCOMB_X65_Y47_N18 ; ky[23]~12|combout         ;
+;   57.803 ;   0.944 ; FF ; IC   ; 1      ; LCCOMB_X67_Y48_N24 ; Selector544~2|datac       ;
+;   58.084 ;   0.281 ; FF ; CELL ; 1      ; LCCOMB_X67_Y48_N24 ; Selector544~2|combout     ;
+;   59.902 ;   1.818 ; FF ; IC   ; 1      ; LCCOMB_X43_Y43_N10 ; ky[1]~feeder|datab        ;
+;   60.327 ;   0.425 ; FF ; CELL ; 1      ; LCCOMB_X43_Y43_N10 ; ky[1]~feeder|combout      ;
+;   60.327 ;   0.000 ; FF ; IC   ; 1      ; FF_X43_Y43_N11     ; ky[1]|d                   ;
+;   60.431 ;   0.104 ; FF ; CELL ; 1      ; FF_X43_Y43_N11     ; ky[1]                     ;
++----------+---------+----+------+--------+--------------------+---------------------------+
+
++-----------------------------------------------------------------------------------------+
+; Data Required Path                                                                      ;
++----------+---------+----+------+--------+-------------------+---------------------------+
+; Total    ; Incr    ; RF ; Type ; Fanout ; Location          ; Element                   ;
++----------+---------+----+------+--------+-------------------+---------------------------+
+; 20.000   ; 20.000  ;    ;      ;        ;                   ; latch edge time           ;
+; 22.926   ; 2.926   ;    ;      ;        ;                   ; clock path                ;
+;   20.000 ;   0.000 ;    ;      ;        ;                   ; source latency            ;
+;   20.000 ;   0.000 ;    ;      ; 1      ; PIN_Y2            ; clk                       ;
+;   20.000 ;   0.000 ; RR ; IC   ; 1      ; IOIBUF_X0_Y36_N15 ; clk~input|i               ;
+;   20.694 ;   0.694 ; RR ; CELL ; 1      ; IOIBUF_X0_Y36_N15 ; clk~input|o               ;
+;   20.874 ;   0.180 ; RR ; IC   ; 1      ; CLKCTRL_G4        ; clk~inputclkctrl|inclk[0] ;
+;   20.874 ;   0.000 ; RR ; CELL ; 2164   ; CLKCTRL_G4        ; clk~inputclkctrl|outclk   ;
+;   22.363 ;   1.489 ; RR ; IC   ; 1      ; FF_X43_Y43_N11    ; ky[1]|clk                 ;
+;   22.918 ;   0.555 ; RR ; CELL ; 1      ; FF_X43_Y43_N11    ; ky[1]                     ;
+;   22.926 ;   0.008 ;    ;      ;        ;                   ; clock pessimism removed   ;
+; 22.906   ; -0.020  ;    ;      ;        ;                   ; clock uncertainty         ;
+; 22.924   ; 0.018   ;    ; uTsu ; 1      ; FF_X43_Y43_N11    ; ky[1]                     ;
++----------+---------+----+------+--------+-------------------+---------------------------+
+
+----------------------------
+; Extra Fitter Information ;
+----------------------------
+HTML report is unavailable in plain text report export.
+
+

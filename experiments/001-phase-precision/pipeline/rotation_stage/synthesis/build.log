@@ -1,0 +1,862 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Sat Oct 24 13:14:34 2026
+Info: Command: quartus_sh --flow compile pipeline
+Info: Quartus(args): compile pipeline
+Info: Project Name = C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/pipeline
+Info: Revision Name = pipeline
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Oct 24 13:14:40 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (12021): Found 1 design units, including 1 entities, in source file mamba3_recurrent_tile.sv
+    Info (12023): Found entity 1: mamba3_recurrent_tile File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file mamba3_cache_ram.sv
+    Info (12023): Found entity 1: mamba3_cache_ram File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_cache_ram.sv Line: 4
+Info (12127): Elaborating entity "mamba3_recurrent_tile" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at mamba3_recurrent_tile.sv(47): object "rotation_address" assigned a value but never read File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 47
+Warning (10230): Verilog HDL assignment warning at fp32_functions.svh(9): truncated value with size 32 to match size of target (5) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 9
+Warning (10764): Verilog HDL warning at fp32_functions.svh(25): converting signed shift amount to unsigned File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 25
+Warning (10764): Verilog HDL warning at fp32_functions.svh(28): converting signed shift amount to unsigned File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 28
+Warning (10764): Verilog HDL warning at fp32_functions.svh(29): converting signed shift amount to unsigned File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 29
+Warning (10764): Verilog HDL warning at fp32_functions.svh(30): converting signed shift amount to unsigned File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 30
+Warning (10230): Verilog HDL assignment warning at fp32_functions.svh(106): truncated value with size 32 to match size of target (8) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 106
+Warning (10764): Verilog HDL warning at fp32_functions.svh(43): converting signed shift amount to unsigned File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 43
+Warning (10230): Verilog HDL assignment warning at fp32_functions.svh(43): truncated value with size 32 to match size of target (28) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 43
+Warning (10764): Verilog HDL warning at fp32_functions.svh(44): converting signed shift amount to unsigned File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 44
+Warning (10230): Verilog HDL assignment warning at fp32_functions.svh(18): truncated value with size 32 to match size of target (5) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 18
+Warning (10764): Verilog HDL warning at fp32_functions.svh(69): converting signed shift amount to unsigned File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 69
+Warning (10230): Verilog HDL assignment warning at fp32_functions.svh(72): truncated value with size 32 to match size of target (8) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 72
+Warning (10230): Verilog HDL assignment warning at mamba3_recurrent_tile.sv(76): truncated value with size 32 to match size of target (16) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 76
+Warning (10230): Verilog HDL assignment warning at fp32_functions.svh(144): truncated value with size 32 to match size of target (5) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 144
+Warning (10230): Verilog HDL assignment warning at fp32_functions.svh(125): truncated value with size 32 to match size of target (8) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 125
+Warning (10030): Net "cosine.data_a" at mamba3_recurrent_tile.sv(31) has no driver or initial value, using a default initial value '0' File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 31
+Warning (10030): Net "cosine.waddr_a" at mamba3_recurrent_tile.sv(31) has no driver or initial value, using a default initial value '0' File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 31
+Warning (10030): Net "sine.data_a" at mamba3_recurrent_tile.sv(31) has no driver or initial value, using a default initial value '0' File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 31
+Warning (10030): Net "sine.waddr_a" at mamba3_recurrent_tile.sv(31) has no driver or initial value, using a default initial value '0' File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 31
+Warning (10030): Net "cosine.we_a" at mamba3_recurrent_tile.sv(31) has no driver or initial value, using a default initial value '0' File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 31
+Warning (10030): Net "sine.we_a" at mamba3_recurrent_tile.sv(31) has no driver or initial value, using a default initial value '0' File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 31
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "v_mem" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "prev_v" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "accum" into its bus
+Info (12128): Elaborating entity "mamba3_cache_ram" for hierarchy "mamba3_cache_ram:cache_bank[0].q_ram" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 102
+Info (12128): Elaborating entity "altsyncram" for hierarchy "mamba3_cache_ram:cache_bank[0].q_ram|altsyncram:ram" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_cache_ram.sv Line: 25
+Info (12130): Elaborated megafunction instantiation "mamba3_cache_ram:cache_bank[0].q_ram|altsyncram:ram" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_cache_ram.sv Line: 25
+Info (12133): Instantiated megafunction "mamba3_cache_ram:cache_bank[0].q_ram|altsyncram:ram" with the following parameter: File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_cache_ram.sv Line: 25
+    Info (12134): Parameter "operation_mode" = "DUAL_PORT"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "widthad_a" = "7"
+    Info (12134): Parameter "numwords_a" = "128"
+    Info (12134): Parameter "width_b" = "32"
+    Info (12134): Parameter "widthad_b" = "7"
+    Info (12134): Parameter "numwords_b" = "128"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK0"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "power_up_uninitialized" = "TRUE"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1ed1.tdf
+    Info (12023): Found entity 1: altsyncram_1ed1 File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/altsyncram_1ed1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_1ed1" for hierarchy "mamba3_cache_ram:cache_bank[0].q_ram|altsyncram:ram|altsyncram_1ed1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Warning (287013): Variable or input pin "data_b" is defined but never used. File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/altsyncram_1ed1.tdf Line: 33
+Warning (276020): Inferred RAM node "state_mem_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning (276020): Inferred RAM node "phase_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning (276020): Inferred RAM node "phase_rtl_1" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "cosine" is uninferred due to asynchronous read logic File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 31
+    Info (276007): RAM logic "sine" is uninferred due to asynchronous read logic File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 31
+Info (19000): Inferred 4 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "state_mem_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 16
+        Info (286033): Parameter WIDTHAD_A set to 10
+        Info (286033): Parameter NUMWORDS_A set to 1024
+        Info (286033): Parameter WIDTH_B set to 16
+        Info (286033): Parameter WIDTHAD_B set to 10
+        Info (286033): Parameter NUMWORDS_B set to 1024
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter RAM_BLOCK_TYPE set to M9K
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "phase_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 16
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 32
+        Info (286033): Parameter WIDTH_B set to 16
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 32
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "phase_rtl_1" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 16
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 32
+        Info (286033): Parameter WIDTH_B set to 16
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 32
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "indices_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 3
+        Info (286033): Parameter WIDTH set to 32
+Info (278001): Inferred 15 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult2" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult6" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult4" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult5" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult3" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult1" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult13" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult14" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult11" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult12" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult9" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult10" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult7" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult8" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+Info (12130): Elaborated megafunction instantiation "altsyncram:state_mem_rtl_0"
+Info (12133): Instantiated megafunction "altsyncram:state_mem_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "16"
+    Info (12134): Parameter "WIDTHAD_A" = "10"
+    Info (12134): Parameter "NUMWORDS_A" = "1024"
+    Info (12134): Parameter "WIDTH_B" = "16"
+    Info (12134): Parameter "WIDTHAD_B" = "10"
+    Info (12134): Parameter "NUMWORDS_B" = "1024"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "M9K"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_b1j1.tdf
+    Info (12023): Found entity 1: altsyncram_b1j1 File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/altsyncram_b1j1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "altsyncram:phase_rtl_0"
+Info (12133): Instantiated megafunction "altsyncram:phase_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "16"
+    Info (12134): Parameter "WIDTHAD_A" = "5"
+    Info (12134): Parameter "NUMWORDS_A" = "32"
+    Info (12134): Parameter "WIDTH_B" = "16"
+    Info (12134): Parameter "WIDTHAD_B" = "5"
+    Info (12134): Parameter "NUMWORDS_B" = "32"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qcc1.tdf
+    Info (12023): Found entity 1: altsyncram_qcc1 File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/altsyncram_qcc1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "altshift_taps:indices_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:indices_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "3"
+    Info (12134): Parameter "WIDTH" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_nnm.tdf
+    Info (12023): Found entity 1: shift_taps_nnm File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/shift_taps_nnm.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vk31.tdf
+    Info (12023): Found entity 1: altsyncram_vk31 File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/altsyncram_vk31.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_24e.tdf
+    Info (12023): Found entity 1: add_sub_24e File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/add_sub_24e.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_6pf.tdf
+    Info (12023): Found entity 1: cntr_6pf File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/cntr_6pf.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ogc.tdf
+    Info (12023): Found entity 1: cmpr_ogc File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/cmpr_ogc.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult2" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+Info (12133): Instantiated megafunction "lpm_mult:Mult2" with the following parameter: File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (12134): Parameter "LPM_WIDTHA" = "24"
+    Info (12134): Parameter "LPM_WIDTHB" = "24"
+    Info (12134): Parameter "LPM_WIDTHP" = "48"
+    Info (12134): Parameter "LPM_WIDTHR" = "48"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_bdt.tdf
+    Info (12023): Found entity 1: mult_bdt File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/db/mult_bdt.tdf Line: 30
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult3" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+Info (12133): Instantiated megafunction "lpm_mult:Mult3" with the following parameter: File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 99
+    Info (12134): Parameter "LPM_WIDTHA" = "24"
+    Info (12134): Parameter "LPM_WIDTHB" = "24"
+    Info (12134): Parameter "LPM_WIDTHP" = "48"
+    Info (12134): Parameter "LPM_WIDTHR" = "48"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (13014): Ignored 2370 buffer(s)
+    Info (13019): Ignored 2370 SOFT buffer(s)
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "Add177~0" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 98
+    Info (17048): Logic cell "Add165~0" File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/fp32_functions.svh Line: 98
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (15717): Design contains 447 virtual pins; timing numbers associated with paths containing virtual pins are estimates
+    Info (15719): Pin "start_ready" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 9
+    Info (15719): Pin "v_ready" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15719): Pin "bc_ready" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 12
+    Info (15719): Pin "y_valid" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 15
+    Info (15719): Pin "y_out[0]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[1]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[2]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[3]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[4]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[5]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[6]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[7]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[8]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[9]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[10]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[11]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[12]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[13]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[14]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[15]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[16]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[17]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[18]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[19]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[20]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[21]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[22]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[23]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[24]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[25]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[26]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[27]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[28]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[29]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[30]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_out[31]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[0]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[1]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[2]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[3]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[4]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[5]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[6]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[7]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[8]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[9]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[10]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[11]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[12]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[13]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[14]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "y_index[15]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 16
+    Info (15719): Pin "done" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 17
+    Info (15719): Pin "state_write_valid" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 18
+    Info (15719): Pin "state_write_index[0]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[1]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[2]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[3]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[4]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[5]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[6]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[7]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[8]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[9]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[10]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[11]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[12]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[13]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[14]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[15]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[16]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[17]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[18]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[19]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[20]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[21]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[22]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[23]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[24]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[25]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[26]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[27]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[28]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[29]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[30]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_index[31]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 19
+    Info (15719): Pin "state_write_data[0]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[1]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[2]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[3]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[4]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[5]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[6]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[7]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[8]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[9]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[10]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[11]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[12]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[13]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[14]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_data[15]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 20
+    Info (15719): Pin "state_write_wide[0]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[1]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[2]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[3]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[4]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[5]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[6]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[7]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[8]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[9]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[10]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[11]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[12]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[13]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[14]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[15]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[16]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[17]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[18]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[19]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[20]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[21]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[22]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[23]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[24]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[25]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[26]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[27]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[28]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[29]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[30]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "state_write_wide[31]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 21
+    Info (15719): Pin "debug_stage[0]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 23
+    Info (15719): Pin "debug_stage[1]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 23
+    Info (15719): Pin "debug_stage[2]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 23
+    Info (15719): Pin "debug_stage[3]" is virtual output pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 23
+    Info (15718): Pin "start_valid" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 8
+    Info (15718): Pin "reset" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 7
+    Info (15718): Pin "bc_valid" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 12
+    Info (15718): Pin "v_valid" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "y_ready" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 15
+    Info (15718): Pin "v_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "v_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "skip_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "skip_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "v_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 11
+    Info (15718): Pin "gamma_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "gamma_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "beta_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "alpha_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 10
+    Info (15718): Pin "kx_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "kx_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "ky_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "increment_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "increment_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 14
+    Info (15718): Pin "qx_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[30]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[29]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[28]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[9]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[8]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[11]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[10]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[13]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[12]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[15]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[14]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[17]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[16]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[19]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[18]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[21]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[20]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[22]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[27]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[26]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[25]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[24]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[23]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[3]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[2]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[1]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[0]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[5]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[4]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[7]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[6]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qx_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+    Info (15718): Pin "qy_in[31]" is virtual input pin File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 13
+Info (21057): Implemented 29541 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+    Info (21061): Implemented 29259 logic cells
+    Info (21064): Implemented 176 RAM segments
+    Info (21062): Implemented 105 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4986 megabytes
+    Info: Processing ended: Sat Oct 24 13:16:40 2026
+    Info: Elapsed time: 00:02:00
+    Info: Total CPU time (on all processors): 00:02:00
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Oct 24 13:16:41 2026
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off pipeline -c pipeline
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = pipeline
+Info: Revision = pipeline
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (119006): Selected device EP4CE115F29C7 for design "pipeline"
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info (171001): Fitter is performing a Fast Fit compilation, which decreases Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP4CE40F29C7 is compatible
+    Info (176445): Device EP4CE40F29I7 is compatible
+    Info (176445): Device EP4CE30F29C7 is compatible
+    Info (176445): Device EP4CE30F29I7 is compatible
+    Info (176445): Device EP4CE55F29C7 is compatible
+    Info (176445): Device EP4CE55F29I7 is compatible
+    Info (176445): Device EP4CE75F29C7 is compatible
+    Info (176445): Device EP4CE75F29I7 is compatible
+    Info (176445): Device EP4CE115F29I7 is compatible
+Info (169124): Fitter converted 5 user pins into dedicated programming pins
+    Info (169125): Pin ~ALTERA_ASDO_DATA1~ is reserved at location F4
+    Info (169125): Pin ~ALTERA_FLASH_nCE_nCSO~ is reserved at location E2
+    Info (169125): Pin ~ALTERA_DCLK~ is reserved at location P3
+    Info (169125): Pin ~ALTERA_DATA0~ is reserved at location N7
+    Info (169125): Pin ~ALTERA_nCEO~ is reserved at location P28
+Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Info (332104): Reading SDC File: 'pipeline.sdc'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 1 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000          clk
+Info (176353): Automatically promoted node clk~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 7
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
+Info (176233): Starting register packing
+Info (176235): Finished register packing
+    Extra Info (176218): Packed 32 registers into blocks of type Block RAM
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:19
+Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
+Info (170189): Fitter placement preparation operations beginning
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:07
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:18
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 9% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 31% of the available device resources in the region that extends from location X58_Y24 to location X68_Y36
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:14
+Info (11888): Total time spent on timing analysis during the Fitter is 9.95 seconds.
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:08
+Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+    Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at Y2 File: C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/mamba3_recurrent_tile.sv Line: 7
+Info (144001): Generated suppressed messages file C:/Users/Orb1t/Documents/Codex/2026-10-19/base/work/github-mamba-fpga/.artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485/output_files/pipeline.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 5954 megabytes
+    Info: Processing ended: Sat Oct 24 13:18:16 2026
+    Info: Elapsed time: 00:01:35
+    Info: Total CPU time (on all processors): 00:02:35
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Oct 24 13:18:17 2026
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off pipeline -c pipeline
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4758 megabytes
+    Info: Processing ended: Sat Oct 24 13:18:23 2026
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
+Info (293026): Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Oct 24 13:18:24 2026
+Info: Command: quartus_sta pipeline -c pipeline
+Info: qsta_default_script.tcl version: #1
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info (332104): Reading SDC File: 'pipeline.sdc'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -64.411
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -64.411          -35388.125 clk 
+Info (332146): Worst-case hold slack is 0.287
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.287               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.547
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.547               0.000 clk 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -56.727
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -56.727          -30718.905 clk 
+Info (332146): Worst-case hold slack is 0.291
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.291               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.558
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.558               0.000 clk 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -21.791
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -21.791           -9064.910 clk 
+Info (332146): Worst-case hold slack is 0.105
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.105               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.199
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.199               0.000 clk 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 5183 megabytes
+    Info: Processing ended: Sat Oct 24 13:19:34 2026
+    Info: Elapsed time: 00:01:10
+    Info: Total CPU time (on all processors): 00:01:12
+Info (293000): Quartus Prime Full Compilation was successful. 0 errors, 31 warnings
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4612 megabytes
+    Info: Processing ended: Sat Oct 24 13:19:35 2026
+    Info: Elapsed time: 00:05:01
+    Info: Total CPU time (on all processors): 00:06:00

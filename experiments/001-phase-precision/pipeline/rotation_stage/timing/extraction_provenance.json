@@ -1,0 +1,35 @@
+{
+  "tool": "Quartus Lite 18.1 quartus_sta",
+  "delay_model": "Slow 1200mV 85C",
+  "script_sha256": "e90e533849d6d0c2c64de293087dc64375e402cb0015eae13496a0c9532d0373",
+  "projects": {
+    "baseline": {
+      "project": ".artifacts/e001-recurrent-rank1-cc3f14fa6f44",
+      "matched_retained_files_sha256": {
+        "pipeline.qsf": "e3d15a9e275e95b85366cb2363d51776330504429b2e276f39803b3f769d2c2b",
+        "pipeline.sdc": "ade3d963fa6f75620b06a86e1f08ecf12acf6c78918c7dee6ba7cc7e71e15519",
+        "pipeline.fit.rpt": "7bf6c92ebc8d504a58090ffd9765a865dd8918f7f02d94b9e43a94027f891596",
+        "pipeline.fit.summary": "394d8d76afd8ae1496ad135489ffa095633f17d8e5afec7e6ddf5987da85b36d",
+        "pipeline.sta.rpt": "9d404f935dc7a4f330803a443855abe45cbb99d6ec9b2bdffa289bdffd929dfe",
+        "pipeline.sta.summary": "cd8d2a488b5358b1fc2c08797385c51dbfebfb6cb1a5d5471f3b6bb2cc94b37b",
+        "mamba3_recurrent_tile.sv": "d934a52fc65ae5cf08de16ac123ed3c55e1fdfa6640185d5ae68e69c66d02cd4",
+        "mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+        "fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb"
+      }
+    },
+    "staged": {
+      "project": ".artifacts/e001-rotation-stage-ed2ad65d0fb4/project/.artifacts/e001-recurrent-rank1-b1752cbf8485",
+      "matched_retained_files_sha256": {
+        "pipeline.qsf": "e3d15a9e275e95b85366cb2363d51776330504429b2e276f39803b3f769d2c2b",
+        "pipeline.sdc": "ade3d963fa6f75620b06a86e1f08ecf12acf6c78918c7dee6ba7cc7e71e15519",
+        "pipeline.fit.rpt": "a9e3d6bfc407d7fb305192eddf36788a9983896dfd5de2290c2f659f4933d6f5",
+        "pipeline.fit.summary": "81ee56352b29e07077c0a6b9b8cc2ce69c43cc1cef07bcc190fd5c7152ba6821",
+        "pipeline.sta.rpt": "4b6257cbdb276525752c139096845150f8c8d9b19b9b6cf51bc60babce13d01e",
+        "pipeline.sta.summary": "e644788b9f2e7822ab0259a83f55151f9da15cea448df5f11e44408f1cf096f2",
+        "mamba3_recurrent_tile.sv": "651cc044fe1924e7b748e213892161c64746679d73b4a880a012a8ea813adfe2",
+        "mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+        "fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb"
+      }
+    }
+  }
+}

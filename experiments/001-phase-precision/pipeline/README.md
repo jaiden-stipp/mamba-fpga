@@ -11,6 +11,9 @@ Read the [implementation report](REPORT.md), [RTL](rtl/mamba3_recurrent_tile.sv)
 [seed-locked results](evidence/summary.json), [PASS/FAIL log](evidence/PASS_FAIL.log),
 and [whole-model integration smoke](model_results.json).
 
+The isolated [rank-1 rotation-stage experiment](rotation_stage/REPORT.md) adds
+one tagged product-register boundary and retains its own regression and timing evidence.
+
 ## Data path
 
 ```mermaid
