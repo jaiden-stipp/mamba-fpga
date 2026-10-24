@@ -1,0 +1,35 @@
+{
+  "tool": "Quartus Lite 18.1 quartus_sta",
+  "delay_model": "Slow 1200mV 85C",
+  "script_sha256": "14f2ec8edeb77f7cb9a6dbc96b74eccf2b8e73c3922a737f34ce76923bd47e97",
+  "projects": {
+    "baseline": {
+      "project": ".artifacts/e001-state-read-stage-2340efa1703e/project/.artifacts/e001-recurrent-rank1-6e078015bd84",
+      "matched_retained_files_sha256": {
+        "pipeline.qsf": "e3d15a9e275e95b85366cb2363d51776330504429b2e276f39803b3f769d2c2b",
+        "pipeline.sdc": "ade3d963fa6f75620b06a86e1f08ecf12acf6c78918c7dee6ba7cc7e71e15519",
+        "pipeline.fit.rpt": "cfed9f9465aea6b6906ac6fe4a5f4886e30a304177ebe09e81fed1f536e662aa",
+        "pipeline.fit.summary": "b63a7b288ab72aaa0718a08a712fcb2dca69bf77a7df091166b964450e1ff9b3",
+        "pipeline.sta.rpt": "59305311b2148a91af10138a21cffc01e65681bb7f6c2c9eed89200008444727",
+        "pipeline.sta.summary": "2d52354ffece3e7079490bff16e546c43b3d26abee833c57d0d8aa4cbb6046ba",
+        "mamba3_recurrent_tile.sv": "9e9e31c85926f66c6572383300314dcf010220bc723e36977962cda4a8a27b7f",
+        "mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+        "fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb"
+      }
+    },
+    "staged": {
+      "project": ".artifacts/e001-state-widen-stage-4be81aad979c/project/.artifacts/e001-recurrent-rank1-f15c0eccf9c2",
+      "matched_retained_files_sha256": {
+        "pipeline.qsf": "e3d15a9e275e95b85366cb2363d51776330504429b2e276f39803b3f769d2c2b",
+        "pipeline.sdc": "ade3d963fa6f75620b06a86e1f08ecf12acf6c78918c7dee6ba7cc7e71e15519",
+        "pipeline.fit.rpt": "58b4c353be9cda8d15624db1eb430089441ceee2bbdaf3b6b2e8cac91a9dde1b",
+        "pipeline.fit.summary": "24f6448a1b7e3824aa50cb28202830ad30bd566541ab5e11338ccdd1188b8021",
+        "pipeline.sta.rpt": "d20ddf4d38924d3fbefcf1ebc9c3f0a47de83cb3431d48c1f22d91fb9a8ae990",
+        "pipeline.sta.summary": "8f5ec5bdfa635f8b40242c23be489b3c033711d02f61ca4787f6f68942dbc3b8",
+        "mamba3_recurrent_tile.sv": "661261b12341a86cdcef224bb20b6d29bc1201f8a238b9d2b01e570840a33041",
+        "mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+        "fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb"
+      }
+    }
+  }
+}

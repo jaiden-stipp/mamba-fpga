@@ -1,0 +1,6 @@
+{
+  "status": "NONE",
+  "first_by_case": [],
+  "oracle_changed": false,
+  "note": "Intentional CORRUPT negative controls are retained separately, not candidate mismatches."
+}

@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "seed": 3758223410,
+  "baseline_commit": "8fda2a3",
+  "scope": "Retiming the existing exact FP16-to-FP32 widening operation before the rank-1 read register. Routed virtual-I/O static timing only; no physical FPGA operation or inference speedup claim.",
+  "clock_constraint_MHz": 50,
+  "constraints_byte_identical": true,
+  "before": {
+    "worst_setup_slack_ns": -26.971,
+    "minimum_restricted_fmax_MHz": 21.29,
+    "fmax_corners": [
+      {
+        "fmax_MHz": 21.29,
+        "restricted_fmax_MHz": 21.29
+      },
+      {
+        "fmax_MHz": 23.39,
+        "restricted_fmax_MHz": 23.39
+      }
+    ],
+    "fit_logic_elements": 28713,
+    "fit_registers": 2876,
+    "fit_multiplier_9bit_elements": 105,
+    "virtual_pins": 447,
+    "worst_registered_path": {
+      "slack_ns": -26.971,
+      "from": "read_state[6]",
+      "to": "kv_old_product[30]",
+      "data_delay_ns": 46.932
+    },
+    "meets_50MHz_setup": false
+  },
+  "after": {
+    "worst_setup_slack_ns": -25.936,
+    "minimum_restricted_fmax_MHz": 21.77,
+    "fmax_corners": [
+      {
+        "fmax_MHz": 21.77,
+        "restricted_fmax_MHz": 21.77
+      },
+      {
+        "fmax_MHz": 23.93,
+        "restricted_fmax_MHz": 23.93
+      }
+    ],
+    "fit_logic_elements": 28651,
+    "fit_registers": 2879,
+    "fit_multiplier_9bit_elements": 105,
+    "virtual_pins": 447,
+    "worst_registered_path": {
+      "slack_ns": -25.936,
+      "from": "trig_c[1]",
+      "to": "rot_kyc[29]",
+      "data_delay_ns": 45.886
+    },
+    "meets_50MHz_setup": false
+  },
+  "worst_slack_change_ns": 1.0350000000000001,
+  "isolated_paths": {
+    "baseline-critical": {
+      "slack_ns": -26.971,
+      "from": "read_state[6]",
+      "to": "kv_old_product[30]",
+      "data_delay_ns": 46.932,
+      "logic_levels": 38
+    },
+    "staged-first": {
+      "slack_ns": 9.943,
+      "from": "stored0[12]",
+      "to": "read_state[21]",
+      "data_delay_ns": 9.987,
+      "logic_levels": 8
+    },
+    "staged-second": {
+      "slack_ns": -22.574,
+      "from": "read_state[22]",
+      "to": "kv_old_product[16]",
+      "data_delay_ns": 42.486,
+      "logic_levels": 34
+    }
+  },
+  "regression": [
+    {
+      "rank": 1,
+      "status": "PASS",
+      "state_writes": 65536,
+      "outputs": 512,
+      "max_bit_error": 0,
+      "oracle_and_stimuli_byte_identical": true,
+      "unstalled_cycles_before": 1468,
+      "unstalled_cycles_after": 1468
+    },
+    {
+      "rank": 4,
+      "status": "PASS",
+      "state_writes": 65536,
+      "outputs": 2048,
+      "max_bit_error": 0,
+      "oracle_and_stimuli_byte_identical": true,
+      "unstalled_cycles_before": 1993,
+      "unstalled_cycles_after": 1993
+    }
+  ],
+  "first_candidate_mismatch": null,
+  "artifact_sha256": {
+    "evidence/arithmetic.log": "32a1dfbe4d2ba9466d671480af0c5425582c661384db5ea8e5d6ed012c36f90a",
+    "evidence/compile.log": "1b04d7d55c93e25b7b96c7109cc936bde4551d209ddebd1feae822ca04325387",
+    "evidence/execution.json": "d8ea63007415f3af71bf28b27cb8052b4b876750281bb17ff817e9ece0ad08da",
+    "evidence/first_mismatch.json": "d1fc77d3f1c23a74d9b5ff0223ce79bb98c6a6c7308b4425b04ea3dde63a44b7",
+    "evidence/PASS_FAIL.log": "1cd13e928c8462e9947f4c7f6e3d1cf28e1f92f2d69852b722f1f20a7aa5cbc5",
+    "evidence/rank1/bc.hex": "9854e82d4182f7e01290d774b70bc6013e7aecb7297308a74dc11c1de4e8c3c8",
+    "evidence/rank1/commands.hex": "c4c79a05370962f4cd70b5482202a9919191ef75a64accf63784924970cdba2b",
+    "evidence/rank1/cos_fp32.hex": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f",
+    "evidence/rank1/negative_control.log": "c45940812462b37a8a7da2a73eae223c6582be335c7bc9be22bae9eba6935c14",
+    "evidence/rank1/outputs.hex": "ab7f1449c2915c6312448f629644918065231f09eb9dd286d9e05234f3f66329",
+    "evidence/rank1/rtl_results.csv": "2b4b9375bd00d3af09464178db32fc3d3d94f6305f017228152eb7833ebdd652",
+    "evidence/rank1/simulation.log": "059769ccb92dd1a1898840564a3c2ef6afd35606580f4c8a9b5576e6b9eb6e05",
+    "evidence/rank1/sin_fp32.hex": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e",
+    "evidence/rank1/states.hex": "884c2c8d0c75b894a94eef0c3f918d3d6020cd6a91aae958879b3807929a5b9b",
+    "evidence/rank1/values.hex": "d230e7ca927a83dbc1ec40a895bf1554dad24a68a491140a6c91ab74ca835de7",
+    "evidence/rank4/bc.hex": "8df23cd2fee17916b25220cf0129f9bbf222d70006bc3f9771aa70b38c0fc383",
+    "evidence/rank4/commands.hex": "777080153930d6c933f69df171d3a563e8bce7d77750277f6d63eb6c54b15b8e",
+    "evidence/rank4/cos_fp32.hex": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f",
+    "evidence/rank4/negative_control.log": "803889589cba53eae873b9a2aae059a6ae7ef1ddd46b49a4dda94e7615a129b5",
+    "evidence/rank4/outputs.hex": "31d4176b4ff950573d6b39fa33ffdd6feda2f606aae1e6d615b3c381a3025575",
+    "evidence/rank4/rtl_results.csv": "7398bc6c08d52f816c7d2db18f6dbaec0be17a2495bceb916cb41651eeeeee2b",
+    "evidence/rank4/simulation.log": "7094a0cd9963c9324c2be3575c3950ce16bf5b7e934e21e881e305a5c2fdefb6",
+    "evidence/rank4/sin_fp32.hex": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e",
+    "evidence/rank4/states.hex": "99c341d87e8a6906f862069792fb89439a4eb25b262676ba580c2261aa2914e6",
+    "evidence/rank4/values.hex": "d6b89bbc07d62c2e355337249e775686531fed5d420c7846c193f55992126bf9",
+    "evidence/runner.log": "94a80e9438dad6aaa9b34c90b09ae58e151bae982f5a5d2a48bd84b097828fa0",
+    "evidence/summary.json": "d405d6856f344c568949c3d1b83acc29b68a6ae4059951fbc2550250f670baf1",
+    "synthesis/build.log": "22975e7b1273943174c3202c363ec74285ea3f579b51a289b473a7668b16f130",
+    "synthesis/build_status.json": "a8746c262234bb217fad92ed636b87da1d6dfffcd1ac5d4dc4ca8a0d006762ab",
+    "synthesis/execution.json": "a0449ffdadb58bb47191b99f0032094c81f1fc2f0d81e86ea4e0f9ba1fa14832",
+    "synthesis/pipeline.asm.rpt": "67e59bc09fa2eec5b8f08dc0b9d44ec6d9b6654ebf09ed709c75b02a7b17612f",
+    "synthesis/pipeline.fit.rpt": "58b4c353be9cda8d15624db1eb430089441ceee2bbdaf3b6b2e8cac91a9dde1b",
+    "synthesis/pipeline.fit.summary": "24f6448a1b7e3824aa50cb28202830ad30bd566541ab5e11338ccdd1188b8021",
+    "synthesis/pipeline.flow.rpt": "7e1e040f54b036e98101fb8a84cb8d638d7da2068fe0b95691e90f8bf2f1afe9",
+    "synthesis/pipeline.map.rpt": "e4e58b1f507e84d40b432ec09f82c437c71065de4e2d663580830784ca381885",
+    "synthesis/pipeline.map.summary": "2043aad052fca60f056d7d69fb2e1d48df8bc03455a67f13f7b0aa086e0c98e3",
+    "synthesis/pipeline.qsf": "e3d15a9e275e95b85366cb2363d51776330504429b2e276f39803b3f769d2c2b",
+    "synthesis/pipeline.sdc": "ade3d963fa6f75620b06a86e1f08ecf12acf6c78918c7dee6ba7cc7e71e15519",
+    "synthesis/pipeline.sta.rpt": "d20ddf4d38924d3fbefcf1ebc9c3f0a47de83cb3431d48c1f22d91fb9a8ae990",
+    "synthesis/pipeline.sta.summary": "8f5ec5bdfa635f8b40242c23be489b3c033711d02f61ca4787f6f68942dbc3b8",
+    "synthesis/runner.log": "8c62fd82d74efebcc6ddac8a7a7943e54327eaeb3af6dc44ad77a3657deda190",
+    "timing/baseline-critical.rpt": "b3d5b85957f04a39a3d036c98e9466b64934bd0d5e622da12ef81d8073be12dc",
+    "timing/baseline-extraction.log": "1d5afda838e5c016bfc71bb63445857dc1f2c113b1871d83321918e8e5a2ff25",
+    "timing/extraction_provenance.json": "9f40933e3c068935352233bfe3de1ea414ee458610fadc301b147e9fefec3f4c",
+    "timing/operator-accumulator-feedback.log": "2acff0b4260047f7dbf5090961af2e624f100b30ecda50705bd94c6bf23270d2",
+    "timing/operator-accumulator-feedback.rpt": "21a1a2dda8a69262c170806263c94a9945054d04f46ffbb1e1ab04dabc838c2a",
+    "timing/operator-readout-multiply.log": "d88a9053470d0a38a67e0f1d55f15e58f0569de0762a87f034be7f5125c2c741",
+    "timing/operator-readout-multiply.rpt": "299585b38cc89dcd4099946c3419f1ca728f8938fbb32c576b375d5dc57393fd",
+    "timing/operator-rotation-multiply.log": "3fa4e41f7dd535cf0f6eb541d46265a2d7ea4adfb45034acc9d56c0b202dbae6",
+    "timing/operator-rotation-multiply.rpt": "8e24695212017a917c3fa46abb60cad4c1e652db718b1879e89ae09ee50e030a",
+    "timing/operator-state-final-add.log": "3e480746a17011eba5cd07943b050ec24e5752f0c6bf5c3add15eedc13051932",
+    "timing/operator-state-final-add.rpt": "e116427a86db2929cc2099b4937e0eb88a5550380479bdfafb95ad2105c2ec03",
+    "timing/operator_floor.json": "4b684acf0bbcc7e9edd20c0327bb6a2a47b4c45aa8f43cace9ef3a0d3832a5f7",
+    "timing/staged-extraction.log": "692951b7f7d214442a4b7c768b75083260587b42a0639a1485dccd7288652760",
+    "timing/staged-first.rpt": "00df953ecca9416641a01e20584236200f8fee8fe33481d75007ce112a0b7f8b",
+    "timing/staged-second.rpt": "580bfbf9423e2012e33751145d9acb755f7ed40a7d8c019fb01a4fd2d6c42344"
+  },
+  "baseline_report_sha256": {
+    "pipeline.asm.rpt": "8767a8ac489b53fa933adf98c5368f0ad2f47b97c00d1ccf4ca1418da1e59e88",
+    "pipeline.fit.rpt": "cfed9f9465aea6b6906ac6fe4a5f4886e30a304177ebe09e81fed1f536e662aa",
+    "pipeline.fit.summary": "b63a7b288ab72aaa0718a08a712fcb2dca69bf77a7df091166b964450e1ff9b3",
+    "pipeline.flow.rpt": "4a7ac50def981ddef5c5d6ce439c63e179d5685075c1d8bd0bd58d3bea5ad2ad",
+    "pipeline.map.rpt": "27d1059d740f5b5db8d71ae1a79121a764a86ea6a15e9141c717665d177a7ef6",
+    "pipeline.map.summary": "4420bdfc8932f59f98a5ed636627247e1fdb699ed1d8d12e3d596415b4cf6703",
+    "pipeline.sta.rpt": "59305311b2148a91af10138a21cffc01e65681bb7f6c2c9eed89200008444727",
+    "pipeline.sta.summary": "2d52354ffece3e7079490bff16e546c43b3d26abee833c57d0d8aa4cbb6046ba"
+  }
+}

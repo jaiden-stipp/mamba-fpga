@@ -1,0 +1,55 @@
+{
+  "scope": "Supplemental routed single-operation paths, slow 1200mV/85C, original 20ns clock. No hardware operation or inference-rate measurement.",
+  "source_sha256": {
+    "mamba3_recurrent_tile.sv": "661261b12341a86cdcef224bb20b6d29bc1201f8a238b9d2b01e570840a33041",
+    "mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+    "fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb"
+  },
+  "project": ".artifacts/e001-state-widen-stage-4be81aad979c/project/.artifacts/e001-recurrent-rank1-f15c0eccf9c2",
+  "cases": {
+    "accumulator-feedback": {
+      "slack_ns": -22.781,
+      "from": "accum[0][4][28]",
+      "to": "accum[0][5][30]",
+      "data_delay_ns": 42.702,
+      "logic_levels": 47,
+      "source_glob": "accum*",
+      "target_glob": "accum*",
+      "operation": "Single fp_add(accum, product4); consecutive updates to the same P channel.",
+      "report_sha256": "21a1a2dda8a69262c170806263c94a9945054d04f46ffbb1e1ab04dabc838c2a"
+    },
+    "readout-multiply": {
+      "slack_ns": -25.165,
+      "from": "updated3[3]",
+      "to": "product4[0][30]",
+      "data_delay_ns": 45.131,
+      "logic_levels": 40,
+      "source_glob": "*",
+      "target_glob": "product4*",
+      "operation": "Single fp_mul(updated3, q3) before the output reduction.",
+      "report_sha256": "299585b38cc89dcd4099946c3419f1ca728f8938fbb32c576b375d5dc57393fd"
+    },
+    "state-final-add": {
+      "slack_ns": -22.271,
+      "from": "update_partial[4]",
+      "to": "updated3[13]",
+      "data_delay_ns": 42.185,
+      "logic_levels": 43,
+      "source_glob": "update_*",
+      "target_glob": "updated3*",
+      "operation": "Single fp_add(update_partial, update_now).",
+      "report_sha256": "e116427a86db2929cc2099b4937e0eb88a5550380479bdfafb95ad2105c2ec03"
+    },
+    "rotation-multiply": {
+      "slack_ns": -25.936,
+      "from": "trig_c[1]",
+      "to": "rot_kyc[29]",
+      "data_delay_ns": 45.886,
+      "logic_levels": 37,
+      "source_glob": "trig_*",
+      "target_glob": "rot_*",
+      "operation": "One separately rounded FP32 multiplication from captured trig/coordinate inputs to a rotation product register.",
+      "report_sha256": "8e24695212017a917c3fa46abb60cad4c1e652db718b1879e89ae09ee50e030a"
+    }
+  }
+}

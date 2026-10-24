@@ -23,6 +23,9 @@ The [trig output stage](trig_output_stage/REPORT.md) separates its ROM readout
 from multiplication and retains supplemental single-operation timing reports.
 The [RAM output stage](state_read_stage/REPORT.md) aligns compressed state and
 K/V/Q before multiplication, exposing widening as the next limiting operation.
+The latest [widening retime](state_widen_stage/REPORT.md) reaches 21.77 MHz
+estimated Fmax, still missing 50 MHz. The loop now reaches an
+[arithmetic-unit pipeline boundary](ARITHMETIC_LIMIT.md).
 
 ## Data path
 

@@ -23,6 +23,12 @@ The completed first builds fit but miss 50 MHz: estimated worst-corner Fmax is
 through rotation; MIMO by the rank reduction into `now1`. These are measured
 static-timing findings, not predictions of complete-model speed.
 
+Subsequent isolated [rank-1 timing iterations](TIMING_LOOP.md) reach 21.77 MHz
+estimated Fmax while preserving the tested bit contract. The latest limiting
+path is now one FP32 multiplication; the [arithmetic-unit boundary report](ARITHMETIC_LIMIT.md)
+records why internal unit pipelines and feedback scheduling are the next work.
+The first-build findings above remain historical; 50 MHz is still not closed.
+
 Use the retained Quartus reports to identify the actual critical path, logic,
 DSP and RAM use. Replace long combinational floating-point functions with
 appropriately staged implementations while retaining this regression as the

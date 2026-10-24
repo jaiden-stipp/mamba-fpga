@@ -1,0 +1,26 @@
+{
+  "prior": "state_read_stage",
+  "scratch_prefix": "e001-state-widen-stage-",
+  "cycles": 1468,
+  "baseline_path": [
+    "read_state*",
+    "kv_old_product*"
+  ],
+  "first_path": [
+    "*",
+    "read_state*"
+  ],
+  "second_path": [
+    "read_state*",
+    "kv_old_product*"
+  ],
+  "markers": [
+    "# RESULT WIDEN conversions=65536 persistent_bits=16 read_bits=32",
+    "# RESULT READ admits=65536 consumes=65536",
+    "# RESULT ROMOUT admits=2048 consumes=2048",
+    "# RESULT PHASE admits=2048 consumes=2048",
+    "# RESULT SUM admits=65536 consumes=65536"
+  ],
+  "scope": "Retiming the existing exact FP16-to-FP32 widening operation before the rank-1 read register.",
+  "description": "Capture half_to_float(stored0) into a 32-bit read_state lane buffer instead of capturing the 16-bit code and widening at the multiplier input. Multiply alpha by the already widened register. This moves the existing exact conversion across one existing boundary, adds no stage or token cycles, and changes no numerical operation. Persistent state_mem remains FP16. Declared transient state-buffer width grows by 16 bits; actual fitted registers depend on constant propagation. The read-stage monitor checks the widened word with the same original conversion function (independently tested over all 65,536 half bit patterns by the unchanged primitive regression), while every state/output still uses the unchanged external NumPy golden files. Add explicit 16-bit persistent / 32-bit read-buffer assertions."
+}

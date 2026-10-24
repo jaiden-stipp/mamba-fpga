@@ -15,6 +15,7 @@ These are routed estimates, not physical FPGA operation or inference speedups.
 | [Registered trig lookup](phase_lookup_stage/REPORT.md) | -30.411 | 19.84 | 28,697 | 2,506 | 105 | 1,435 |
 | [Trig output register](trig_output_stage/REPORT.md) | -27.252 | 21.16 | 28,687 | 2,699 | 105 | 1,467 |
 | [RAM output register](state_read_stage/REPORT.md) | -26.971 | 21.29 | 28,713 | 2,876 | 105 | 1,468 |
+| [Retimed state widening](state_widen_stage/REPORT.md) | -25.936 | 21.77 | 28,651 | 2,879 | 105 | 1,468 |
 
 All retained variants pass 131,072 state writes, 2,560 outputs and 384,448
 primitive arithmetic checks with zero bit-reference error; the seven stimulus/
@@ -26,11 +27,15 @@ M9Ks from 7 to 9 (logical memory 29,792 → 46,176 bits). Its initial path extra
 used an RTL register name that synthesis absorbed into the ROM; the audit rejected
 that extraction, and its diagnostics remain retained beside the corrected reports.
 
-The latest measured worst path is `read_state[6]` → `kv_old_product[30]`,
-46.932 ns data delay through FP16 widening and FP32 multiplication. The next
-iteration moves widening before the read-stage register, keeping the persistent
-state FP16 while adding only 16 transient register bits and no token cycles.
-Supplemental single-operation paths already take roughly 42–45 ns in this build;
-ordinary inter-operator boundaries are approaching their useful limit. No change
-to numerical association, oracle tolerances or constraints is permitted as a
-shortcut to a better result.
+The widening retime keeps persistent state FP16 and adds no cycles. Its declared
+lane buffer is 16 bits wider, but synthesis adds only three net fitted registers.
+The conversion path takes 9.987 ns and the selected old-state multiply 42.486 ns.
+
+The latest measured worst path is `trig_c[1]` → `rot_kyc[29]`, **one FP32
+multiplication**, 45.886 ns / 37 logic levels. This is the [stopping point for
+external register cuts](ARITHMETIC_LIMIT.md): the next relevant implementation
+change is an internally pipelined arithmetic unit, with latency-aware scheduling
+for accumulator feedback. Single-operation paths and their actual source/report
+hashes are retained. This is not a claim that 50 MHz was achieved or cannot be
+achieved by a different implementation. No numerical equality or timing constraint
+was relaxed. The latest verified candidate is [state_widen_stage](state_widen_stage/REPORT.md).
