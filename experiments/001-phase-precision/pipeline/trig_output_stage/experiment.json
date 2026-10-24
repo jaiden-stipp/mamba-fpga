@@ -1,0 +1,25 @@
+{
+  "prior": "phase_lookup_stage",
+  "scratch_prefix": "e001-trig-output-stage-",
+  "cycles": 1467,
+  "baseline_path": [
+    "*cosine_rtl*",
+    "rot_kxs*"
+  ],
+  "first_path": [
+    "*cosine_rtl*",
+    "trig_*"
+  ],
+  "second_path": [
+    "trig_*",
+    "rot_kxs*"
+  ],
+  "markers": [
+    "# RESULT ROMOUT reset_inflight=checked",
+    "# RESULT ROMOUT admits=2048 consumes=2048",
+    "# RESULT PHASE admits=2048 consumes=2048",
+    "# RESULT SUM admits=65536 consumes=65536"
+  ],
+  "scope": "One additional rank-1 registered trig-output/coordinate cycle before rotation multiplication.",
+  "description": "Add ROM_OUTPUT between phase capture and ROTATE_MUL. Register all four delayed coordinates and both trig values together; preserve the pair/rank/address/valid lifetime through both wait cycles, multiplication, addition and two writes. Only rotated pairs take the extra cycle (+32 cycles/token). Independently check all six delayed words and reset at the new stage while retaining earlier phase/product/state reset checks. No arithmetic operation or recurrence schedule changes. The initial second path selected trig_c into a sine-product endpoint and had no path; that rejected extraction is retained. The corrected selectors include the captured trig/coordinate inputs of rot_kxs and the ROM-to-capture bank."
+}

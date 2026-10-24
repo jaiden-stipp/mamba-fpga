@@ -1,0 +1,44 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY mamba3_recurrent_tile
+set_global_assignment -name SYSTEMVERILOG_FILE mamba3_recurrent_tile.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mamba3_cache_ram.sv
+set_global_assignment -name SDC_FILE pipeline.sdc
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+set_global_assignment -name FITTER_EFFORT "FAST_FIT"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_location_assignment PIN_Y2 -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_instance_assignment -name VIRTUAL_PIN ON -to reset
+set_instance_assignment -name VIRTUAL_PIN ON -to start_valid
+set_instance_assignment -name VIRTUAL_PIN ON -to start_ready
+set_instance_assignment -name VIRTUAL_PIN ON -to alpha_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to beta_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to gamma_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to skip_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to v_valid
+set_instance_assignment -name VIRTUAL_PIN ON -to v_ready
+set_instance_assignment -name VIRTUAL_PIN ON -to v_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to bc_valid
+set_instance_assignment -name VIRTUAL_PIN ON -to bc_ready
+set_instance_assignment -name VIRTUAL_PIN ON -to qx_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to qy_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to kx_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to ky_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to increment_in[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to y_valid
+set_instance_assignment -name VIRTUAL_PIN ON -to y_ready
+set_instance_assignment -name VIRTUAL_PIN ON -to y_out[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to y_index[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to done
+set_instance_assignment -name VIRTUAL_PIN ON -to state_write_valid
+set_instance_assignment -name VIRTUAL_PIN ON -to state_write_index[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to state_write_data[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to state_write_wide[*]
+set_instance_assignment -name VIRTUAL_PIN ON -to debug_stage[*]
+set_parameter -name RANK 1
+set_parameter -name P 8
+
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
