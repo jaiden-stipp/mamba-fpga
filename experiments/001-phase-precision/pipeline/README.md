@@ -17,6 +17,8 @@ Its [K×V-stage successor](kv_product_stage/REPORT.md) adds one further aligned
 boundary on the resulting K-RAM-to-`now1` limiting path.
 The continuing [timing loop](TIMING_LOOP.md) records each measured successor;
 the [update-sum stage](update_sum_stage/REPORT.md) separates the two state additions.
+The [registered trig lookup](phase_lookup_stage/REPORT.md) follows the resulting
+phase-ROM limiting path and records the inferred ROM resource tradeoff.
 
 ## Data path
 

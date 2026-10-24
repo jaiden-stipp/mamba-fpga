@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "seed": 3758223410,
+  "source_sha256": {
+    "rtl/mamba3_recurrent_tile.sv": "d42363724b4a6047b2d9e2c3104484bf638a3c387d50315a7944053752ca4dbd",
+    "rtl/mamba3_cache_ram.sv": "46677d2e1ac9e75e25bd31b69b83c405081ad73cead965c47d0ed768d192d9a8",
+    "rtl/fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb",
+    "rtl/tb_fp32.sv": "6e88c7defe9de04d69fc9ceb73484ba9f977e6f65696e60ff329d7dbe3ac2e91",
+    "rtl/tb_recurrent_tile.sv": "7ca89265dea24f29f0410fd10cde90f349460c7633f42db77f6da1af3c2eb912",
+    "regression.py": "63f2fe79f03968a50b1389992900d2011915588636a8d512680f94cf39fe28e8"
+  },
+  "arithmetic_vectors": 96112,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "generator": "PCG64",
+    "simulator": "Model Technology ModelSim ALTERA STARTER EDITION vsim 10.5b Simulator 2016.10 Oct  5 2016",
+    "altera_mf_sha256": "b8fcaab11387c1a62c538c70a121cfbb1f5f05dbc7b0848d6142f10e322f7df2"
+  },
+  "arithmetic_result_comparisons": 384448,
+  "all_half_bit_patterns_tested": 65536,
+  "cases": [
+    {
+      "rank": 1,
+      "P": 8,
+      "N": 128,
+      "tokens": 64,
+      "state_writes": 65536,
+      "outputs": 512,
+      "phase_coverage": {
+        "positive_wraps": 153,
+        "negative_wraps": 212,
+        "zero_increments": 6,
+        "even_halfway_addresses": 8,
+        "odd_halfway_addresses": 6,
+        "lookup_address_bins": 256
+      },
+      "trace_sha256": "c90ab67f72bdbdaa379cc62c496df86b76be13513b3521270eed92eb06e6a53d",
+      "precision_metrics": [
+        {
+          "dataset": "synthetic",
+          "output_max_abs_error_vs_float64": 0.3312887779180187,
+          "output_relative_rms_vs_float64": 0.00305911064952237,
+          "early_narrowing_max_output_change": 0.0159454345703125
+        },
+        {
+          "dataset": "actual_checkpoint_trace",
+          "output_max_abs_error_vs_float64": 0.03447155457033446,
+          "output_relative_rms_vs_float64": 0.0025666079810513836,
+          "early_narrowing_max_output_change": 0.0023698806762695312
+        }
+      ],
+      "counters": {
+        "rank": 1,
+        "tokens": 64,
+        "writes": 65536,
+        "outputs": 512,
+        "errors": 0,
+        "input_bubbles": 245,
+        "output_stalls": 169,
+        "consecutive_write_pairs": 65472
+      },
+      "token_cycles_without_input_bubbles_or_output_stalls": [
+        1435
+      ],
+      "token_cycles_with_bubbles_and_stalls": {
+        "min": 1440,
+        "max": 1442
+      },
+      "quantized_reference_max_bit_error": 0,
+      "negative_control_detected": true
+    },
+    {
+      "rank": 4,
+      "P": 8,
+      "N": 128,
+      "tokens": 64,
+      "state_writes": 65536,
+      "outputs": 2048,
+      "phase_coverage": {
+        "positive_wraps": 185,
+        "negative_wraps": 226,
+        "zero_increments": 6,
+        "even_halfway_addresses": 9,
+        "odd_halfway_addresses": 8,
+        "lookup_address_bins": 256
+      },
+      "trace_sha256": "6f0656c43ba1aba5e968ff4dc2d0c2ffbf437d84bf8accbaa08a1d39fb7a26b4",
+      "precision_metrics": [
+        {
+          "dataset": "synthetic",
+          "output_max_abs_error_vs_float64": 0.2361039303360739,
+          "output_relative_rms_vs_float64": 0.002838648432378804,
+          "early_narrowing_max_output_change": 0.0402069091796875
+        },
+        {
+          "dataset": "actual_checkpoint_trace",
+          "output_max_abs_error_vs_float64": 0.08487897012048684,
+          "output_relative_rms_vs_float64": 0.006641034010745459,
+          "early_narrowing_max_output_change": 0.002074003219604492
+        }
+      ],
+      "counters": {
+        "rank": 4,
+        "tokens": 64,
+        "writes": 65536,
+        "outputs": 2048,
+        "errors": 0,
+        "input_bubbles": 924,
+        "output_stalls": 699,
+        "consecutive_write_pairs": 65472
+      },
+      "token_cycles_without_input_bubbles_or_output_stalls": [
+        1993
+      ],
+      "token_cycles_with_bubbles_and_stalls": {
+        "min": 2018,
+        "max": 2020
+      },
+      "quantized_reference_max_bit_error": 0,
+      "negative_control_detected": true
+    }
+  ],
+  "state_storage": "FP16",
+  "compute": "FP32 RNE separate multiply/add",
+  "precision_reference": "FP64 recurrence and true trigonometry of accumulated 16-bit phase; no FP16 feedback. Same supplied quantized increments, frozen upstream activations.",
+  "scope": "Recurrent tile RTL simulation; not full-model or measured FPGA acceleration."
+}

@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "seed": 3758223410,
+  "baseline_commit": "207e8e6",
+  "scope": "One additional rank-1 captured-trig/coordinate boundary before rotation multiplication. Routed virtual-I/O static timing only; no physical FPGA operation or inference speedup claim.",
+  "clock_constraint_MHz": 50,
+  "constraints_byte_identical": true,
+  "before": {
+    "worst_setup_slack_ns": -36.953,
+    "minimum_restricted_fmax_MHz": 17.56,
+    "fmax_corners": [
+      {
+        "fmax_MHz": 17.56,
+        "restricted_fmax_MHz": 17.56
+      },
+      {
+        "fmax_MHz": 19.24,
+        "restricted_fmax_MHz": 19.24
+      }
+    ],
+    "fit_logic_elements": 28780,
+    "fit_registers": 2377,
+    "fit_multiplier_9bit_elements": 105,
+    "virtual_pins": 447,
+    "worst_registered_path": {
+      "slack_ns": -36.953,
+      "from": "altsyncram:phase_rtl_0|altsyncram_qcc1:auto_generated|ram_block1a0~portb_address_reg0",
+      "to": "rot_qyc[12]",
+      "data_delay_ns": 56.475
+    },
+    "meets_50MHz_setup": false
+  },
+  "after": {
+    "worst_setup_slack_ns": -30.411,
+    "minimum_restricted_fmax_MHz": 19.84,
+    "fmax_corners": [
+      {
+        "fmax_MHz": 19.84,
+        "restricted_fmax_MHz": 19.84
+      },
+      {
+        "fmax_MHz": 21.77,
+        "restricted_fmax_MHz": 21.77
+      }
+    ],
+    "fit_logic_elements": 28697,
+    "fit_registers": 2506,
+    "fit_multiplier_9bit_elements": 105,
+    "virtual_pins": 447,
+    "worst_registered_path": {
+      "slack_ns": -30.411,
+      "from": "altsyncram:cosine_rtl_0|altsyncram_pa91:auto_generated|ram_block1a23~porta_address_reg0",
+      "to": "rot_kxs[28]",
+      "data_delay_ns": 49.931
+    },
+    "meets_50MHz_setup": false
+  },
+  "worst_slack_change_ns": 6.542000000000002,
+  "isolated_paths": {
+    "baseline-critical": {
+      "slack_ns": -36.953,
+      "from": "altsyncram:phase_rtl_0|altsyncram_qcc1:auto_generated|ram_block1a0~portb_address_reg0",
+      "to": "rot_qyc[12]",
+      "data_delay_ns": 56.475,
+      "logic_levels": 41
+    },
+    "staged-first": {
+      "slack_ns": 4.984,
+      "from": "phase_rtl_0_bypass[8]",
+      "to": "altsyncram:cosine_rtl_0|altsyncram_pa91:auto_generated|ram_block1a0~porta_address_reg0",
+      "data_delay_ns": 15.341,
+      "logic_levels": 9
+    },
+    "staged-second": {
+      "slack_ns": -27.76,
+      "from": "altsyncram:cosine_rtl_0|altsyncram_pa91:auto_generated|ram_block1a0~porta_address_reg0",
+      "to": "rot_qyc[15]",
+      "data_delay_ns": 47.307,
+      "logic_levels": 37
+    }
+  },
+  "regression": [
+    {
+      "rank": 1,
+      "status": "PASS",
+      "state_writes": 65536,
+      "outputs": 512,
+      "max_bit_error": 0,
+      "oracle_and_stimuli_byte_identical": true,
+      "unstalled_cycles_before": 1403,
+      "unstalled_cycles_after": 1435
+    },
+    {
+      "rank": 4,
+      "status": "PASS",
+      "state_writes": 65536,
+      "outputs": 2048,
+      "max_bit_error": 0,
+      "oracle_and_stimuli_byte_identical": true,
+      "unstalled_cycles_before": 1993,
+      "unstalled_cycles_after": 1993
+    }
+  ],
+  "first_candidate_mismatch": null,
+  "artifact_sha256": {
+    "evidence/arithmetic.log": "32a1dfbe4d2ba9466d671480af0c5425582c661384db5ea8e5d6ed012c36f90a",
+    "evidence/compile.log": "1b04d7d55c93e25b7b96c7109cc936bde4551d209ddebd1feae822ca04325387",
+    "evidence/execution.json": "84b2bb5c247e141ababbef7bdef20b4575ef5895340dc95109e5dea2e9b676d5",
+    "evidence/first_mismatch.json": "d1fc77d3f1c23a74d9b5ff0223ce79bb98c6a6c7308b4425b04ea3dde63a44b7",
+    "evidence/PASS_FAIL.log": "1cd13e928c8462e9947f4c7f6e3d1cf28e1f92f2d69852b722f1f20a7aa5cbc5",
+    "evidence/rank1/bc.hex": "9854e82d4182f7e01290d774b70bc6013e7aecb7297308a74dc11c1de4e8c3c8",
+    "evidence/rank1/commands.hex": "c4c79a05370962f4cd70b5482202a9919191ef75a64accf63784924970cdba2b",
+    "evidence/rank1/cos_fp32.hex": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f",
+    "evidence/rank1/negative_control.log": "3cc918226c354ae8272e7fece4e14f975cf1922ffe7040811aebe6aa73616ce2",
+    "evidence/rank1/outputs.hex": "ab7f1449c2915c6312448f629644918065231f09eb9dd286d9e05234f3f66329",
+    "evidence/rank1/rtl_results.csv": "e8badced0187216a1a19cb2873903572f62b5c91a594bc82f82262a9c3c8d5c1",
+    "evidence/rank1/simulation.log": "577d7e589aeedb411594ba493372148c1028c72af72731ac516aa77d70e9ff36",
+    "evidence/rank1/sin_fp32.hex": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e",
+    "evidence/rank1/states.hex": "884c2c8d0c75b894a94eef0c3f918d3d6020cd6a91aae958879b3807929a5b9b",
+    "evidence/rank1/values.hex": "d230e7ca927a83dbc1ec40a895bf1554dad24a68a491140a6c91ab74ca835de7",
+    "evidence/rank4/bc.hex": "8df23cd2fee17916b25220cf0129f9bbf222d70006bc3f9771aa70b38c0fc383",
+    "evidence/rank4/commands.hex": "777080153930d6c933f69df171d3a563e8bce7d77750277f6d63eb6c54b15b8e",
+    "evidence/rank4/cos_fp32.hex": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f",
+    "evidence/rank4/negative_control.log": "803889589cba53eae873b9a2aae059a6ae7ef1ddd46b49a4dda94e7615a129b5",
+    "evidence/rank4/outputs.hex": "31d4176b4ff950573d6b39fa33ffdd6feda2f606aae1e6d615b3c381a3025575",
+    "evidence/rank4/rtl_results.csv": "7398bc6c08d52f816c7d2db18f6dbaec0be17a2495bceb916cb41651eeeeee2b",
+    "evidence/rank4/simulation.log": "7094a0cd9963c9324c2be3575c3950ce16bf5b7e934e21e881e305a5c2fdefb6",
+    "evidence/rank4/sin_fp32.hex": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e",
+    "evidence/rank4/states.hex": "99c341d87e8a6906f862069792fb89439a4eb25b262676ba580c2261aa2914e6",
+    "evidence/rank4/values.hex": "d6b89bbc07d62c2e355337249e775686531fed5d420c7846c193f55992126bf9",
+    "evidence/runner.log": "5af10516c464a677db223c8c2ed5abcc6f9c84a7e4e80a98c7781a8bd1570b4c",
+    "evidence/summary.json": "fd2cb887b23d59d62bb45bdb157784186838bafe86a53d789a0c7c2a8fe10ef1",
+    "synthesis/build.log": "57916b67117399db25acb333aeeb0ba92a4216e85beab524a8d32e0a99524769",
+    "synthesis/build_status.json": "67adde8c5b7074118aa22eb6c501b25f27721db5e8c7134ab06356469196fc15",
+    "synthesis/execution.json": "a819b1ed3d3ae15ceaf9df23590cf360c7373f3d1f61c4d949172f0e15a94ebb",
+    "synthesis/pipeline.asm.rpt": "392ee2e1926ee6dad1a93539ded4cb7aa54f51b8bcc6859d81dd7b74e9aafc18",
+    "synthesis/pipeline.fit.rpt": "46bd29ccbe52ecd637260294f7a2d32379e6b4c423ae8eb39405f08584b68e02",
+    "synthesis/pipeline.fit.summary": "33360357129b7b6d0705413587136695eaaee8ac3dbb6553239e06ba34be708a",
+    "synthesis/pipeline.flow.rpt": "532f5c356121191c70c9b705e4b0eacd44fb44117a599df989c54187aab387c6",
+    "synthesis/pipeline.map.rpt": "4c18d6e16e8771fac217b20414bbdfa59967b9eee6cf2c4d6d4067505fd7ddb6",
+    "synthesis/pipeline.map.summary": "5f3c8ecc1a07dfd0a43f771ed2fb14cec6804d4f8c5690e8049cea195daf21be",
+    "synthesis/pipeline.qsf": "e3d15a9e275e95b85366cb2363d51776330504429b2e276f39803b3f769d2c2b",
+    "synthesis/pipeline.sdc": "ade3d963fa6f75620b06a86e1f08ecf12acf6c78918c7dee6ba7cc7e71e15519",
+    "synthesis/pipeline.sta.rpt": "e64268b4971c7be942b364fa032e4e80804c7fb7ae21006c61f3fe750d9d9da2",
+    "synthesis/pipeline.sta.summary": "85fac202731edc52337081cae940e2ca5f7d8c0753c500700ea6f8a539f38dbf",
+    "synthesis/runner.log": "8c37ee8f8e3058bbe44b3079d3f7f38bee95c7ef50692287adfe10196c52d4b1",
+    "timing/baseline-critical.rpt": "db3fc69d9f919baf1ecde769c34bef527829eac50c9307c098889d580d30eaf3",
+    "timing/baseline-extraction.log": "df1af80f7ae6d75dfc41ac5af4108aa13baebba9257aec17be0a24ec8ef325bd",
+    "timing/extraction_provenance.json": "4ba0d6c92473f3bb97397642d2215a30f003c37994b9bcde3961fdcfb3899197",
+    "timing/initial-selector-staged-extraction.log": "d669813ae1a7c45e22131e3a3ce95f206ac5e65919e746327f97f27c3debc475",
+    "timing/staged-extraction.log": "efc51a033005efdd5d3bb59caa0af27c258372b2ea672fadc05918d5dadbb85c",
+    "timing/staged-first.rpt": "ab08247df2396b875316a1fe05027868fd8f6dd5460a509810f5ca081f5cadb1",
+    "timing/staged-second.rpt": "54ac4c75a27f121df87a38afe05ff091f3234d9b491926b9efd3628e98bed3c4"
+  },
+  "baseline_report_sha256": {
+    "pipeline.asm.rpt": "8c34edd0b9a6a679d6351433fa1334414ba82784bf90e459a1d79bef851c703f",
+    "pipeline.fit.rpt": "a88748ea39464b6f83e7b2b69a4a273f2c24e7c22089e84a8dcf1dce1976f1d5",
+    "pipeline.fit.summary": "3cbda46e8237e0aca8e65809f076dc059e3a4bc67ea353b949ac21e205440ec6",
+    "pipeline.flow.rpt": "77bbfc333d6c0a61e31118cb735d286378c2f87948ea265570ccc3ea4db61183",
+    "pipeline.map.rpt": "205ae7ad38bab238eb8b156b448edca12b72bdae865a523c7567ceb56ad4f129",
+    "pipeline.map.summary": "6a3c7b3acedf7d2bd975192c22e00cb63de5c74f9a459d0e6e144d9ecfd0b5f3",
+    "pipeline.sta.rpt": "53ffde85310cf76979e98a48d67f0822fa72ba20d721e74e3bde5f12af8b16b9",
+    "pipeline.sta.summary": "77cfedd5ec85c3b63927c1ac6db47494309d824382b449787d98f629eca6cb41"
+  }
+}

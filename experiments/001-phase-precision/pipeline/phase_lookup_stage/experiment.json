@@ -1,0 +1,24 @@
+{
+  "prior": "update_sum_stage",
+  "scratch_prefix": "e001-phase-lookup-stage-",
+  "cycles": 1435,
+  "baseline_path": [
+    "*phase_rtl_0*",
+    "rot_qyc*"
+  ],
+  "first_path": [
+    "*phase_rtl_0*",
+    "*cosine_rtl*"
+  ],
+  "second_path": [
+    "*cosine_rtl*",
+    "rot_qyc*"
+  ],
+  "markers": [
+    "# RESULT PHASE reset_inflight=checked",
+    "# RESULT PHASE admits=2048 consumes=2048",
+    "# RESULT SUM admits=65536 consumes=65536"
+  ],
+  "scope": "One additional rank-1 captured-trig/coordinate boundary before rotation multiplication.",
+  "description": "On B/C acceptance, capture all four FP32 coordinates and cosine/sine together with the existing pair/rank/address/valid tags. A new ROTATE_MUL cycle computes the original eight FP32 products, followed by the existing ROTATE_ADD cycle. Keep ready low while the tagged pair is pending. Only the first N/4 rotating pairs use the extra cycle, adding 32 cycles/token. The recurrence pipeline is unchanged. Extend the tag monitor through ROTATE_MUL, check all six captured words, and test resets in both the captured-ROM and existing product stages. Quartus absorbs the trig registers into inferred synchronous-ROM address registers; phase_c is not a routed register name. The initial name-selector failure is retained under timing/initial-selector-*. Actual register selectors bind the phase-to-ROM-address and ROM-address-to-product segments. The registered-ROM inference increases M9Ks from 7 to 9 and logical memory bits from 29,792 to 46,176."
+}
