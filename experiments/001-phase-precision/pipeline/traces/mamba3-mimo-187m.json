@@ -1,0 +1,23 @@
+{
+  "checkpoint": "mamba3-mimo-187m",
+  "layer": 0,
+  "head": 0,
+  "P_channels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "N": 128,
+  "rank": 4,
+  "tokens": 32,
+  "validation_offset": 32768,
+  "checkpoint_sha256": "369db3fb9deedfc98baa95ac9166baf862dd7e03b3143afaf0d19e46a220daf6",
+  "tokens_sha256": "2d9547fd138028905b27792f6adb4ec34cf9252ec0538ad935350be4bf24ab30",
+  "trace_sha256": "6f0656c43ba1aba5e968ff4dc2d0c2ffbf437d84bf8accbaa08a1d39fb7a26b4",
+  "scope": "Frozen actual model inputs, not full-model quality or acceleration."
+}

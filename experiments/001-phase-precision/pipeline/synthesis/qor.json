@@ -1,0 +1,89 @@
+{
+  "scope": "Quartus standalone core estimates, virtual non-clock IO, FAST_FIT; no physical-board or complete-model timing measurement.",
+  "clock_constraint_MHz": 50,
+  "board_programmed": false,
+  "cases": [
+    {
+      "rank": 1,
+      "compile_status": "PASS",
+      "virtual_pins": 447,
+      "map_logic_elements": 29092,
+      "fit_logic_elements": 28589,
+      "fit_registers": 1857,
+      "fit_memory_bits": 29792,
+      "M9K_blocks": 7,
+      "allocated_block_memory_bits": 64512,
+      "fit_multiplier_9bit_elements": 105,
+      "fmax_corners": [
+        {
+          "fmax_MHz": 10.39,
+          "restricted_fmax_MHz": 10.39
+        },
+        {
+          "fmax_MHz": 11.39,
+          "restricted_fmax_MHz": 11.39
+        }
+      ],
+      "minimum_restricted_fmax_MHz": 10.39,
+      "worst_setup_slack_ns": -76.239,
+      "worst_reported_registered_path": {
+        "slack_ns": -76.239,
+        "from": "altsyncram:phase_rtl_0|altsyncram_qcc1:auto_generated|ram_block1a0~portb_address_reg0",
+        "to": "ky[0]",
+        "data_delay_ns": 95.748
+      },
+      "meets_50MHz_internal_setup": false,
+      "report_sha256": {
+        "pipeline.asm.rpt": "69333fef8786eb5a27ef62bdc22d00cc164a7e658b9ff9b654347624fbcc7b2d",
+        "pipeline.fit.rpt": "7bf6c92ebc8d504a58090ffd9765a865dd8918f7f02d94b9e43a94027f891596",
+        "pipeline.fit.summary": "394d8d76afd8ae1496ad135489ffa095633f17d8e5afec7e6ddf5987da85b36d",
+        "pipeline.flow.rpt": "af19cc9f9db8abb11abcccb7cdfe7d8ca4e6e067a5d261a56ed35e2dc3cd7cb2",
+        "pipeline.map.rpt": "6b525990f394b2039c9be9b881f6c72af4919902e2650d6cd0c4a0682ffbb05a",
+        "pipeline.map.summary": "e39fe6a43ec4ba29e492e18dbce22234c9d20b6d566b9db52f1d5c01f707be08",
+        "pipeline.sta.rpt": "9d404f935dc7a4f330803a443855abe45cbb99d6ec9b2bdffa289bdffd929dfe",
+        "pipeline.sta.summary": "cd8d2a488b5358b1fc2c08797385c51dbfebfb6cb1a5d5471f3b6bb2cc94b37b"
+      }
+    },
+    {
+      "rank": 4,
+      "compile_status": "PASS",
+      "virtual_pins": 447,
+      "map_logic_elements": 53660,
+      "fit_logic_elements": 51940,
+      "fit_registers": 4641,
+      "fit_memory_bits": 66656,
+      "M9K_blocks": 16,
+      "allocated_block_memory_bits": 147456,
+      "fit_multiplier_9bit_elements": 168,
+      "fmax_corners": [
+        {
+          "fmax_MHz": 4.87,
+          "restricted_fmax_MHz": 4.87
+        },
+        {
+          "fmax_MHz": 5.34,
+          "restricted_fmax_MHz": 5.34
+        }
+      ],
+      "minimum_restricted_fmax_MHz": 4.87,
+      "worst_setup_slack_ns": -185.431,
+      "worst_reported_registered_path": {
+        "slack_ns": -185.431,
+        "from": "mamba3_cache_ram:cache_bank[0].k_ram|altsyncram:ram|altsyncram_1ed1:auto_generated|ram_block1a0~portb_re_reg",
+        "to": "now1[12]",
+        "data_delay_ns": 205.096
+      },
+      "meets_50MHz_internal_setup": false,
+      "report_sha256": {
+        "pipeline.asm.rpt": "d24ed0c8c1a475e48a0616b281b22f685035f75d316852302733ec91c1c1fe95",
+        "pipeline.fit.rpt": "7e7e07fb6cefd3837a7a9aef612af591c0d97a63d3622261e53f85851c003726",
+        "pipeline.fit.summary": "490c78d022683c528f19d3750dfdd116970a70c68c2762df9bb2c8ecc6435b9a",
+        "pipeline.flow.rpt": "91ac7f883805799aedaf72810d8394fa54814fef1e696aaeccf802c4afeeed63",
+        "pipeline.map.rpt": "03bc195cda194f66c6bde7c51e253c1000c922eea68e803ad5d6c2ec716dfd05",
+        "pipeline.map.summary": "59677ab9198b262a9086ef980d6df48896a3574dd9f2e79b7a8286b3a1f1c906",
+        "pipeline.sta.rpt": "74c25ba27de3f88528983d7840c26033428ae661f7a3a7287149ff8dab4b40c1",
+        "pipeline.sta.summary": "6d8cf4c83a3890b09a441c71d0a3c94906ef64264a8f2c88aa935843749953b8"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rank": 1,
+  "P": 8,
+  "N": 128,
+  "target": "EP4CE115F29C7",
+  "clock_constraint_MHz": 50,
+  "virtual_io": true,
+  "fitter_effort": "FAST_FIT",
+  "board_programmed": false,
+  "source_sha256": {
+    "mamba3_recurrent_tile.sv": "3dcd53c24913bde79ba8c4b2a2e6577c3bd68ec23354ee6ac7acc3b8451941fe",
+    "fp32_functions.svh": "d7e806eb5a65f2243eed386be97287621e83c1ce9ed547be99cb726578e29aeb"
+  },
+  "quartus_exit_code": 0,
+  "status": "PASS"
+}

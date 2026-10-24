@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "seed": "0xe001f032",
+  "byte_identical_files": 24,
+  "sha256": {
+    "arithmetic.log": "32a1dfbe4d2ba9466d671480af0c5425582c661384db5ea8e5d6ed012c36f90a",
+    "compile.log": "1b04d7d55c93e25b7b96c7109cc936bde4551d209ddebd1feae822ca04325387",
+    "PASS_FAIL.log": "1cd13e928c8462e9947f4c7f6e3d1cf28e1f92f2d69852b722f1f20a7aa5cbc5",
+    "summary.json": "59e7b2a64b37f1ec4e4b2753cffe0608e4450da8c943e9d68203e5ea7671562e",
+    "rank1/bc.hex": "9854e82d4182f7e01290d774b70bc6013e7aecb7297308a74dc11c1de4e8c3c8",
+    "rank1/commands.hex": "c4c79a05370962f4cd70b5482202a9919191ef75a64accf63784924970cdba2b",
+    "rank1/cos_fp32.hex": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f",
+    "rank1/negative_control.log": "5436d4744779dfc84144e79734c437c2d946916f3c87ee468e90eb2e8cda941e",
+    "rank1/outputs.hex": "ab7f1449c2915c6312448f629644918065231f09eb9dd286d9e05234f3f66329",
+    "rank1/rtl_results.csv": "379055ed158deccfe1860c242ab8306062dddea8d588c1e2b491bd8b71a9d399",
+    "rank1/simulation.log": "aea2e193280d397b03271539d3aa6a486ff037fa0f8b3e5ac4a6c751913a715d",
+    "rank1/sin_fp32.hex": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e",
+    "rank1/states.hex": "884c2c8d0c75b894a94eef0c3f918d3d6020cd6a91aae958879b3807929a5b9b",
+    "rank1/values.hex": "d230e7ca927a83dbc1ec40a895bf1554dad24a68a491140a6c91ab74ca835de7",
+    "rank4/bc.hex": "8df23cd2fee17916b25220cf0129f9bbf222d70006bc3f9771aa70b38c0fc383",
+    "rank4/commands.hex": "777080153930d6c933f69df171d3a563e8bce7d77750277f6d63eb6c54b15b8e",
+    "rank4/cos_fp32.hex": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f",
+    "rank4/negative_control.log": "803889589cba53eae873b9a2aae059a6ae7ef1ddd46b49a4dda94e7615a129b5",
+    "rank4/outputs.hex": "31d4176b4ff950573d6b39fa33ffdd6feda2f606aae1e6d615b3c381a3025575",
+    "rank4/rtl_results.csv": "7398bc6c08d52f816c7d2db18f6dbaec0be17a2495bceb916cb41651eeeeee2b",
+    "rank4/simulation.log": "7094a0cd9963c9324c2be3575c3950ce16bf5b7e934e21e881e305a5c2fdefb6",
+    "rank4/sin_fp32.hex": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e",
+    "rank4/states.hex": "99c341d87e8a6906f862069792fb89439a4eb25b262676ba580c2261aa2914e6",
+    "rank4/values.hex": "d6b89bbc07d62c2e355337249e775686531fed5d420c7846c193f55992126bf9"
+  },
+  "scope": "A second clean ModelSim build/run reproduced all retained regression evidence byte-for-byte, using the installed vendor RAM model."
+}

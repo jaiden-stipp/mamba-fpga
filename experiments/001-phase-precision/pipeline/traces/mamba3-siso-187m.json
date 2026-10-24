@@ -1,0 +1,23 @@
+{
+  "checkpoint": "mamba3-siso-187m",
+  "layer": 0,
+  "head": 0,
+  "P_channels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "N": 128,
+  "rank": 1,
+  "tokens": 32,
+  "validation_offset": 32768,
+  "checkpoint_sha256": "b462d55e9f8ab9746be641d4de550b51bf65e55ab662e66835588b5a458c95ec",
+  "tokens_sha256": "2d9547fd138028905b27792f6adb4ec34cf9252ec0538ad935350be4bf24ab30",
+  "trace_sha256": "c90ab67f72bdbdaa379cc62c496df86b76be13513b3521270eed92eb06e6a53d",
+  "scope": "Frozen actual model inputs, not full-model quality or acceleration."
+}

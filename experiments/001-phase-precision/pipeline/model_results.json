@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "seed": 3758223410,
+  "backend": "Torch eager arithmetic emulator, not FPGA transport",
+  "source_sha256": {
+    "torch_backend.py": "534540535becf8aa42c0a8e053333c377ddfe711e711054e9aa037a5eabbd2d0",
+    "evaluate_model.py": "acdd0b44a9f8c68b7dd51bf2f972e0e446255975cd09ab21ebcc255a31d4e41e"
+  },
+  "torch_version": "2.8.0+cu128",
+  "numpy_version": "2.2.6",
+  "contract_checks": [
+    {
+      "rank": 1,
+      "outputs_exact": 512,
+      "packed_state_values_exact": 65536
+    },
+    {
+      "rank": 4,
+      "outputs_exact": 2048,
+      "packed_state_values_exact": 65536
+    }
+  ],
+  "models": [
+    {
+      "checkpoint": "mamba3-siso-187m",
+      "layers": 12,
+      "heads_per_layer": 24,
+      "P": 64,
+      "N": 128,
+      "rank": 1,
+      "tokens": 32,
+      "validation_offset": 32768,
+      "reference_perplexity": 455.8843289961598,
+      "emulator_perplexity": 456.4187510149715,
+      "relative_perplexity_change": 0.0011722754760807117,
+      "argmax_agreement_tokens": 31,
+      "persistent_main_state_bytes": 4718592,
+      "hidden_relative_rms": 0.004170901142060757,
+      "all_logits_finite": true
+    },
+    {
+      "checkpoint": "mamba3-mimo-187m",
+      "layers": 12,
+      "heads_per_layer": 24,
+      "P": 64,
+      "N": 128,
+      "rank": 4,
+      "tokens": 32,
+      "validation_offset": 32768,
+      "reference_perplexity": 610.9244238526385,
+      "emulator_perplexity": 611.3574660957539,
+      "relative_perplexity_change": 0.0007088311192153004,
+      "argmax_agreement_tokens": 31,
+      "persistent_main_state_bytes": 4718592,
+      "hidden_relative_rms": 0.0015258252387866378,
+      "all_logits_finite": true
+    }
+  ],
+  "scope": "32-token full-model integration smoke. Dense/normalization/nonlinear/gating/FFN/vocabulary layers execute in Torch. Recurrence arithmetic matches the RTL contract; only sampled tiles were simulated in RTL. No end-to-end hardware speed or matched-quality claim."
+}

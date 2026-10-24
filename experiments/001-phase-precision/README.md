@@ -10,6 +10,8 @@ The FPGA covers phase accumulation, LUT addressing, sine/cosine lookup, and sign
 
 The [2026-10-23 corner regression](PHASE_CORNER_REGRESSION.md) adds 4,096 unique deterministic vectors (seed `0xe0014096`) for wraparound, signed extrema, zero increments, and rounding boundaries. ModelSim checked the original 1,024 cases and the new 4,096 cases separately: 10,240 core results, zero quantized-reference mismatches. A separate float64 rotation comparison quantifies numerical error; this is additional RTL simulation, not a new board run. See the [PASS/FAIL log](evidence/phase_corner_regression/PASS_FAIL.log) and [machine-readable summary](evidence/phase_corner_regression/summary.json).
 
+The [recurrent pipeline continuation](pipeline/README.md) connects phase rotation, resident FP16 state, FP32 two-input recurrence, current-output reduction, writeback and the D skip term. Its SISO/MIMO RTL regression checks 131,072 state updates and 2,560 outputs, including actual checkpoint traces, with zero quantized-reference mismatches. An arithmetic emulator also runs inside both complete checkpoint decoders. See the [implementation report](pipeline/REPORT.md) for synthesis/timing evidence and the remaining complete-decoder integration work; this continuation does not establish end-to-end FPGA acceleration.
+
 ## Reproduce
 
 `source/` holds scripts and pinned upstream code; `source/results/` holds analysis inputs; `source/hardware/` holds RTL, Quartus project, ROMs, testbench, and original board/build files. `evidence/` and `figures/` hold report artifacts.
