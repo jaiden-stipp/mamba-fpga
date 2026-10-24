@@ -1,0 +1,23 @@
+{
+  "prior": "kv_product_stage",
+  "scratch_prefix": "e001-update-sum-stage-",
+  "cycles": 1403,
+  "baseline_path": [
+    "prev2*",
+    "updated3*"
+  ],
+  "first_path": [
+    "prev2*",
+    "update_partial*"
+  ],
+  "second_path": [
+    "update_partial*",
+    "updated3*"
+  ],
+  "markers": [
+    "# RESULT SUM reset_inflight=checked",
+    "# RESULT SUM admits=65536 consumes=65536"
+  ],
+  "scope": "One additional rank-1 boundary between the two left-associated state-update additions.",
+  "description": "Register fp_add(old2, prev2) as update_partial, and carry now2 and Q through matching registers. On the next cycle compute fp_add(update_partial, update_now). Extend the rank-1 valid/address pipeline by one cycle and shift every downstream state-write/product/accumulator consumer together. The testbench independently checks address, delayed now2 and Q for every partial sum, and resets with this stage valid before writeback. No addition is reassociated."
+}

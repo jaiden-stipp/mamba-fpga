@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "phase": "synthesis",
+  "command": [
+    "C:\\Users\\Orb1t\\Documents\\Codex\\2026-10-19\\base\\work\\mamba-phase\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\Orb1t\\Documents\\Codex\\2026-10-19\\base\\work\\github-mamba-fpga\\.artifacts\\e001-update-sum-stage-0082bb045089\\project\\experiments\\001-phase-precision\\pipeline\\synthesize.py",
+    "--rank",
+    "1"
+  ],
+  "exit_code": 0
+}

@@ -15,6 +15,8 @@ The isolated [rank-1 rotation-stage experiment](rotation_stage/REPORT.md) adds
 one tagged product-register boundary and retains its own regression and timing evidence.
 Its [K×V-stage successor](kv_product_stage/REPORT.md) adds one further aligned
 boundary on the resulting K-RAM-to-`now1` limiting path.
+The continuing [timing loop](TIMING_LOOP.md) records each measured successor;
+the [update-sum stage](update_sum_stage/REPORT.md) separates the two state additions.
 
 ## Data path
 

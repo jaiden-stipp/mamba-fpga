@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Oct 24 13:39:09 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : pipeline
+Top-level Entity Name : mamba3_recurrent_tile
+Family : Cyclone IV E
+Total logic elements : 29,292
+    Total combinational functions : 28,322
+    Dedicated logic registers : 2,409
+Total registers : 2409
+Total pins : 1
+Total virtual pins : 447
+Total memory bits : 29,792
+Embedded Multiplier 9-bit elements : 105
+Total PLLs : 0
