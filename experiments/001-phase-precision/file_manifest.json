@@ -1781,8 +1781,8 @@
   },
   {
     "path": "pipeline/README.md",
-    "bytes": 5663,
-    "sha256": "f0e076f10e31f3e83b028b0eae4ec623deda7919828c14f4ef35600c705b1be9"
+    "bytes": 5800,
+    "sha256": "4b509778d0c2f5d2fb5f24439fed10b41b1bbd7fd132f4c57c35a3b75ba4ce09"
   },
   {
     "path": "pipeline/regression.py",
@@ -2343,5 +2343,280 @@
     "path": "pipeline/rotation_stage/timing/staged-products-to-ky.rpt",
     "bytes": 38314,
     "sha256": "9da5402d97a931c4894370256cda70e50f9ea30a9b4cb8e719ddfccc109dfb36"
+  },
+  {
+    "path": "pipeline/kv_product_stage/analyze.py",
+    "bytes": 10212,
+    "sha256": "4b38cb34d5dbcbb10cecc14005897265ac773687049a291fdbb4ef044876b323"
+  },
+  {
+    "path": "pipeline/kv_product_stage/comparison.json",
+    "bytes": 8764,
+    "sha256": "3e6f574a748c24ebb1ca1298b19415bad0414e2b7d783af6d90ec85c2a9476b6"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/arithmetic.log",
+    "bytes": 50,
+    "sha256": "32a1dfbe4d2ba9466d671480af0c5425582c661384db5ea8e5d6ed012c36f90a"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/compile.log",
+    "bytes": 4102,
+    "sha256": "1b04d7d55c93e25b7b96c7109cc936bde4551d209ddebd1feae822ca04325387"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/execution.json",
+    "bytes": 732,
+    "sha256": "19d5bb194fce8dfac7f61e0ed3501e3ee0e329dd1848facc0cf2a4b1dca40b11"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/first_mismatch.json",
+    "bytes": 181,
+    "sha256": "d1fc77d3f1c23a74d9b5ff0223ce79bb98c6a6c7308b4425b04ea3dde63a44b7"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/PASS_FAIL.log",
+    "bytes": 296,
+    "sha256": "1cd13e928c8462e9947f4c7f6e3d1cf28e1f92f2d69852b722f1f20a7aa5cbc5"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/bc.hex",
+    "bytes": 151552,
+    "sha256": "9854e82d4182f7e01290d774b70bc6013e7aecb7297308a74dc11c1de4e8c3c8"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/commands.hex",
+    "bytes": 2112,
+    "sha256": "c4c79a05370962f4cd70b5482202a9919191ef75a64accf63784924970cdba2b"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/cos_fp32.hex",
+    "bytes": 2304,
+    "sha256": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/negative_control.log",
+    "bytes": 2261,
+    "sha256": "2e7912720fc08c60ccae056f1fc33ebab1b910e50265b44a7f2cf20f49d9b23a"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/outputs.hex",
+    "bytes": 4608,
+    "sha256": "ab7f1449c2915c6312448f629644918065231f09eb9dd286d9e05234f3f66329"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/rtl_results.csv",
+    "bytes": 2114612,
+    "sha256": "1624ffb30e1cfb7e42e421a5a701d27a7202af6b2855adab7463fe8d3de4da07"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/simulation.log",
+    "bytes": 2189,
+    "sha256": "601a9a18b2636be874c0e8d78ba37af218aaf8d26ecc00497866a047bfcf24c5"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/sin_fp32.hex",
+    "bytes": 2304,
+    "sha256": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/states.hex",
+    "bytes": 851968,
+    "sha256": "884c2c8d0c75b894a94eef0c3f918d3d6020cd6a91aae958879b3807929a5b9b"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank1/values.hex",
+    "bytes": 4608,
+    "sha256": "d230e7ca927a83dbc1ec40a895bf1554dad24a68a491140a6c91ab74ca835de7"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/bc.hex",
+    "bytes": 606208,
+    "sha256": "8df23cd2fee17916b25220cf0129f9bbf222d70006bc3f9771aa70b38c0fc383"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/commands.hex",
+    "bytes": 2112,
+    "sha256": "777080153930d6c933f69df171d3a563e8bce7d77750277f6d63eb6c54b15b8e"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/cos_fp32.hex",
+    "bytes": 2304,
+    "sha256": "3c357d1298bc89a00b6a3108a2f3a00244fb95a976db47da91e003bafced048f"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/negative_control.log",
+    "bytes": 2046,
+    "sha256": "803889589cba53eae873b9a2aae059a6ae7ef1ddd46b49a4dda94e7615a129b5"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/outputs.hex",
+    "bytes": 18432,
+    "sha256": "31d4176b4ff950573d6b39fa33ffdd6feda2f606aae1e6d615b3c381a3025575"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/rtl_results.csv",
+    "bytes": 2201348,
+    "sha256": "7398bc6c08d52f816c7d2db18f6dbaec0be17a2495bceb916cb41651eeeeee2b"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/simulation.log",
+    "bytes": 1974,
+    "sha256": "7094a0cd9963c9324c2be3575c3950ce16bf5b7e934e21e881e305a5c2fdefb6"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/sin_fp32.hex",
+    "bytes": 2304,
+    "sha256": "27c0e4a309a7ae2b8da9ab263df29ae35249b3e80e1e9a248945306f41d6797e"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/states.hex",
+    "bytes": 851968,
+    "sha256": "99c341d87e8a6906f862069792fb89439a4eb25b262676ba580c2261aa2914e6"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/rank4/values.hex",
+    "bytes": 18432,
+    "sha256": "d6b89bbc07d62c2e355337249e775686531fed5d420c7846c193f55992126bf9"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/runner.log",
+    "bytes": 4602,
+    "sha256": "856a7e4b8480283e491adfb3b2366b38afac242f36bb660909ceb17565778e26"
+  },
+  {
+    "path": "pipeline/kv_product_stage/evidence/summary.json",
+    "bytes": 4474,
+    "sha256": "0485caeff350d01a3891bdfc43537ef05a16de3757cef576147c9ce6baeef73a"
+  },
+  {
+    "path": "pipeline/kv_product_stage/extract_paths.tcl",
+    "bytes": 918,
+    "sha256": "c8669a2e819c29832476d7801a63e9d2cd6b5d4551147644f9ab708e9a0ffbf1"
+  },
+  {
+    "path": "pipeline/kv_product_stage/inputs.json",
+    "bytes": 1549,
+    "sha256": "80bfaf087b112be504e48ff2cd1a05e5fe6f46158b4be52ba843725e15e5b51f"
+  },
+  {
+    "path": "pipeline/kv_product_stage/REPORT.md",
+    "bytes": 7201,
+    "sha256": "066ebb687ad4e397967e396bfe9aee6b4f099b4cf4ffb4f5b6c13f37b6471602"
+  },
+  {
+    "path": "pipeline/kv_product_stage/rtl/mamba3_recurrent_tile.sv",
+    "bytes": 11633,
+    "sha256": "954b3c521b6cd594cc89ea0e4d5de36480cf634a7d45139954b59ae8b1f86911"
+  },
+  {
+    "path": "pipeline/kv_product_stage/rtl/tb_recurrent_tile.sv",
+    "bytes": 11916,
+    "sha256": "469b1b9a7cb003c4670626f9936760ca8cc53fa293fd667cda7d58d7559a1d06"
+  },
+  {
+    "path": "pipeline/kv_product_stage/run_experiment.py",
+    "bytes": 4129,
+    "sha256": "209cebe9cd6b8347f70dd7d38a21933b38a4f9288f237b250da93ecb8ef005be"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/build.log",
+    "bytes": 162210,
+    "sha256": "f4b8596f51139141b1a84726eb3337f910515e327841d1dd51200365e5a0bfb0"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/build_status.json",
+    "bytes": 556,
+    "sha256": "c96f9dcc68d987bf2b87a0947612433a2493587b94379c5b520d76e52d773677"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/execution.json",
+    "bytes": 426,
+    "sha256": "6d77510a8871e93db2556ff6e35f1f60bf975d250e8833cbff72664083a7f5f1"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.asm.rpt",
+    "bytes": 6248,
+    "sha256": "cfe8f293e268b5855ebbd1fc8431a261346606cf496e52fecc0f3c8caa78b9be"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.fit.rpt",
+    "bytes": 323075,
+    "sha256": "767a35aff01ba6277423a03f368a91c4cb8f57cf082b1891beb2738463fd2629"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.fit.summary",
+    "bytes": 654,
+    "sha256": "360c4e7481c119f8e00894d655fdfdeaf788d91f2ad50ff794c1a1b058fbbc0b"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.flow.rpt",
+    "bytes": 7197,
+    "sha256": "ae49b8c3863d0ad0692eb948052759120b7e0ed7f6e15d3b14b6f0e68c77b2fb"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.map.rpt",
+    "bytes": 416558,
+    "sha256": "2eaa562589b146e47acbd0a2626de7cd37296e7f3932aa4fcf14fe724708615e"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.map.summary",
+    "bytes": 500,
+    "sha256": "d92b10e2086d9fbb6b149257d9f1c62895092c1e91493acf9ee973d51de1b3f3"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.qsf",
+    "bytes": 2586,
+    "sha256": "e3d15a9e275e95b85366cb2363d51776330504429b2e276f39803b3f769d2c2b"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.sdc",
+    "bytes": 83,
+    "sha256": "ade3d963fa6f75620b06a86e1f08ecf12acf6c78918c7dee6ba7cc7e71e15519"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.sta.rpt",
+    "bytes": 271903,
+    "sha256": "17b3e836caf19dac78e8cd73a2d88567c543c5c8d92e71491b36cee0138c4a42"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/pipeline.sta.summary",
+    "bytes": 941,
+    "sha256": "6cec12d69dd1c5c00fb66c251e9bcff3d9bbb4211818abe4392c3914615ac114"
+  },
+  {
+    "path": "pipeline/kv_product_stage/synthesis/runner.log",
+    "bytes": 5582,
+    "sha256": "7e8963e8af05d8fb131cb8fc9b2069549494358c84097c52afded8587a963170"
+  },
+  {
+    "path": "pipeline/kv_product_stage/timing/baseline-extraction.log",
+    "bytes": 3200,
+    "sha256": "c1d36066df7b3ede821dffa5356e6e75d870440fdad126c55d7a091fd7792ba5"
+  },
+  {
+    "path": "pipeline/kv_product_stage/timing/baseline-kram-to-now1.rpt",
+    "bytes": 103356,
+    "sha256": "aa931f508d1ce13ae9810f2cd6783cc6b2942c447f93f7967f01aa322d18329a"
+  },
+  {
+    "path": "pipeline/kv_product_stage/timing/extraction_provenance.json",
+    "bytes": 2358,
+    "sha256": "3e5595138f3d874d55c2e99c1e78db79b0d6f08c84ebc98997eea72e9fd30930"
+  },
+  {
+    "path": "pipeline/kv_product_stage/timing/staged-extraction.log",
+    "bytes": 3690,
+    "sha256": "e9ee9076375d95a2fa9ce6e423baf97b64dc6f5f024ab6a9de7ff607bfde9222"
+  },
+  {
+    "path": "pipeline/kv_product_stage/timing/staged-kram-to-product.rpt",
+    "bytes": 68936,
+    "sha256": "f3d75e8dda7639a6c77256bdc2b45acd32be799dc651a2195da7fe24d668f777"
+  },
+  {
+    "path": "pipeline/kv_product_stage/timing/staged-product-to-now1.rpt",
+    "bytes": 29193,
+    "sha256": "768e97c74fe9997040013ea1940719d64226709a88563591790c8a8a040295ec"
   }
 ]
